@@ -677,7 +677,18 @@ input[type="text"] {
   letter-spacing: 1px;
   font-size: 13px;
   padding: 10px 15px;
+  color: #000;
+  outline: #000 auto 2px;
+  background-color: transparent;
 }
+
+.form-group .btn-modify:hover, .form-group .btn-modify:focus, .form-group .btn-modify:active {
+  background-color: transparent !important;
+  color: rgb(121, 121, 121);
+  outline: rgb(121, 121, 121) auto 2px !important;
+}
+
+
 
 .fh5co-social-icons {
   margin: 0;
@@ -1041,7 +1052,7 @@ input[type="text"] {
   border: 2px solid #fff;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #fff;
+  background: #000;
   color: #000;
 }
 
