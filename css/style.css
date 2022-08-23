@@ -661,10 +661,12 @@ input[type="text"] {
   margin-bottom: 30px;
 }
 .form-group .btn-modify {
-  font-family: "Playfair Display", serif;
+  font-family: 'AnebaNeue';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 700;
   font-size: 13px;
   padding: 10px 15px;
 }
@@ -1014,6 +1016,10 @@ input[type="text"] {
   background: #F95959;
   color: #fff;
   border: 2px solid #F95959;
+  font-family: 'AnebaNeue';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #fa7272 !important;
@@ -1033,6 +1039,10 @@ input[type="text"] {
   background: #515151;
   color: #fff;
   border: 2px solid #515151;
+  font-family: 'AnebaNeue';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 .btn-primary-disabled:hover, .btn-primary-disabled:focus, .btn-primary-disabled:active {
   background: #a1a1a1 !important;
