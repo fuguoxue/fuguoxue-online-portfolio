@@ -13,13 +13,22 @@
 * 	Template Style 
 *
 * ======================================================= */
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  font-size: 20px;
+  z-index: 2000;
+  mix-blend-mode: difference;
+}
+
 body {
   font-family: "Open Sans", arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  color: #767676;
-  background: rgba(255, 255, 255, 0.6);
+  background-color: #fff;
   /* START white border*/
   border-left: 20px solid #fff;
   border-right: 20px solid #fff;
@@ -141,7 +150,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav {
-  margin: 4em 0 2em 0;
+  margin: 4em 3% 2em 0;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
@@ -161,12 +171,12 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav #fh5co-logo a {
   margin-bottom: 0;
   padding: 0;
-  color: #000;
+  color: #fff;
   display: block;
   line-height: 32px;
 }
 .fh5co-nav #fh5co-logo a span {
-  color: #F95959;
+  color: #06a6a6;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1 {
@@ -258,7 +268,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 .fh5co-nav ul li.btn-cta a span {
-  background: #f95959;
+  background: #06a6a6;
   padding: 4px 10px;
   display: -moz-inline-stack;
   display: inline-block;
@@ -278,7 +288,7 @@ h1, h2, h3, h4, h5, h6, figure {
   box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
 }
 .fh5co-nav ul li.active > a {
-  color: #F95959 !important;
+  color: #06a6a6 !important;
   position: relative;
 }
 .fh5co-nav ul li.active > a:after {
@@ -862,7 +872,7 @@ input[type="text"] {
   transform: rotate(-180deg);
 }
 #fh5co-offcanvas ul li.active > a {
-  color: #F95959;
+  color: #06a6a6;
 }
 
 .gototop {
