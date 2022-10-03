@@ -1268,6 +1268,7 @@ input[type="text"] {
 
 .info-table {
   margin: auto;
+  margin-bottom: 20px;
   width: 80%;
   border-collapse: collapse;
   border-style: hidden;
