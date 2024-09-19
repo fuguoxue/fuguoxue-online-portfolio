@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Tree of Growth",
+        "tags": ["Creative Coding", "Interactive Installation"],
+        "year": "2024",
+        "imgURL": "/imgs/Tree-of-Growth.jpg"
+    },
+    {
+        "name": "The Surface City",
+        "tags": ["Creative Coding", "Story Telling"],
+        "year": "2024",
+        "imgURL": "/imgs/The-Surface-City-cover.gif"
+    },
+    {
+        "name": "WildWeb",
+        "tags": ["Interactive Installation"],
+        "year": "2023",
+        "imgURL": "/imgs/wildweb-cover.jpg"
+    },
+    {
+        "name": "AquaMetropolis",
+        "tags": ["Animation", "Story Telling"],
+        "year": "2023",
+        "imgURL": "/imgs/aquametropolis-cover.gif"
+    },
+    {
+        "name": "Earthlings",
+        "tags": ["Game"],
+        "year": "2022",
+        "imgURL": "/imgs/earthlings-cover.gif"
+    }, 
+    {
+        "name": "Cat Jazz",
+        "tags": ["Animation"],
+        "year": "2020",
+        "imgURL": "/imgs/cat-jazz-cover.gif"
+    }
+]
