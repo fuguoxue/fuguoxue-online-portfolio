@@ -1,23 +1,36 @@
-import ProjectInfoSection from "@/components/projectInfoSection";
-import {BackTab} from "@/components/webpageReusables";
+import { ProjectInfoSection } from "@/components/projectInfoSection";
+import { NavigationTab } from "@/components/webpageReusables";
 import Image from "next/image";
 import P5ShadowController from "@/components/P5TitleShadow";
+import { ProjectSwitch } from "@/components/projectInfoSection";
 
 // Array of image paths
 const images = [
   "/imgs/tree-of-growth/Weixin Image_20240728103144.jpg",
   "/imgs/tree-of-growth/Weixin Image_20240728103216.jpg",
-  "/imgs/tree-of-growth/Weixin Image_20240728103227.jpg"
+  "/imgs/tree-of-growth/Weixin Image_20240728103227.jpg",
 ];
 
 export default function Main() {
+  // const router = useRouter();
+  // const { id } = router.query;
+
+  // // Find the current project's index in the projectData array
+  // const currentIndex = projectData.findIndex((project) => project.id === id);
+
+  // // Get the current project object
+  // const currentProject = projectData[currentIndex];
+
+  // // Calculate the previous and next project based on the current index
+  // const previousProject = currentIndex > 0 ? projectData[currentIndex - 1] : null;
+  // const nextProject = currentIndex < projectData.length - 1 ? projectData[currentIndex + 1] : null;
+
   return (
     <div className="grid grid-cols-5 min-h-screen m-4">
       <aside className="col-span-1 p-4">
         <div className="sticky top-0">
           <P5ShadowController />
           <ProjectInfoSection projectName="Tree of Growth" />
-          <BackTab />
         </div>
       </aside>
       <main className="col-span-3 p-4">
@@ -52,7 +65,7 @@ export default function Main() {
         </div>
       </main>
       <div className="col-span-1 p-4">
-        <p>Next</p>
+        <ProjectSwitch projectName="Tree of Growth" />
       </div>
     </div>
   );

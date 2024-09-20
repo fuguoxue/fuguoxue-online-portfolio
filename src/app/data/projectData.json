@@ -12,7 +12,7 @@
     },
     {
         "name": "The Surface City",
-        "tags": ["Creative Coding", "Story Telling"],
+        "tags": ["Creative Coding", "Storytelling"],
         "year": "2024",
         "imgURL": "/imgs/The-Surface-City-cover.gif",
         "hidden": false,
@@ -34,7 +34,7 @@
     },
     {
         "name": "AquaMetropolis",
-        "tags": ["Animation", "Story Telling", "Artificial Intelligence"],
+        "tags": ["Animation", "Storytelling", "Artificial Intelligence"],
         "year": "2023",
         "imgURL": "/imgs/aquametropolis-cover.gif",
         "hidden": false,

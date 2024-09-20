@@ -6,10 +6,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import projectData from "./data/projectData.json"; // Import your project data
 import { FaVimeoV, FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 import dynamic from "next/dynamic";
-// Dynamically import P5Background without SSR
-const P5Background = dynamic(() => import("../components/P5Background"), {
-  ssr: false, // This disables server-side rendering for the P5 component
-});
 // import {WebsiteTitle} from "@/components/webpageReusables";
 import P5ShadowController from "@/components/P5TitleShadow";
 
