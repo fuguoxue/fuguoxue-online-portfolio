@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #141414;
+  --foreground: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,12 +20,61 @@ body {
   font-family: 'Inconsolata', monospace;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Inconsolata', monospace;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inconsolata', monospace;
+  @apply text-gray-300;
+}
+
+h1 {
+  @apply text-4xl font-bold mb-4;
+}
+
+h2 {
+  @apply text-3xl font-medium mb-3;
+}
+
+h3 {
+  @apply text-2xl font-medium mb-2;
+}
+
+h4 {
+  @apply text-xl font-medium mb-2;
+}
+
+h5 {
+  @apply text-lg font-medium mb-1;
+}
+
+h6 {
+  @apply text-base font-medium mb-1;
+}
+
+p {
+  @apply text-sm leading-relaxed mb-1;
+}
+
+.tagline {
+  @apply text-red-300 my-3;
+}
+
+.tagline span {
+  @apply inline-block;
+}
+
+.tagline span span {
+  @apply text-gray-200 inline-block mx-1;
+}
+
+.title-shadow {
+  text-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.8),   /* Inner glow */
+    0 0 10px rgba(255, 255, 255, 0.6),  /* Middle glow */
+    0 0 20px rgba(255, 255, 255, 0.5),  /* Outer glow */
+    0 0 40px rgba(255, 255, 255, 0.4);  /* Larger, faint glow */
 }

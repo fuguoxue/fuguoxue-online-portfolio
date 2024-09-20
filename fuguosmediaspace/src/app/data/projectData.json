@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Tree of Growth",
+        "tags": ["Creative Coding", "Interactive Installation"],
+        "year": "2024",
+        "imgURL": "/imgs/Tree-of-Growth.jpg",
+        "hidden": false,
+        "description": "Inspired by L-systems, known for their ability to generate customized recursive patterns, Tree of Growth is an interactive projection that brings the art of tree planting to life. By simply placing a red box (the “seed”) on the floor at different positions, participants can “grow” a diverse array of trees, each with unique shapes and characteristics. \nThis project is a collaboration between Fuguo Xue and Jinyuan Liu.",
+        "time": "1 month",
+        "media": "interactive projection built with Max MSP, and a block made with woodboard and acrylic paint.",
+        "mentors": ["Joshua Goldberg", "Rob Ramirez"]
+    },
+    {
+        "name": "The Surface City",
+        "tags": ["Creative Coding", "Story Telling"],
+        "year": "2024",
+        "imgURL": "/imgs/The-Surface-City-cover.gif",
+        "hidden": false,
+        "description": "The Surface City is a concept design and storytelling experience enhanced by creative coding. It aims to explore the patterns of cities with code and the potential of 2D tiles in creating 3D visual effects.\nThe Surface City is a collaboration between Fuguo and Chenyi. It is part of the Visible Cities: Workshop Exhibition organized by CritLab Review.",
+        "time": "2 weeks",
+        "media": "generative landscape done by p5.js coding and Adobe Illustrator.",
+        "mentors": ["Thiago Hersan", "Alexandra Marraccini"]
+    },
+    {
+        "name": "WildWeb",
+        "tags": ["Interactive Installation", "Creative Coding"],
+        "year": "2023",
+        "imgURL": "/imgs/wildweb-cover.jpg",
+        "hidden": false,
+        "description": "",
+        "time": "",
+        "media": "",
+        "mentors": []
+    },
+    {
+        "name": "AquaMetropolis",
+        "tags": ["Animation", "Story Telling", "Artificial Intelligence"],
+        "year": "2023",
+        "imgURL": "/imgs/aquametropolis-cover.gif",
+        "hidden": false,
+        "description": "",
+        "time": "",
+        "media": "",
+        "mentors": []
+    },
+    {
+        "name": "Cometale",
+        "tags": ["Interactive Installation", "Museum Experience", "Artificial Intelligence"],
+        "year": "2023",
+        "imgURL": "/imgs/cometale-cover.gif",
+        "hidden": false,
+        "description": "",
+        "time": "",
+        "media": "",
+        "mentors": []
+    },
+    {
+        "name": "Earthlings",
+        "tags": ["Game"],
+        "year": "2022",
+        "imgURL": "/imgs/earthlings-cover.gif",
+        "hidden": false,
+        "description": "",
+        "time": "",
+        "media": "",
+        "mentors": []
+    }, 
+    {
+        "name": "Cat Jazz",
+        "tags": ["Animation"],
+        "year": "2020",
+        "imgURL": "/imgs/cat-jazz-cover.gif",
+        "hidden": false,
+        "description": "",
+        "time": "",
+        "media": "",
+        "mentors": []
+    }
+]
