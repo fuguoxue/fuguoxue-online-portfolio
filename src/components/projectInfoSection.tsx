@@ -1,3 +1,4 @@
+"use client";
 import projectData from "../app/data/projectData.json";
 import { NavigationTab } from "./webpageReusables";
 
@@ -15,9 +16,11 @@ export function ProjectInfoSection({ projectName }: ProjectInfoSectionProps) {
   }
 
   return (
-    <div className="sticky top-0">
+    <div>
       <h2>{project.name}</h2>
-      <h3>{project.year}</h3>
+      <h4>{project.year}</h4>
+      <p className="mt-4 text-gray-400"><b>TIME FRAME: </b>{project.time}</p>
+      <p className="mb-4 text-gray-400"><b>MEDIA: </b>{project.media}</p>
       <p>
         {project.description.split("\n").map((line, index) => (
           <span key={index}>
@@ -35,7 +38,7 @@ export function ProjectInfoSection({ projectName }: ProjectInfoSectionProps) {
           </span>
         ))}
       </p>
-      <NavigationTab href="/" text="Home" arrowPosition="left" />
+      {/* <NavigationTab href="/" text="Home" arrowPosition="left" /> */}
     </div>
   );
 }
@@ -48,7 +51,7 @@ export function ProjectSwitch({ projectName }: ProjectInfoSectionProps) {
   const nextProject = projectData[currentIndex + 1] || null;
   if ((previousProject!=null) && (nextProject!=null)) {
     return (
-      <div className="col-span-1 p-4 flex justify-between items-start">
+      <div className="mt-2 flex justify-between items-start">
         <NavigationTab
           href={`/projects/${previousProject.name
             .replace(/\s+/g, "-")
@@ -67,7 +70,7 @@ export function ProjectSwitch({ projectName }: ProjectInfoSectionProps) {
     );
   } else if (previousProject==null) {
     return (
-      <div className="col-span-1 p-4 flex items-start">
+      <div className="mt-2 flex justify-end">
         <NavigationTab
           href={`/projects/${nextProject.name
             .replace(/\s+/g, "-")
@@ -79,7 +82,7 @@ export function ProjectSwitch({ projectName }: ProjectInfoSectionProps) {
     );
   } else if (nextProject==null) {
     return (
-      <div className="col-span-1 p-4 flex items-start">
+      <div className="mt-2 flex justify-start">
         <NavigationTab
           href={`/projects/${previousProject.name
             .replace(/\s+/g, "-")

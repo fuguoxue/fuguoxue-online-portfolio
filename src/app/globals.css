@@ -60,7 +60,7 @@ p {
 }
 
 .tagline {
-  @apply text-red-300 my-3;
+  @apply text-red-300 my-5;
 }
 
 .tagline span {

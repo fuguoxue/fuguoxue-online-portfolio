@@ -5,8 +5,6 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import projectData from "./data/projectData.json"; // Import your project data
 import { FaVimeoV, FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
-import dynamic from "next/dynamic";
-// import {WebsiteTitle} from "@/components/webpageReusables";
 import P5ShadowController from "@/components/P5TitleShadow";
 
 export default function Home() {
@@ -30,9 +28,6 @@ export default function Home() {
 
   return (
     <div className="relative">
-      {/* Interactive p5.js Background */}
-      {/* <P5Background /> */}
-
       <div className="grid grid-cols-5 min-h-screen">
         {/* Sidebar */}
         <aside className="col-span-1 p-8 text-gray-400">
