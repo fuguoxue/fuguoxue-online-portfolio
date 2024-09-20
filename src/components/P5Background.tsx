@@ -1,3 +1,4 @@
+"use client";
 import { useRef, useEffect } from "react";
 import p5 from "p5";
 

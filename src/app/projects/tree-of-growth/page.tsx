@@ -1,6 +1,7 @@
 import ProjectInfoSection from "@/components/projectInfoSection";
-import {WebsiteTitle,BackTab} from "@/components/webpageReusables";
+import {BackTab} from "@/components/webpageReusables";
 import Image from "next/image";
+import P5ShadowController from "@/components/P5TitleShadow";
 
 // Array of image paths
 const images = [
@@ -14,7 +15,7 @@ export default function Main() {
     <div className="grid grid-cols-5 min-h-screen m-4">
       <aside className="col-span-1 p-4">
         <div className="sticky top-0">
-          <WebsiteTitle />
+          <P5ShadowController />
           <ProjectInfoSection projectName="Tree of Growth" />
           <BackTab />
         </div>

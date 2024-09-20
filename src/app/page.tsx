@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <div className="relative">
       {/* Interactive p5.js Background */}
-      <P5Background />
+      {/* <P5Background /> */}
 
       <div className="grid grid-cols-5 min-h-screen">
         {/* Sidebar */}

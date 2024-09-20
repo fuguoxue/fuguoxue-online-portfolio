@@ -18,10 +18,10 @@ export function BackTab() {
   return (
     <Link
       href="/"
-      className="group inline-flex items-center border-b-2 border-transparent hover:border-gray-200 transition duration-300 text-base"
+      className="group inline-flex items-center border-b-2 border-transparent hover:border-gray-50 transition duration-300 text-base"
     >
       {/* Visible arrow with hover animation */}
-      <span className="mr-2 text-gray-200 group-hover:scale-150 transition-transform duration-300">
+      <span className="mr-2 text-gray-200 group-hover:scale-150 group-hover:border-gray-50 transition-transform duration-300">
         &#8592; {/* This is the arrow code (←) */}
       </span>
       Back to Home
