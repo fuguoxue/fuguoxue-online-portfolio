@@ -30,7 +30,7 @@ export default function Home() {
     <div className="relative">
       <div className="grid grid-cols-5 min-h-screen">
         {/* Sidebar */}
-        <aside className="col-span-1 p-8 text-gray-400">
+        <aside className="col-span-1 p-8 text-white">
           <div className="sticky top-0">
             {/* Bio Section */}
             <P5ShadowController />
@@ -49,8 +49,8 @@ export default function Home() {
                   onClick={() => setSelectedTag(tag)}
                   className={`mr-4 text-left py-2 border-b-2 transition-all duration-300 ${
                     selectedTag === tag
-                      ? "border-gray-300 text-gray-300"
-                      : "border-b-2 border-transparent hover:border-gray-200 transition-border duration-300"
+                      ? "border-white text-white"
+                      : "border-b-2 border-transparent hover:border-white text-gray-300 transition-border duration-300"
                   }`}
                 >
                   {tag}
@@ -62,17 +62,17 @@ export default function Home() {
             <div className="flex items-center space-x-4">
               {" "}
               {/* Flexbox to align icons in a row and center them vertically */}
-              <Link href="https://vimeo.com/your-profile" target="_blank">
-                <FaVimeoV className="w-6 h-6 hover:text-gray-300 transition" />
+              <Link href="https://vimeo.com/xuefuguo" target="_blank">
+                <FaVimeoV className="w-6 h-6 text-gray-300 hover:text-white transition" />
               </Link>
-              <Link href="https://linkedin.com/in/your-profile" target="_blank">
-                <FaLinkedinIn className="w-6 h-6 hover:text-gray-300 transition" />
+              <Link href="https://www.linkedin.com/in/xuefuguo/" target="_blank">
+                <FaLinkedinIn className="w-6 h-6 text-gray-300 hover:text-white transition" />
               </Link>
-              <Link href="https://github.com/your-profile" target="_blank">
-                <FaGithub className="w-6 h-6 hover:text-gray-300 transition" />
+              <Link href="https://github.com/fuguoxue-nyu" target="_blank">
+                <FaGithub className="w-6 h-6 text-gray-300 hover:text-white transition" />
               </Link>
-              <Link href="https://instagram.com/your-profile" target="_blank">
-                <FaInstagram className="w-6 h-6 hover:text-gray-300 transition" />
+              <Link href="https://www.instagram.com/fuguosmediaspace/" target="_blank">
+                <FaInstagram className="w-6 h-6 text-gray-300 hover:text-white transition" />
               </Link>
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function Home() {
                     className="relative group"
                   >
                     {/* Image Container with fixed dimensions */}
-                    <div className="w-full h-64 overflow-hidden">
+                    <div className="relative w-full h-64 overflow-hidden">
                       <Link
                         href={`/projects/${project.name
                           .replace(/\s+/g, "-")
@@ -108,9 +108,8 @@ export default function Home() {
                         <Image
                           src={project.imgURL}
                           alt={project.name}
-                          width={400}
-                          height={400}
-                          objectFit="cover"
+                          fill
+                          style={{ objectFit: "cover" }}
                           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                         />
                       </Link>

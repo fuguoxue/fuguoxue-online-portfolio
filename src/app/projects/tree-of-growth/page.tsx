@@ -48,7 +48,6 @@ export default function Main() {
                 alt={`Tree of Growth image ${index + 1}`}
                 width={400}
                 height={400}
-                objectFit="cover"
                 className="w-full h-full object-cover"
               />
             </div>

@@ -24,7 +24,6 @@ export default function Main() {
                 alt={`The Suface City cover image`}
                 width={400}
                 height={400}
-                objectFit="cover"
                 className="w-full h-full object-cover"
               />
         </div>
