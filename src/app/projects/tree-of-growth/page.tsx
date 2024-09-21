@@ -1,9 +1,9 @@
 import {
   ProjectInfoSection,
   ProjectSwitch,
-} from "@/components/projectInfoSection";
+} from "../../../components/projectInfoSection";
 import Image from "next/image";
-import TitleLine from "@/components/TitleLine";
+import TitleLine from "../../../components/TitleLine";
 
 // Array of image paths
 const images = [

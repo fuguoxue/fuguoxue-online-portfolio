@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import projectData from "./data/projectData.json"; // Import your project data
 import { FaVimeoV, FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
-import P5ShadowController from "@/components/P5TitleShadow";
+import P5ShadowController from "../components/P5TitleShadow";
 
 export default function Home() {
   const [selectedTag, setSelectedTag] = useState<string>("All Works"); // Explicitly setting the type to 'string'
