@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react"; // Import Swiper and SwiperS
 import { Navigation, Pagination, Thumbs } from "swiper/modules";
 import { useState } from "react";
 import Image from "next/image";
+import { Swiper as SwiperType } from "swiper"; // Import the Swiper type
 
 // Import Swiper styles
 import "swiper/css";
@@ -16,7 +17,7 @@ interface SlideshowProps {
 }
 
 export default function SwiperSlider({ slides }: SlideshowProps) {
-  const [thumbsSwiper, setThumbsSwiper] = useState<any>(null); // For controlling thumbnails
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null); // For controlling thumbnails
 
   return (
     <div className="swiper-container justify-center">
