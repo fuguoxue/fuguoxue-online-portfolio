@@ -19,8 +19,6 @@ export function ProjectInfoSection({ projectName }: ProjectInfoSectionProps) {
     <div>
       <h2>{project.name}</h2>
       <h4>{project.year}</h4>
-      <p className="mt-4 text-gray-400"><b>TIME FRAME: </b>{project.time}</p>
-      <p className="mb-4 text-gray-400"><b>MEDIA: </b>{project.media}</p>
       <p>
         {project.description.split("\n").map((line, index) => (
           <span key={index}>
@@ -29,11 +27,13 @@ export function ProjectInfoSection({ projectName }: ProjectInfoSectionProps) {
           </span>
         ))}
       </p>
-      <p className="tagline">
+      <p className="mt-4 mb-2 supplementary text-sm text-tag"><b>TIME FRAME: </b>{project.time}</p>
+      <p className="mb-2 supplementary text-sm text-tag"><b>MEDIA: </b>{project.media}</p>
+      <p className="tagline"><b>TAGS: </b>
         {project.tags.map((tag, index) => (
           <span key={tag}>
             {tag}
-            {index < project.tags.length - 1 && <span>•</span>}{" "}
+            {index < project.tags.length - 1 && <span>|</span>}{" "}
             {/* Add bullet between tags, but not after the last one */}
           </span>
         ))}

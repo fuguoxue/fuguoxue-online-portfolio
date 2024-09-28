@@ -15,26 +15,31 @@ export function WebsiteTitle() {
 }
 
 interface TabProps {
-  href: string;       // URL to navigate to
-  text: string;       // The text of the tab
-  arrowPosition: "left" | "right";  // Position of the arrow (left or right of the text)
+  href: string; // URL to navigate to
+  text: string; // The text of the tab
+  arrowPosition: "left" | "right"; // Position of the arrow (left or right of the text)
 }
 
 export function NavigationTab({ href, text, arrowPosition }: TabProps) {
   return (
     <Link
       href={href}
-      className="group inline-flex items-center border-b-2 border-transparent hover:border-gray-50 transition duration-300 text-base"
+      className="group inline-flex items-center text-primary transition-all duration-300 transform hover:scale-105 hover:text-secondary text-lg"
     >
       {arrowPosition === "left" && (
-        <span className="mr-2 text-gray-200 group-hover:scale-150 group-hover:border-gray-50 transition-transform duration-300">
-          &#8592;
+        <span className="transition-all duration-300 transform group-hover:scale-105 group-hover:text-secondary">
+          &#8592;&nbsp;
         </span>
       )}
-      {text}
+
+      {/* Wrap text in a span to apply the underline */}
+      <span className="transition-all duration-300 group-hover:underline">
+        {text}
+      </span>
+
       {arrowPosition === "right" && (
-        <span className="ml-2 text-gray-200 group-hover:scale-150 group-hover:border-gray-50 transition-transform duration-300">
-          &#8594;
+        <span className="transition-all duration-300 transform group-hover:scale-105 group-hover:text-secondary">
+          &nbsp;&#8594;
         </span>
       )}
     </Link>

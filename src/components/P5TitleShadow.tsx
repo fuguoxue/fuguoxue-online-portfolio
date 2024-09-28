@@ -64,7 +64,7 @@ const P5ShadowController: React.FC = () => {
     <div>
       <h1
         ref={titleRef}
-        className="mb-10 font-light tracking-wide title-shadow"
+        className="mb-10 font-light tracking-wide"
         onClick={() => (window.location.href = "/")}
       >
         Fuguo&apos;s<br />Media Space

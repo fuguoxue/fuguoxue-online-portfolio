@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #141414;
-  --foreground: #ffffff;
+  --background: #fff;
+  --foreground: #141414;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,7 +28,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Inconsolata', monospace;
-  @apply text-gray-300;
+  @apply text-primary;
 }
 
 h1 {
@@ -56,11 +56,11 @@ h6 {
 }
 
 p {
-  @apply text-sm leading-relaxed mb-1;
+  @apply text-base leading-relaxed mb-1;
 }
 
 .tagline {
-  @apply text-red-300 my-5;
+  @apply text-tag text-sm;
 }
 
 .tagline span {
@@ -68,13 +68,9 @@ p {
 }
 
 .tagline span span {
-  @apply text-gray-200 inline-block mx-1;
+  @apply text-primary inline-block mx-1;
 }
 
-.title-shadow {
-  text-shadow: 
-    0 0 5px rgba(255, 255, 255, 0.8),   /* Inner glow */
-    0 0 10px rgba(255, 255, 255, 0.6),  /* Middle glow */
-    0 0 20px rgba(255, 255, 255, 0.5),  /* Outer glow */
-    0 0 40px rgba(255, 255, 255, 0.4);  /* Larger, faint glow */
+.supplementary {
+  @apply text-sm;
 }

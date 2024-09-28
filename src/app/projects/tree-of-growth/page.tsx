@@ -22,7 +22,6 @@ export default function Main() {
       </div>
       <aside className="col-span-1 p-4 sticky top-4">
         <ProjectInfoSection projectName={projectName} />
-        <ProjectSwitch projectName={projectName} />
       </aside>
       <main className="col-span-3 p-4">
         {/* Embedded video */}
@@ -54,7 +53,9 @@ export default function Main() {
           ))}
         </div>
       </main>
-      <div className="col-span-1 p-4"></div>
+      <div className="col-span-1 p-4">
+        <ProjectSwitch projectName={projectName} />
+      </div>
     </div>
   );
 }

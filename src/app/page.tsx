@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import projectData from "./data/projectData.json"; // Import your project data
-import { FaVimeoV, FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 import P5ShadowController from "../components/P5TitleShadow";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [selectedTag, setSelectedTag] = useState<string>("All Works"); // Explicitly setting the type to 'string'
@@ -30,7 +30,7 @@ export default function Home() {
     <div className="relative">
       <div className="grid grid-cols-5 min-h-screen">
         {/* Sidebar */}
-        <aside className="col-span-1 p-8 text-white">
+        <aside className="col-span-1 p-8 text-primary">
           <div className="sticky top-0">
             {/* Bio Section */}
             <P5ShadowController />
@@ -49,8 +49,8 @@ export default function Home() {
                   onClick={() => setSelectedTag(tag)}
                   className={`mr-4 text-left py-2 border-b-2 transition-all duration-300 ${
                     selectedTag === tag
-                      ? "border-white text-white"
-                      : "border-b-2 border-transparent hover:border-white text-gray-300 transition-border duration-300"
+                      ? "border-secondary text-secondary font-medium text-lg"
+                      : "border-b-2 border-transparent hover:border-secondary text-primary transition-border transition-all duration-300"
                   }`}
                 >
                   {tag}
@@ -59,22 +59,9 @@ export default function Home() {
             </div>
 
             {/* Social Media Links */}
-            <div className="flex items-center space-x-4">
-              {" "}
-              {/* Flexbox to align icons in a row and center them vertically */}
-              <Link href="https://vimeo.com/xuefuguo" target="_blank">
-                <FaVimeoV className="w-6 h-6 text-gray-300 hover:text-white transition" />
-              </Link>
-              <Link href="https://www.linkedin.com/in/xuefuguo/" target="_blank">
-                <FaLinkedinIn className="w-6 h-6 text-gray-300 hover:text-white transition" />
-              </Link>
-              <Link href="https://github.com/fuguoxue-nyu" target="_blank">
-                <FaGithub className="w-6 h-6 text-gray-300 hover:text-white transition" />
-              </Link>
-              <Link href="https://www.instagram.com/fuguosmediaspace/" target="_blank">
-                <FaInstagram className="w-6 h-6 text-gray-300 hover:text-white transition" />
-              </Link>
-            </div>
+            <footer>
+              <Footer />
+            </footer>
           </div>
         </aside>
 
