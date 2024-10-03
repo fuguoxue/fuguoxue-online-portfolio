@@ -17,7 +17,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
 }
 
 @layer utilities {
@@ -26,8 +26,13 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Inconsolata', monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inconsolata", monospace;
   @apply text-primary;
 }
 
@@ -59,6 +64,8 @@ p {
   @apply text-base leading-relaxed mb-1;
 }
 
+/* Tag */
+
 .tagline {
   @apply text-tag text-sm;
 }
@@ -73,4 +80,22 @@ p {
 
 .supplementary {
   @apply text-sm;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Slideshow */
+.thumbnail-swiper .swiper-slide {
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+/* Unselected thumbnails */
+.thumbnail-swiper .swiper-slide:not(.swiper-slide-thumb-active) {
+  opacity: 0.5; /* Adjust transparency */
+  filter: brightness(80%); /* Make the unselected thumbnails look dimmer */
+}
+
+/* Selected (active) thumbnail */
+.thumbnail-swiper .swiper-slide-thumb-active {
+  opacity: 1;
+  filter: brightness(100%);
 }

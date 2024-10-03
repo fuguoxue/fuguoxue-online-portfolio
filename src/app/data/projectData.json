@@ -27,10 +27,10 @@
         "year": "2023",
         "imgURL": "/imgs/wildweb-cover.jpg",
         "hidden": false,
-        "description": "",
-        "time": "",
-        "media": "",
-        "mentors": []
+        "description": "WildWeb is an interactive installation that visualizes the recording of people’s digital and physical footprints in this era of pervasive information technology, and how technology digests the data to generate endless content.\nThis installation was designed and developed by me and Sauda Musharrat.",
+        "time": "1 month",
+        "media": "physical settings powered by Arduino and real-time data processing with Max MSP.",
+        "mentors": ["Katherine Bennett"]
     },
     {
         "name": "AquaMetropolis",
@@ -38,10 +38,10 @@
         "year": "2023",
         "imgURL": "/imgs/aquametropolis-cover.gif",
         "hidden": false,
-        "description": "",
-        "time": "",
-        "media": "",
-        "mentors": []
+        "description": "AquaMetropolis: A Submerged Cyberpunk Odyssey is an extraordinary AI-generated short film produced by Fuguo Xue that transports viewers into a mesmerizing undersea world. In this visionary future, humanity has adapted to life beneath the waves as sea levels rise. While the city appears harmonious, the film subtly reveals the profound vulnerability and awe that humans experience when faced with the relentless power of the natural world.",
+        "time": "3 months",
+        "media": "GenAI for art, animation, and audio.",
+        "mentors": ["Nick Katsivelos"]
     },
     {
         "name": "Cometale",
@@ -49,10 +49,10 @@
         "year": "2023",
         "imgURL": "/imgs/cometale-cover.gif",
         "hidden": false,
-        "description": "",
-        "time": "",
-        "media": "",
-        "mentors": []
+        "description": "Cometale is an interactive installation that creates a unique and engaging experience, highlighting the interconnectedness of history and nature by combining ancient and modern elements. By developing this installation, I hope to offer visitors a chance to reflect on the historical events, and how they continue to shape our understanding of the world around us today.\nCometale was featured at the Ars Electronica Festival 2023 Campus Exhibition.",
+        "time": "1 year",
+        "media": "GenAI for art and animation, and TouchDesigner for real-time interactions with the projection.",
+        "mentors": ["Ina Conradi", "Louis-Philippe Demers", "Chua Hock Chuan"]
     },
     {
         "name": "Earthlings",
@@ -60,20 +60,20 @@
         "year": "2022",
         "imgURL": "/imgs/earthlings-cover.gif",
         "hidden": false,
-        "description": "",
-        "time": "",
-        "media": "",
-        "mentors": []
+        "description": "Earthlings is a two-player 2.5D environment game that promotes ecological awareness by encouraging cooperation in the game. By developing this game, we hope to prompt our players to think about the relationship between humans and nature.\nI contributed to this game in terms of game conception, game programming, and art assets creation.\nOur team of 3 (Fuguo Xue, Xinying Guo, and Yaoxuan Wang) presented this game at The International Conference of Undergraduate Research 2022 (ICUR 2022).",
+        "time": "1 year",
+        "media": "game experience built with Unity3D, Aseprite, and Mental Canvas.",
+        "mentors": ["Wesley Tan Chee Wah", "Wonkeun Chang"]
     }, 
     {
         "name": "Cat Jazz",
-        "tags": ["Animation"],
+        "tags": ["Animation", "Storytelling"],
         "year": "2020",
         "imgURL": "/imgs/cat-jazz-cover.gif",
         "hidden": false,
-        "description": "",
-        "time": "",
-        "media": "",
-        "mentors": []
+        "description": "Cat Jazz is an experimental animation that combines jazz music and abstract animation to present the imagery of cats. Different from traditional animation's reliance on concrete characters, this experimental animation uses the automatic audio-visual synchronization mechanism of the human brain to complete the storytelling.",
+        "time": "1 month",
+        "media": "experimental animation created with Adobe After Effects.",
+        "mentors": ["Vibeke Sorensen", "Thummanapalli Nagaraju"]
     }
 ]

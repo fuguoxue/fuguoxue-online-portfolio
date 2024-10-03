@@ -29,6 +29,7 @@ export default function SwiperSlider({ slides }: SlideshowProps) {
         thumbs={{ swiper: thumbsSwiper }}
         spaceBetween={50}
         slidesPerView={1}
+        loop={true}
         className="main-swiper mb-4"
       >
         {slides.map((slide, index) => (
@@ -69,23 +70,17 @@ export default function SwiperSlider({ slides }: SlideshowProps) {
           </SwiperSlide>
         ))}
       </Swiper>
-
-      {/* Custom styles for active and inactive thumbnails */}
+      {/* Custom styles using Tailwind classes */}
       <style jsx global>{`
-        .thumbnail-swiper .swiper-slide {
-          transition: opacity 0.3s ease, filter 0.3s ease;
+        .swiper-button-prev,
+        .swiper-button-next {
+          color: #008080;
         }
-
-        /* Unselected thumbnails */
-        .thumbnail-swiper .swiper-slide:not(.swiper-slide-thumb-active) {
-          opacity: 0.5; /* Adjust transparency */
-          filter: brightness(80%); /* Make the unselected thumbnails look dimmer */
+        .swiper-pagination-bullet {
+          background-color:#008080;
         }
-
-        /* Selected (active) thumbnail */
-        .thumbnail-swiper .swiper-slide-thumb-active {
-          opacity: 1;
-          filter: brightness(100%);
+        .swiper-pagination-bullet-active {
+          background-color: #FF6F61;
         }
       `}</style>
     </div>

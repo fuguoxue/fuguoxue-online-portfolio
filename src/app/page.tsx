@@ -35,10 +35,7 @@ export default function Home() {
             {/* Bio Section */}
             <P5ShadowController />
             <p className="leading-relaxed mb-8">
-              Fuguo Xue is a media artist specializing in interactive installations and
-              creative technologies. Her work blends AI, creative coding, and
-              immersive experiences. Exhibitions include Ars Electronica and
-              more.
+              Fuguo Xue is a media artist and frontend developer specializing in interactive installations and creative technologies. Her work blends AI, creative coding, and experience design. Exhibitions include Ars Electronica and more.
             </p>
 
             {/* Tag Filter */}

@@ -24,21 +24,20 @@ export function NavigationTab({ href, text, arrowPosition }: TabProps) {
   return (
     <Link
       href={href}
-      className="group inline-flex items-center text-primary transition-all duration-300 transform hover:scale-105 hover:text-secondary text-lg"
+      className="group inline-flex items-center text-primary transition-all duration-300 transform hover:scale-105 hover:text-tag text-lg"
     >
       {arrowPosition === "left" && (
-        <span className="transition-all duration-300 transform group-hover:scale-105 group-hover:text-secondary">
+        <span className="transition-all transform group-hover:scale-105 group-hover:text-tag">
           &#8592;&nbsp;
         </span>
       )}
 
-      {/* Wrap text in a span to apply the underline */}
-      <span className="transition-all duration-300 group-hover:underline">
+      <span className="transition-all group-hover:underline">
         {text}
       </span>
 
       {arrowPosition === "right" && (
-        <span className="transition-all duration-300 transform group-hover:scale-105 group-hover:text-secondary">
+        <span className="transition-all transform group-hover:scale-105 group-hover:text-tag">
           &nbsp;&#8594;
         </span>
       )}

@@ -12,7 +12,8 @@ const config: Config = {
         background: "#fff",
         primary: "#333333",
         secondary: "#3A3D98",
-        tag: "#008080"
+        tag: "#008080",
+        selected:"#FF6F61"
       },
     },
   },

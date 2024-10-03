@@ -29,7 +29,7 @@ export function ProjectInfoSection({ projectName }: ProjectInfoSectionProps) {
       </p>
       <p className="mt-4 mb-2 supplementary text-sm text-tag"><b>TIME FRAME: </b>{project.time}</p>
       <p className="mb-2 supplementary text-sm text-tag"><b>MEDIA: </b>{project.media}</p>
-      <p className="tagline"><b>TAGS: </b>
+      <p className="tagline supplementary"><b>TAGS: </b>
         {project.tags.map((tag, index) => (
           <span key={tag}>
             {tag}

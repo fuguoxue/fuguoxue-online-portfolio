@@ -71,7 +71,7 @@ const imageSources = [
 
 export default function Main() {
   return (
-    <div className="grid grid-cols-5 min-h-screen m-4">
+    <div className="grid grid-cols-5 m-4">
       <div className="col-span-5">
         <TitleLine />
       </div>
