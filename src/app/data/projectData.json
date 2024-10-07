@@ -5,7 +5,7 @@
         "year": "2024",
         "imgURL": "/imgs/Tree-of-Growth.jpg",
         "hidden": false,
-        "description": "Inspired by L-systems, known for their ability to generate customized recursive patterns, Tree of Growth is an interactive projection that brings the art of tree planting to life. By simply placing a red box (the “seed”) on the floor at different positions, participants can “grow” a diverse array of trees, each with unique shapes and characteristics. \nThis project is a collaboration between Fuguo Xue and Jinyuan Liu.",
+        "description": "Inspired by L-systems, known for their flexible and customizable descriptions of recursive patterns, Tree of Growth is an interactive projection that brings the art of tree planting to life. The installation invites participants to plant and grow their own unique trees in a virtual garden, simply by positioning a red box on the floor. Every tree is distinct, reflecting nature’s diversity, powered by recursive mathematical rules.\nThis is a collaboration between Fuguo Xue and Jinyuan Liu.",
         "time": "1 month",
         "media": "interactive projection built with Max MSP, and a block made with woodboard and acrylic paint.",
         "mentors": ["Joshua Goldberg", "Rob Ramirez"]
