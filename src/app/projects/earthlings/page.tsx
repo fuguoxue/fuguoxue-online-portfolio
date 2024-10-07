@@ -1,30 +1,31 @@
 import {
-    ProjectInfoSection,
-    ProjectSwitch,
-  } from "../../../components/projectInfoSection";
-  import Image from "next/image";
-  import TitleLine from "../../../components/TitleLine";
-  
-  const projectName = "Earthlings";
-  
-  export default function Main() {
-    return (
-      <div className="grid grid-cols-5 m-4">
-        <div className="col-span-5">
-          <TitleLine />
-        </div>
-        <aside className="col-span-1 p-4 sticky top-4">
-          <ProjectInfoSection projectName={projectName} />
-        </aside>
-        <main className="col-span-3 p-4 mb-8">
-          <Image
-            src={`/imgs/earthlings-cover.gif`}
-            alt={`Earthlings`}
-            width={400}
-            height={400}
-            className="w-full object-cover mb-4"
-          />
-          <div className="relative w-full pb-[56.25%] mb-8">
+  ProjectInfoSection,
+  ProjectSwitch,
+} from "../../../components/projectInfoSection";
+import Image from "next/image";
+import TitleLine from "../../../components/TitleLine";
+import BackToTop from "@/components/BackToTop";
+
+const projectName = "Earthlings";
+
+export default function Main() {
+  return (
+    <div className="grid grid-cols-5 m-4">
+      <div className="col-span-5">
+        <TitleLine />
+      </div>
+      <aside>
+        <ProjectInfoSection projectName={projectName} />
+      </aside>
+      <main className="col-span-3 p-4 mb-8">
+        <Image
+          src={`/imgs/earthlings-cover.gif`}
+          alt={`Earthlings`}
+          width={400}
+          height={400}
+          className="w-full object-cover mb-4"
+        />
+        <div className="relative w-full pb-[56.25%] mb-8">
           <iframe
             width="full"
             height="auto"
@@ -36,11 +37,11 @@ import {
             className="absolute top-0 left-0 w-full h-full"
           ></iframe>
         </div>
-        </main>
-        <div className="col-span-1 p-4">
-          <ProjectSwitch projectName={projectName} />
-        </div>
-      </div>
-    );
-  }
-  
+      </main>
+      <aside>
+        <ProjectSwitch projectName={projectName} />
+        <BackToTop />
+      </aside>
+    </div>
+  );
+}

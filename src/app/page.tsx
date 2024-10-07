@@ -30,7 +30,7 @@ export default function Home() {
     <div className="relative">
       <div className="grid grid-cols-5 min-h-screen">
         {/* Sidebar */}
-        <aside className="col-span-1 p-8 text-primary">
+        <aside className="p-8">
           <div className="sticky top-0">
             {/* Bio Section */}
             <P5ShadowController />

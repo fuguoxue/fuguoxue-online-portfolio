@@ -8,6 +8,7 @@ import Slideshow from "@/components/Slideshow";
 import ImageWithCaption from "@/components/ImageWithCaption";
 import Link from "next/link";
 import { FaGithub, FaLink } from "react-icons/fa";
+import BackToTop from "@/components/BackToTop";
 
 const projectName = "The Surface City";
 const imageSources = [
@@ -64,21 +65,21 @@ export default function Main() {
       <div className="col-span-5">
         <TitleLine />
       </div>
-      <aside className="col-span-1 p-4 sticky top-4">
+      <aside>
         <ProjectInfoSection projectName={projectName} />
         <Link
           href="https://cyeeee.github.io/surface-city/"
-          className="text-sm text-primary hover:text-secondary transition flex"
+          className="external-link"
         >
-          <FaLink className="w-4 h-4 mr-2 mb-2" />
-          Create your one-of-a-kind 3D landscape
+          <FaLink className="external-link-icon" />
+          Generate a 3D landscape
         </Link>
         <Link
           href="https://github.com/cyeeee/surface-city"
-          className="text-sm text-primary hover:text-secondary transition flex"
+          className="external-link"
         >
-          <FaGithub className="w-4 h-4 mr-2" />
-          View source code from GitHub
+          <FaGithub className="external-link-icon" />
+          Project soruce code
         </Link>
       </aside>
       <main className="col-span-3 p-4 mb-8">
@@ -151,7 +152,7 @@ export default function Main() {
           <Slideshow slides={imageSources} />
         </section>
         <section>
-          <h2>Inspirations</h2>
+          <h3>Inspiration</h3>
           <p>
             <i>Italo Calvino, Invisible Cities</i>
           </p>
@@ -163,14 +164,14 @@ export default function Main() {
           </p>
         </section>
         <section>
-          <h2>Production</h2>
+          <h3>Production</h3>
           <p>
             Our city is built with p5.js coding and Adobe Illustrator. We first
             used Adobe Illustrator to create tile images, which were fed into
             our p5.js code for cityscape generation. The technique we adapted is
             the Wave Function Collapse model introduced in our workshop.
           </p>
-          <h3>Tile Design</h3>
+          <h4>Tile Design</h4>
           <p>
             Inspired by the Monument Valley game, we wanted to build a city in
             2.5D (two-and-a-half dimensional). Therefore, a standard tile image
@@ -191,8 +192,8 @@ export default function Main() {
             src="/imgs/the-surface-city/tile-sketch.png"
             alt="Diagram of hexagon-to-triangle tile conversion."
             caption="Diagram of hexagon-to-triangle tile conversion."
-            width={400}
-            height={400}
+            widthPercentage={70}
+            minWidth={600}
           />
           <p>
             The final shape of our tile is a rectangle with six divisions. To
@@ -209,7 +210,7 @@ export default function Main() {
             we need to analyze the possible color adjacencies and summarize a
             set of rules to eliminate those impossible tiles.
           </p>
-          <h3>Color Adjacency Analysis</h3>
+          <h4>Color Adjacency Analysis</h4>
           <p>
             Since there are too many possibilities with the 6-grid tile, we
             found it hard to analyze the rule for color adjacency and shortlist
@@ -221,37 +222,29 @@ export default function Main() {
             <ImageWithCaption
               src="/imgs/the-surface-city/2-Grid+Tiles.png"
               alt="2-grid tileset."
-              caption="2-grid tileset."
-              width={400}
-              height={400}
+              caption="2-grid tileset."          
             />
             <ImageWithCaption
               src="/imgs/the-surface-city/2-grid-tiles-test.png"
               alt="Outcome with 2-grid tileset."
               caption="Outcome with 2-grid tileset."
-              width={400}
-              height={400}
             />
             <ImageWithCaption
               src="/imgs/the-surface-city/4-Grid+Tiles.png"
               alt="4-grid tileset."
               caption="4-grid tileset."
-              width={400}
-              height={400}
             />
             <ImageWithCaption
               src="/imgs/the-surface-city/4-grid-tiles-test.png"
               alt="Outcome with 4-grid tileset."
               caption="Outcome with 4-grid tileset."
-              width={400}
-              height={400}
             />
           </div>
           <p>
             However, However, both the 2-grid and 4-grid tilesets produce
             visuals that are more 2D than 3D.
           </p>
-          <h3>Color Rules Summary & Back to 6-grid</h3>
+          <h4>Color Rules Summary & Back to 6-grid</h4>
           <p>
             The original code restricts two adjacent edges between each tile to
             be in the same color. Since we are working on a 2.5D effect pattern,
@@ -296,14 +289,15 @@ export default function Main() {
             src="/imgs/the-surface-city/SC-97.png"
             alt="Cityscape generated with 98 tiles."
             caption="Cityscape generated with 98 tiles."
-            width={400}
-            height={400}
+            widthPercentage={80}
+            minWidth={400}
           />
         </section>
       </main>
-      <div className="col-span-1 p-4">
+      <aside>
         <ProjectSwitch projectName={projectName} />
-      </div>
+        <BackToTop />
+      </aside>
     </div>
   );
 }

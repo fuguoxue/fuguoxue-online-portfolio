@@ -33,7 +33,7 @@ export function ProjectInfoSection({ projectName }: ProjectInfoSectionProps) {
         {project.tags.map((tag, index) => (
           <span key={tag}>
             {tag}
-            {index < project.tags.length - 1 && <span>|</span>}{" "}
+            {index < project.tags.length - 1 && <span>|</span>}
             {/* Add bullet between tags, but not after the last one */}
           </span>
         ))}

@@ -26,7 +26,7 @@ export default function Main() {
       <div className="col-span-5">
         <TitleLine />
       </div>
-      <aside className="col-span-1 p-4 sticky top-4">
+      <aside>
         <ProjectInfoSection projectName={projectName} />
       </aside>
       <main className="col-span-3 p-4">
@@ -77,8 +77,8 @@ export default function Main() {
             src={ScreenshotTree}
             alt={`Screenshot of a tree pattern. `}
             caption="Screenshot of a tree pattern generated with L-system programmed in Max MSP. "
-            width={400}
-            height={400}
+            widthPercentage={50}
+            minWidth={400}
           />
           <p>
             The dynamic and flexibility offered by L-systems made us interested
@@ -103,9 +103,9 @@ export default function Main() {
           </div>
         </section>
       </main>
-      <div className="col-span-1 p-4">
+      <aside>
         <ProjectSwitch projectName={projectName} />
-      </div>
+      </aside>
     </div>
   );
 }

@@ -45,11 +45,11 @@ h2 {
 }
 
 h3 {
-  @apply text-2xl font-medium mb-2;
+  @apply text-2xl font-medium my-2;
 }
 
 h4 {
-  @apply text-xl font-medium mb-2;
+  @apply text-xl font-medium my-2;
 }
 
 h5 {
@@ -66,6 +66,10 @@ p {
 
 section {
   @apply my-4;
+}
+
+aside {
+  @apply col-span-1 p-4 sticky top-4 self-start;
 }
 
 /* Tag */
@@ -102,4 +106,12 @@ section {
 .thumbnail-swiper .swiper-slide-thumb-active {
   opacity: 1;
   filter: brightness(100%);
+}
+
+.external-link {
+  @apply text-sm text-caption hover:text-tag transition flex mb-2 align-middle;
+}
+
+.external-link-icon {
+  @apply w-4 h-4 mr-2 align-middle;
 }

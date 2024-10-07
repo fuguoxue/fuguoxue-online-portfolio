@@ -24,10 +24,10 @@ export function NavigationTab({ href, text, arrowPosition }: TabProps) {
   return (
     <Link
       href={href}
-      className="group inline-flex items-center text-primary transition-all duration-300 transform hover:scale-105 hover:text-tag text-lg"
+      className="group inline-flex items-center text-primary transition-all duration-300 transform hover:scale-105 hover:text-secondary text-lg"
     >
       {arrowPosition === "left" && (
-        <span className="transition-all transform group-hover:scale-105 group-hover:text-tag">
+        <span className="transition-all transform group-hover:scale-105 group-hover:text-secondary">
           &#8592;&nbsp;
         </span>
       )}
@@ -37,7 +37,7 @@ export function NavigationTab({ href, text, arrowPosition }: TabProps) {
       </span>
 
       {arrowPosition === "right" && (
-        <span className="transition-all transform group-hover:scale-105 group-hover:text-tag">
+        <span className="transition-all transform group-hover:scale-105 group-hover:text-secondary">
           &nbsp;&#8594;
         </span>
       )}

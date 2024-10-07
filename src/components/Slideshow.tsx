@@ -43,7 +43,7 @@ export default function SwiperSlider({ slides }: SlideshowProps) {
                 className="w-full h-full object-cover"
               />
               {/* Description below the image */}
-              <p className="text-center mt-8 mb-12">{slide.description}</p>
+              <p className="text-center mt-8 mb-12 text-sm text-caption">{slide.description}</p>
             </div>
           </SwiperSlide>
         ))}
@@ -56,7 +56,7 @@ export default function SwiperSlider({ slides }: SlideshowProps) {
         slidesPerView={9}
         watchSlidesProgress={true}
         modules={[Thumbs]}
-        className="thumbnail-swiper"
+        className="thumbnail-swiper mb-4"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
