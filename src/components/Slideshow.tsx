@@ -49,6 +49,7 @@ export default function Slideshow({ slides }: SlideshowProps) {
                 alt={`Slide ${index + 1}`}
                 width={400}
                 height={400}
+                loading="lazy"
                 className="w-full h-full object-cover"
                 onLoadingComplete={() => {
                   if (swiperInstance) swiperInstance.update(); // Recalculate Swiper dimensions
@@ -90,6 +91,7 @@ export default function Slideshow({ slides }: SlideshowProps) {
               alt={`Thumbnail ${index + 1}`}
               width={50}
               height={50}
+              loading="lazy"
               className="w-full h-full object-cover"
               onLoadingComplete={() => {
                 if (thumbsSwiper) thumbsSwiper.update(); // Ensure Swiper dimensions are updated after image load

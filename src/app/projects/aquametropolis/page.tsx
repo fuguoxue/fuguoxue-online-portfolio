@@ -8,6 +8,7 @@ import BackToTop from "@/components/BackToTop";
 import { RiOpenaiFill } from "react-icons/ri";
 import Link from "next/link";
 import Slideshow from "@/components/Slideshow";
+import ImageWithCaption from "@/components/ImageWithCaption";
 
 const projectName = "AquaMetropolis";
 const midjourneyImgs = [
@@ -145,6 +146,7 @@ export default function Main() {
               </Link>
             </i>
           </p>
+          <p>What if the animals in the songs are humanized and humans turn out to be the exhibits and consumables? An imagination of the power reversal between humans and marine animals.</p>
         </section>
         <section>
           <h3>Production</h3>
@@ -182,8 +184,61 @@ export default function Main() {
           </p>
           <Slideshow slides={midjourneyImgs} />
           <h4>Pika Labs and Runway ML</h4>
-          <p>I used Pika Labs and Runway ML for image-to-video generation, and eventually chose Pika Labs because it is free and stable.</p>
-          
+          <p>
+            I used Pika Labs and Runway ML for image-to-video generation, and
+            eventually chose Pika Labs because it is free and stable.
+          </p>
+          <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-3 gap-4 my-4">
+            <div className="col-span-1">
+              <ImageWithCaption
+                src="/imgs/aquametropolis/girl-in-front-of-window.png"
+                alt="Image generated with Midjourney. A girl in front of a window, looking at fish swimming outside."
+                caption="Image generated with Midjourney. A girl in front of a window, looking at fish swimming outside."
+              />
+            </div>
+            <div className="video-container col-span-1">
+              <video width="100%" height="auto" controls muted>
+                <source src="/imgs/aquametropolis/pika.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <figcaption className="text-center text-caption text-sm my-2">
+                Video generated with Pika Labs based on Midjourney image.
+              </figcaption>
+            </div>
+            <div className="video-container col-span-1">
+              <video width="100%" height="auto" controls muted>
+                <source
+                  src="/imgs/aquametropolis/runway.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <figcaption className="text-center text-caption text-sm my-2">
+                Video generated with Runway ML based on Midjourney image.
+              </figcaption>
+            </div>
+          </div>
+
+          <h4>Photoshop Generative Fill</h4>
+          <p>
+            I used Photoshop together with Midjourney for image generation,
+            fine-tuning, and image expansion.Photoshop Generative Fill function
+            allows me to specify what to fill in a specific range in the image
+            and comes in handy for expanding the original image. While
+            Midjourney&apos;s image-expanding function is usually of fixed size,
+            Photoshop Generative Fill allows image expansion to any dimension
+            required.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 gap-4 my-4">
+            <ImageWithCaption src="/imgs/aquametropolis/skyscrapers5.png" alt="Original image by Midjouney. The image has water surface, but there should be no water surface in an underwater environment." caption="Original image by Midjouney. The image has water surface, but there should be no water surface in an underwater environment." />
+            <ImageWithCaption src="/imgs/aquametropolis/skyscrapers5-expand.png" alt="Expanded the image with Photoshop Generative Fill. I also replaced watersurface with seafloor, and expand the image dimension." caption="Expanded the image with Photoshop Generative Fill. I also replaced watersurface with seafloor, and expand the image dimension." />
+            <ImageWithCaption src="/imgs/aquametropolis/midjourney-portrait.png" alt="Portrait image generated with Midjourney." caption="Portrait image generated with Midjourney." />
+            <ImageWithCaption src="/imgs/aquametropolis/ps.png" alt="Expanded the portrait background with Photoshop Generative Fill." caption="Expanded the portrait background with Photoshop Generative Fill." />
+          </div>
+          <h4>Audio & Video Editing</h4>
+          <p>To generate narrated audio, I put the transcript into Elevenlabs, a text-to-speech AI tool. ElevenLabs provides many voices and allows voice customizations including Stability, Clarity+Similarity Enhancement, and Style Exaggeration. </p>
+          <p>I used Stable Audio to generate the BGM and it worked better than my expectation. I used MyEdit for generating sound effects like the explosion sounds. </p>
+          <p>For video editing, I tried Descript, Premiere Pro, and CapCut. I found CapCut most handy and efficient for my project.</p>
         </section>
       </main>
       <aside>
