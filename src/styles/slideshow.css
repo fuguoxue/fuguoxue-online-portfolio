@@ -1,0 +1,26 @@
+.swiper-button-prev,
+.swiper-button-next {
+  color: #008080;
+}
+.swiper-pagination-bullet {
+  background-color: #008080;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ff6f61;
+}
+.swiper-container {
+  @apply min-h-64 relative
+}
+
+.swiper-pagination {
+  @apply absolute;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply align-middle;
+}
+
+.swiper-slide {
+  @apply flex justify-center align-middle h-full
+}

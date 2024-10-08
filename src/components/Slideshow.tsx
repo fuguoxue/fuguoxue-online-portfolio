@@ -1,36 +1,45 @@
 "use client";
 
-import { Swiper, SwiperSlide } from "swiper/react"; // Import Swiper and SwiperSlide components
-import { Navigation, Pagination, Thumbs } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Thumbs, Autoplay } from "swiper/modules";
 import { useState } from "react";
 import Image from "next/image";
-import { Swiper as SwiperType } from "swiper"; // Import the Swiper type
+import { Swiper as SwiperType } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/thumbs";
+import "@/styles/slideshow.css";
 
 interface SlideshowProps {
-  slides: { image: string; thumbnail: string; description: string }[]; // Array of image objects with thumbnail and description
+  slides: { image: string; description: string }[]; // Array of image objects with description
 }
 
-export default function SwiperSlider({ slides }: SlideshowProps) {
-  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null); // For controlling thumbnails
+export default function Slideshow({ slides }: SlideshowProps) {
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
+  const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
 
   return (
     <div className="swiper-container justify-center">
       {/* Main Swiper with Images */}
       <Swiper
-        modules={[Navigation, Pagination, Thumbs]}
+        modules={[Navigation, Pagination, Thumbs, Autoplay]}
         navigation
         pagination={{ clickable: true }}
         thumbs={{ swiper: thumbsSwiper }}
         spaceBetween={50}
         slidesPerView={1}
         loop={true}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         className="main-swiper mb-4"
+        onInit={(swiper) => setSwiperInstance(swiper)}
+        onSlideChange={(swiper) => {
+          if (thumbsSwiper) {
+            thumbsSwiper.slideTo(swiper.activeIndex, 300, true);
+          }
+        }}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
@@ -41,9 +50,15 @@ export default function SwiperSlider({ slides }: SlideshowProps) {
                 width={400}
                 height={400}
                 className="w-full h-full object-cover"
+                onLoadingComplete={() => {
+                  if (swiperInstance) swiperInstance.update(); // Recalculate Swiper dimensions
+                }}
               />
-              {/* Description below the image */}
-              <p className="text-center mt-8 mb-12 text-sm text-caption">{slide.description}</p>
+              {slide.description && (
+                <p className="text-center mt-8 mb-12 text-sm text-caption">
+                  {slide.description}
+                </p>
+              )}
             </div>
           </SwiperSlide>
         ))}
@@ -54,35 +69,35 @@ export default function SwiperSlider({ slides }: SlideshowProps) {
         onSwiper={setThumbsSwiper}
         spaceBetween={10}
         slidesPerView={9}
-        watchSlidesProgress={true}
+        centeredSlides={true} // Center the active thumbnail
+        slideToClickedSlide={true} // Ensure clicking slides centers them
+        watchSlidesProgress={true} // Watch the progress to update correctly
         modules={[Thumbs]}
         className="thumbnail-swiper mb-4"
+        onSlideChange={(swiper) => {
+          // Manually ensure the active thumbnail stays centered on slide change
+          if (swiperInstance) {
+            // Use the main swiper instance for synchronization
+            const activeIndex = swiperInstance.activeIndex; // Get the active index of the main swiper
+            swiper.slideTo(activeIndex, 300, true); // Center the thumbnail swiper based on the active index
+          }
+        }}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <Image
-              src={slide.thumbnail}
+              src={slide.image}
               alt={`Thumbnail ${index + 1}`}
               width={50}
               height={50}
               className="w-full h-full object-cover"
+              onLoadingComplete={() => {
+                if (thumbsSwiper) thumbsSwiper.update(); // Ensure Swiper dimensions are updated after image load
+              }}
             />
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* Custom styles using Tailwind classes */}
-      <style jsx global>{`
-        .swiper-button-prev,
-        .swiper-button-next {
-          color: #008080;
-        }
-        .swiper-pagination-bullet {
-          background-color:#008080;
-        }
-        .swiper-pagination-bullet-active {
-          background-color: #FF6F61;
-        }
-      `}</style>
     </div>
   );
 }

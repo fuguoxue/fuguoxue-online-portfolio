@@ -14,47 +14,38 @@ const projectName = "The Surface City";
 const imageSources = [
   {
     image: "/imgs/the-surface-city/SC-0.png",
-    thumbnail: "/imgs/the-surface-city/SC-0.png",
     description: "SC-0",
   },
   {
     image: "/imgs/the-surface-city/SC-1.png",
-    thumbnail: "/imgs/the-surface-city/SC-1.png",
     description: "SC-1",
   },
   {
     image: "/imgs/the-surface-city/SC-2.png",
-    thumbnail: "/imgs/the-surface-city/SC-2.png",
     description: "SC-2",
   },
   {
     image: "/imgs/the-surface-city/SC-4.png",
-    thumbnail: "/imgs/the-surface-city/SC-4.png",
     description: "SC-4",
   },
   {
     image: "/imgs/the-surface-city/SC-39.png",
-    thumbnail: "/imgs/the-surface-city/SC-39.png",
     description: "SC-39",
   },
   {
     image: "/imgs/the-surface-city/SC-41.png",
-    thumbnail: "/imgs/the-surface-city/SC-41.png",
     description: "SC-41",
   },
   {
     image: "/imgs/the-surface-city/SC-68.png",
-    thumbnail: "/imgs/the-surface-city/SC-68.png",
     description: "SC-68",
   },
   {
     image: "/imgs/the-surface-city/SC-71.png",
-    thumbnail: "/imgs/the-surface-city/SC-71.png",
     description: "SC-71",
   },
   {
     image: "/imgs/the-surface-city/SC-97.png",
-    thumbnail: "/imgs/the-surface-city/SC-97.png",
     description: "SC-97",
   },
 ];
@@ -69,17 +60,17 @@ export default function Main() {
         <ProjectInfoSection projectName={projectName} />
         <Link
           href="https://cyeeee.github.io/surface-city/"
-          className="external-link"
+          className="external-link supplementary"
         >
           <FaLink className="external-link-icon" />
-          Generate a 3D landscape
+          Generate your city
         </Link>
         <Link
           href="https://github.com/cyeeee/surface-city"
-          className="external-link"
+          className="external-link supplementary"
         >
           <FaGithub className="external-link-icon" />
-          Project soruce code
+          Project source code
         </Link>
       </aside>
       <main className="col-span-3 p-4 mb-8">
@@ -97,7 +88,7 @@ export default function Main() {
         <section>
           <h3>Story of The Surface City</h3>
           <div className="my-2">
-            <p>
+            <blockquote className="quote"><p>
               In SC, the Surface City, nothing is hidden from the city as all
               the activities happen on the surfaces of buildings. The city may
               seem gravity-free and floating in the air from a visitor&apos;s
@@ -147,7 +138,8 @@ export default function Main() {
               that the vanished people actually “entered” the buildings. But
               what does “enter” mean? Isn&apos;t everything just directly
               accessible, right on the surface?
-            </p>
+            </p></blockquote>
+            
           </div>
           <Slideshow slides={imageSources} />
         </section>
