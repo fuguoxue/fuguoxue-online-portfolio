@@ -1,7 +1,7 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Thumbs, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Thumbs, Autoplay, FreeMode } from "swiper/modules";
 import { useState } from "react";
 import Image from "next/image";
 import { Swiper as SwiperType } from "swiper";
@@ -25,7 +25,7 @@ export default function Slideshow({ slides }: SlideshowProps) {
     <div className="swiper-container justify-center">
       {/* Main Swiper with Images */}
       <Swiper
-        modules={[Navigation, Pagination, Thumbs, Autoplay]}
+        modules={[FreeMode, Navigation, Pagination, Thumbs, Autoplay]}
         navigation
         pagination={{ clickable: true }}
         thumbs={{ swiper: thumbsSwiper }}
@@ -35,11 +35,6 @@ export default function Slideshow({ slides }: SlideshowProps) {
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         className="main-swiper mb-4"
         onInit={(swiper) => setSwiperInstance(swiper)}
-        onSlideChange={(swiper) => {
-          if (thumbsSwiper) {
-            thumbsSwiper.slideTo(swiper.activeIndex, 300, true);
-          }
-        }}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
@@ -49,7 +44,6 @@ export default function Slideshow({ slides }: SlideshowProps) {
                 alt={`Slide ${index + 1}`}
                 width={400}
                 height={400}
-                loading="lazy"
                 className="w-full h-full object-cover"
                 onLoadingComplete={() => {
                   if (swiperInstance) swiperInstance.update(); // Recalculate Swiper dimensions
@@ -70,19 +64,10 @@ export default function Slideshow({ slides }: SlideshowProps) {
         onSwiper={setThumbsSwiper}
         spaceBetween={10}
         slidesPerView={9}
-        centeredSlides={true} // Center the active thumbnail
         slideToClickedSlide={true} // Ensure clicking slides centers them
         watchSlidesProgress={true} // Watch the progress to update correctly
-        modules={[Thumbs]}
+        modules={[FreeMode, Pagination, Navigation]}
         className="thumbnail-swiper mb-4"
-        onSlideChange={(swiper) => {
-          // Manually ensure the active thumbnail stays centered on slide change
-          if (swiperInstance) {
-            // Use the main swiper instance for synchronization
-            const activeIndex = swiperInstance.activeIndex; // Get the active index of the main swiper
-            swiper.slideTo(activeIndex, 300, true); // Center the thumbnail swiper based on the active index
-          }
-        }}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
@@ -91,7 +76,6 @@ export default function Slideshow({ slides }: SlideshowProps) {
               alt={`Thumbnail ${index + 1}`}
               width={50}
               height={50}
-              loading="lazy"
               className="w-full h-full object-cover"
               onLoadingComplete={() => {
                 if (thumbsSwiper) thumbsSwiper.update(); // Ensure Swiper dimensions are updated after image load
