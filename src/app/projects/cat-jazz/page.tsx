@@ -4,6 +4,7 @@ import {
 } from "../../../components/projectInfoSection";
 import Image from "next/image";
 import TitleLine from "../../../components/TitleLine";
+import BackToTop from "@/components/BackToTop";
 
 const projectName = "Cat Jazz";
 
@@ -37,9 +38,10 @@ export default function Main() {
           ></iframe>
         </div>
       </main>
-      <div className="col-span-1 p-4">
+      <aside>
         <ProjectSwitch projectName={projectName} />
-      </div>
+        <BackToTop />
+      </aside>
     </div>
   );
 }

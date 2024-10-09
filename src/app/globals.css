@@ -120,3 +120,6 @@ aside {
   @apply border-l-4 border-solid border-caption text-primary pl-4 italic my-4
 }
 
+.caption {
+  @apply text-center text-sm text-caption
+}

@@ -22,7 +22,7 @@ export default function Slideshow({ slides }: SlideshowProps) {
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
 
   return (
-    <div className="swiper-container justify-center">
+    <div className="swiper-container justify-center my-8">
       {/* Main Swiper with Images */}
       <Swiper
         modules={[FreeMode, Navigation, Pagination, Thumbs, Autoplay]}
@@ -44,7 +44,7 @@ export default function Slideshow({ slides }: SlideshowProps) {
                 alt={`Slide ${index + 1}`}
                 width={400}
                 height={400}
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-cover"
                 onLoadingComplete={() => {
                   if (swiperInstance) swiperInstance.update(); // Recalculate Swiper dimensions
                 }}

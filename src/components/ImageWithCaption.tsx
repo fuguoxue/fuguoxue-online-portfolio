@@ -13,15 +13,13 @@ export default function ImageWithCaption({
   alt,
   caption,
   widthPercentage = 100, // Default to 100% if not provided
-  minWidth = 300, // Default minimum width if not provided
 }: ImageWithCaptionProps) {
   return (
-    <figure className="flex flex-col items-center w-full">
+    <figure className="flex flex-col items-center w-full my-8">
       {/* Image container with responsive width */}
       <div
         className="w-full"
         style={{
-          minWidth: `${minWidth}px`, // Minimum width for smaller screens
           width: `${widthPercentage}%`, // Responsive width based on the parent container
         }}
       >
@@ -32,7 +30,7 @@ export default function ImageWithCaption({
           width={100} /* These values represent percentage of the container’s width */
           height={75} /* Adjust the ratio accordingly or leave auto for responsive height */
           objectFit="cover" /* Optional: Ensures the image covers the container without distortion */
-          className="w-full h-auto"
+          className="w-full h-auto object-contain"
         />
       </div>
       <figcaption className="text-center text-caption text-sm my-2">{caption}</figcaption>
