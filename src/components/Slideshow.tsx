@@ -22,7 +22,7 @@ export default function Slideshow({ slides }: SlideshowProps) {
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
 
   return (
-    <div className="swiper-container justify-center my-8">
+    <div className="swiper-container justify-center my-8 z-0">
       {/* Main Swiper with Images */}
       <Swiper
         modules={[FreeMode, Navigation, Pagination, Thumbs, Autoplay]}

@@ -52,11 +52,11 @@ const imageSources = [
 
 export default function Main() {
   return (
-    <div className="grid grid-cols-5 m-4">
-      <div className="col-span-5">
+    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 min-h-screen m-4">
+      <div className="col-span-1 md:col-span-4 lg:col-span-5">
         <TitleLine />
       </div>
-      <aside>
+      <aside className="col-span-1">
         <ProjectInfoSection projectName={projectName} />
         <Link
           href="https://cyeeee.github.io/surface-city/"
@@ -73,7 +73,7 @@ export default function Main() {
           Project source code
         </Link>
       </aside>
-      <main className="col-span-3 p-4 mb-8">
+      <main className="col-span-1 md:col-span-3 p-4 mb-8">
         <Link href="https://cyeeee.github.io/surface-city/">
           <div className="relative w-full mb-4">
             <Image
@@ -286,7 +286,8 @@ export default function Main() {
           />
         </section>
       </main>
-      <aside>
+      <div className="col-span-1 sm:hidden md:block lg:hidden"></div>
+      <aside className="col-span-1 md:col-span-3 lg:col-span-1">
         <ProjectSwitch projectName={projectName} />
         <BackToTop />
       </aside>

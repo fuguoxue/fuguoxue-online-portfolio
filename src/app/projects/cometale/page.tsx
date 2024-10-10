@@ -70,11 +70,11 @@ const AIImgs = [
 
 export default function Main() {
   return (
-    <div className="grid grid-cols-5 m-4">
-      <div className="col-span-5">
+    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 min-h-screen m-4">
+      <div className="col-span-1 md:col-span-4 lg:col-span-5">
         <TitleLine />
       </div>
-      <aside className="col-span-1 p-4 sticky top-4">
+      <aside className="col-span-1">
         <ProjectInfoSection projectName={projectName} />
         <Link
           href="https://ars.electronica.art/who-owns-the-truth/en/cometale/"
@@ -97,7 +97,7 @@ export default function Main() {
           Thesis Paper
         </Link>
       </aside>
-      <main className="col-span-3 p-4 mb-8">
+      <main className="col-span-1 md:col-span-3 p-4 mb-8">
         <div className="relative w-full pb-[56.25%] mb-8">
           <iframe
             width="full"
@@ -192,7 +192,12 @@ export default function Main() {
             and micro, ancient and modern, and cosmic and terrestrial.
           </p>
           <Slideshow slides={AIImgs} />
-          <p>To arrange the animation clips, I decided to put them in a line, so that the projection mimics the shape of an ancient Chinese scroll. Standing in front of the projection is like reading about comets from the Book of Silk. </p>
+          <p>
+            To arrange the animation clips, I decided to put them in a line, so
+            that the projection mimics the shape of an ancient Chinese scroll.
+            Standing in front of the projection is like reading about comets
+            from the Book of Silk.{" "}
+          </p>
           <div className="relative w-full pb-[56.25%] my-8">
             <iframe
               width="full"
@@ -216,7 +221,8 @@ export default function Main() {
           </p>
         </section>
       </main>
-      <aside>
+      <div className="col-span-1 sm:hidden md:block lg:hidden"></div>
+      <aside className="col-span-1 md:col-span-3 lg:col-span-1">
         <ProjectSwitch projectName={projectName} />
         <BackToTop />
       </aside>

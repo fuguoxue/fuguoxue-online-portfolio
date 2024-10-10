@@ -27,9 +27,16 @@ export function ProjectInfoSection({ projectName }: ProjectInfoSectionProps) {
           </span>
         ))}
       </p>
-      <p className="mt-4 mb-2 supplementary text-sm text-tag"><b>TIME FRAME: </b>{project.time}</p>
-      <p className="mb-2 supplementary text-sm text-tag"><b>MEDIA: </b>{project.media}</p>
-      <p className="tagline supplementary mb-4 text-left"><b>TAGS: </b>
+      <p className="mt-4 mb-2 supplementary text-sm text-tag">
+        <b>TIME FRAME: </b>
+        {project.time}
+      </p>
+      <p className="mb-2 supplementary text-sm text-tag">
+        <b>MEDIA: </b>
+        {project.media}
+      </p>
+      <p className="tagline supplementary mb-4 text-left">
+        <b>TAGS: </b>
         {project.tags.map((tag, index) => (
           <span key={tag} className="">
             {tag}
@@ -49,48 +56,31 @@ export function ProjectSwitch({ projectName }: ProjectInfoSectionProps) {
   );
   const previousProject = projectData[currentIndex - 1] || null;
   const nextProject = projectData[currentIndex + 1] || null;
-  if ((previousProject!=null) && (nextProject!=null)) {
-    return (
-      <div className="mt-2 flex justify-between items-start">
-        <NavigationTab
-          href={`/projects/${previousProject.name
-            .replace(/\s+/g, "-")
-            .toLowerCase()}`}
-          text="Previous"
-          arrowPosition="left"
-        />
-        <NavigationTab
-          href={`/projects/${nextProject.name
-            .replace(/\s+/g, "-")
-            .toLowerCase()}`}
-          text="Next"
-          arrowPosition="right"
-        />
+  return (
+    <div className="grid grid-cols-2 gap-4 mt-2 items-start">
+      <div className="col-span-1 text-left w-full">
+        {previousProject && (
+          <NavigationTab
+            href={`/projects/${previousProject.name
+              .replace(/\s+/g, "-")
+              .toLowerCase()}`}
+            text="Previous"
+            arrowPosition="left"
+          />
+        )}
       </div>
-    );
-  } else if (previousProject==null) {
-    return (
-      <div className="mt-2 flex justify-end">
-        <NavigationTab
-          href={`/projects/${nextProject.name
-            .replace(/\s+/g, "-")
-            .toLowerCase()}`}
-          text="Next"
-          arrowPosition="right"
-        />
+
+      <div className="col-span-1 text-right w-full">
+        {nextProject && (
+          <NavigationTab
+            href={`/projects/${nextProject.name
+              .replace(/\s+/g, "-")
+              .toLowerCase()}`}
+            text="Next"
+            arrowPosition="right"
+          />
+        )}
       </div>
-    );
-  } else if (nextProject==null) {
-    return (
-      <div className="mt-2 flex justify-start">
-        <NavigationTab
-          href={`/projects/${previousProject.name
-            .replace(/\s+/g, "-")
-            .toLowerCase()}`}
-          text="Previous"
-          arrowPosition="left"
-        />
-      </div>
-    );
-  }
+    </div>
+  );
 }

@@ -41,7 +41,7 @@ h1 {
 }
 
 h2 {
-  @apply text-3xl font-medium mb-3;
+  @apply text-3xl font-medium mb-3 overflow-hidden break-words;
 }
 
 h3 {
@@ -69,12 +69,16 @@ section {
 }
 
 aside {
-  @apply col-span-1 p-4 sticky top-4 self-start;
+  @apply p-4 md:sticky top-4 self-start;
 }
 
-/* span {
+span {
   font-family: "Inconsolata", monospace;
-} */
+}
+
+p span {
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
 
 button {
   font-family: "Inconsolata", monospace;

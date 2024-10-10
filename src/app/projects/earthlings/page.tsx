@@ -37,11 +37,11 @@ const boyGifs = [
 
 export default function Main() {
   return (
-    <div className="grid grid-cols-5 m-4">
-      <div className="col-span-5">
+    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 min-h-screen m-4">
+      <div className="col-span-1 md:col-span-4 lg:col-span-5">
         <TitleLine />
       </div>
-      <aside>
+      <aside className="col-span-1">
         <ProjectInfoSection projectName={projectName} />
         <Link
           href="https://github.com/fuguoxue/Earthlings"
@@ -51,7 +51,7 @@ export default function Main() {
           GitHub Download
         </Link>
       </aside>
-      <main className="col-span-3 p-4 mb-8">
+      <main className="col-span-1 md:col-span-3 p-4 mb-8">
         <Image
           src={`/imgs/earthlings-cover.gif`}
           alt={`Earthlings`}
@@ -113,6 +113,7 @@ export default function Main() {
             Due to frequent conflicts between macaques and students, the
             university finally relocated two of the macaques to a zoo.
           </p>
+          <h4>Another Possibility with Animals?</h4>
           <p>
             There are many kinds of relations between humans and animals,
             besides humans saving animals from danger and being angered by
@@ -169,12 +170,12 @@ export default function Main() {
             ))}
           </div>
           <h4>Game Mechanism</h4>
-          <h5>Game task: </h5>
+          <h5>Game tasks</h5>
           <ol className="list-decimal ml-6">
             <li>Collect as many magic stones as possible before exiting.</li>
             <li>Find the exit and escape from the fire scene.</li>
           </ol>
-          <h5>Characters and Skills:</h5>
+          <h5>Characters and Skills</h5>
           <p>
             The human character (Boy) and the animal character (Deer) each has
             unique attributes and skills. Because Boy and Deer both have limited
@@ -223,7 +224,8 @@ export default function Main() {
           </div>
         </section>
       </main>
-      <aside>
+      <div className="col-span-1 sm:hidden md:block lg:hidden"></div>
+      <aside className="col-span-1 md:col-span-3 lg:col-span-1">
         <ProjectSwitch projectName={projectName} />
         <BackToTop />
       </aside>

@@ -96,11 +96,11 @@ const midjourneyImgs = [
 
 export default function Main() {
   return (
-    <div className="grid grid-cols-5 m-4">
-      <div className="col-span-5">
+    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 min-h-screen m-4">
+      <div className="col-span-1 md:col-span-4 lg:col-span-5">
         <TitleLine />
       </div>
-      <aside className="col-span-1 p-4 sticky top-4">
+      <aside className="col-span-1">
         <ProjectInfoSection projectName={projectName} />
         <Link
           href="https://chatgpt.com/g/g-x99S0do7b-aquametropolis-guide"
@@ -110,7 +110,7 @@ export default function Main() {
           Chat with AquaMetropolis Guide
         </Link>
       </aside>
-      <main className="col-span-3 p-4 mb-8">
+      <main className="col-span-1 md:col-span-3 p-4 mb-8">
         <Image
           src={`/imgs/aquametropolis-cover.gif`}
           alt={`AquaMetropolis`}
@@ -241,7 +241,8 @@ export default function Main() {
           <p>For video editing, I tried Descript, Premiere Pro, and CapCut. I found CapCut most handy and efficient for my project.</p>
         </section>
       </main>
-      <aside>
+      <div className="col-span-1 sm:hidden md:block lg:hidden"></div>
+      <aside className="col-span-1 md:col-span-3 lg:col-span-1">
         <ProjectSwitch projectName={projectName} />
         <BackToTop />
       </aside>
