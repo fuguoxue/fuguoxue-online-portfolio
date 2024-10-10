@@ -5,6 +5,7 @@ import {
 import Image from "next/image";
 import TitleLine from "../../../components/TitleLine";
 import BackToTop from "@/components/BackToTop";
+import ImageWithCaption from "@/components/ImageWithCaption";
 
 const projectName = "Cat Jazz";
 
@@ -37,6 +38,29 @@ export default function Main() {
             className="absolute top-0 left-0 w-full h-full"
           ></iframe>
         </div>
+        <section>
+          <h3>Inspiration</h3>
+          <p className="italic">Cats Musical</p>
+          <h3>Ideation</h3>
+          <p>Cats&apos; behaviors can seem weird and funny, and people record them with tons of videos, GIFs, and memes on social media. </p>
+          <p>By creating an experimental animation, I would like to convey the unique charm of cats. I also wrote a Jazz music piece to help narrate the elegance and humorous characteristics of cats.</p>
+          <h4>Narrative Design</h4>
+          <p>Part 1: cats wander in the dark.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
+            <ImageWithCaption src="/imgs/cat-jazz/part1-1.gif" alt="GIF of animation part 1-1." caption="" />
+            <ImageWithCaption src="/imgs/cat-jazz/part1-2.gif" alt="GIF of animation part 1-2." caption="" />
+          </div>
+          <p>Part 2: cats&apos; curiosity.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
+            <ImageWithCaption src="/imgs/cat-jazz-cover.gif" alt="GIF of animation part 2-1." caption="" />
+            <ImageWithCaption src="/imgs/cat-jazz/part2-2.gif" alt="GIF of animation part 2-2." caption="" />
+          </div>
+          <p>Part 3: cats party.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
+            <ImageWithCaption src="/imgs/cat-jazz/part3-1.gif" alt="GIF of animation part 3-1." caption="" />
+            <ImageWithCaption src="/imgs/cat-jazz/part3-2.gif" alt="GIF of animation part 3-2." caption="" />
+          </div>
+        </section>
       </main>
       <aside>
         <ProjectSwitch projectName={projectName} />

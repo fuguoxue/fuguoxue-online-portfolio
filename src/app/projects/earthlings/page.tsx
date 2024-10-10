@@ -7,6 +7,8 @@ import TitleLine from "../../../components/TitleLine";
 import BackToTop from "@/components/BackToTop";
 import ImageWithCaption from "@/components/ImageWithCaption";
 import ExpandableImage from "@/components/ExpandableImage";
+import { FaGithub } from "react-icons/fa6";
+import Link from "next/link";
 
 const projectName = "Earthlings";
 const animalImgs = [
@@ -41,6 +43,13 @@ export default function Main() {
       </div>
       <aside>
         <ProjectInfoSection projectName={projectName} />
+        <Link
+          href="https://github.com/fuguoxue/Earthlings"
+          className="external-link supplementary"
+        >
+          <FaGithub className="external-link-icon" />
+          Download on Github and play
+        </Link>
       </aside>
       <main className="col-span-3 p-4 mb-8">
         <Image

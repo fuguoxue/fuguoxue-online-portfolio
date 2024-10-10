@@ -77,7 +77,7 @@ export default function Main() {
       <aside className="col-span-1 p-4 sticky top-4">
         <ProjectInfoSection projectName={projectName} />
         <Link
-          href="https://cyeeee.github.io/surface-city/"
+          href="https://ars.electronica.art/who-owns-the-truth/en/cometale/"
           className="external-link supplementary"
         >
           <Image
@@ -90,7 +90,7 @@ export default function Main() {
           Cometale at Ars Electronica Festival 2023
         </Link>
         <Link
-          href="https://github.com/cyeeee/surface-city"
+          href="https://dr.ntu.edu.sg/handle/10356/167573"
           className="external-link supplementary"
         >
           <FaBook className="external-link-icon" />
