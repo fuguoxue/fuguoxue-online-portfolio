@@ -56,7 +56,7 @@
     },
     {
         "name": "Earthlings",
-        "tags": ["Game"],
+        "tags": ["Game", "Storytelling"],
         "year": "2022",
         "imgURL": "/imgs/earthlings-cover.gif",
         "hidden": false,
@@ -67,7 +67,7 @@
     }, 
     {
         "name": "Eclipse Chaser",
-        "tags": ["Game"],
+        "tags": ["Game", "Storytelling"],
         "year": "2024",
         "imgURL": "/imgs/eclipse-chase-cover.png",
         "hidden": false,

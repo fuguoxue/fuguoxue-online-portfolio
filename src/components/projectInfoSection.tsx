@@ -18,7 +18,7 @@ export function ProjectInfoSection({ projectName }: ProjectInfoSectionProps) {
   return (
     <div>
       <h2>{project.name}</h2>
-      <h4>{project.year}</h4>
+      <h4>({project.year})</h4>
       <p className="text-left">
         {project.description.split("\n").map((line, index) => (
           <span key={index}>
