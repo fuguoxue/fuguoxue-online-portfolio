@@ -15,7 +15,7 @@ export default function ImageWithCaption({
   widthPercentage = 100, // Default to 100% if not provided
 }: ImageWithCaptionProps) {
   return (
-    <figure className="flex flex-col items-center w-full my-8">
+    <figure className="flex flex-col items-center w-full my-4">
       {/* Image container with responsive width */}
       <div
         className="w-full"
@@ -27,13 +27,21 @@ export default function ImageWithCaption({
           src={src}
           alt={alt}
           layout="responsive" /* Maintains aspect ratio */
-          width={100} /* These values represent percentage of the container’s width */
-          height={75} /* Adjust the ratio accordingly or leave auto for responsive height */
+          width={
+            100
+          } /* These values represent percentage of the container’s width */
+          height={
+            75
+          } /* Adjust the ratio accordingly or leave auto for responsive height */
           objectFit="cover" /* Optional: Ensures the image covers the container without distortion */
           className="w-full h-auto object-contain"
         />
       </div>
-      <figcaption className="text-center text-caption text-sm my-2">{caption}</figcaption>
+      {caption && (
+        <figcaption className="text-center text-caption text-sm mt-2">
+          {caption}
+        </figcaption>
+      )}
     </figure>
   );
 }

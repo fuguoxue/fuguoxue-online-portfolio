@@ -1,17 +1,32 @@
 "use client";
-import { useState } from 'react';
-import Image from 'next/image';
+import { useState } from "react";
+import Image from "next/image";
 
-export default function ExpandableImage({ src, alt, description }: { src: string; alt: string; description: string }) {
+export default function ExpandableImage({
+  src,
+  alt,
+  description,
+}: {
+  src: string;
+  alt: string;
+  description: string;
+}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
 
+  // Handle clicking outside the expanded image to close the modal
+  const handleOutsideClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target === e.currentTarget) {
+      closeModal();
+    }
+  };
+
   return (
     <div>
-      {/* Thumbnail image */}
-      <div className="cursor-pointer my-8" onClick={openModal}>
+      {/* Thumbnail image with hover effect */}
+      <div className="relative cursor-pointer mt-8 group" onClick={openModal}>
         <Image
           src={src}
           alt={alt}
@@ -19,19 +34,19 @@ export default function ExpandableImage({ src, alt, description }: { src: string
           width={300}
           height={200}
         />
-        <p className="caption mt-2">{description}</p>
+        {/* Hover overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300"></div>
       </div>
+      <p className="caption my-2">{description}</p>
 
       {/* Modal for expanded image */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
+          onClick={handleOutsideClick}
+        >
           <div className="relative">
-            <button
-              className="absolute top-2 right-2 text-white"
-              onClick={closeModal}
-            >
-              Close
-            </button>
+            {/* Expanded image */}
             <Image
               src={src}
               alt={alt}
@@ -39,7 +54,7 @@ export default function ExpandableImage({ src, alt, description }: { src: string
               width={800}
               height={600}
             />
-            <p>{alt}</p>
+            <p className="text-white mt-4 text-center">{description}</p>
           </div>
         </div>
       )}

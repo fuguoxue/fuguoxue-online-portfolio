@@ -28,18 +28,18 @@ export default function Home() {
 
   return (
     <div className="relative">
-      <div className="grid grid-cols-5 min-h-screen">
+      <div className="grid grid-cols-1 lg:grid-cols-5 min-h-screen">
         {/* Sidebar */}
-        <aside className="p-8">
+        <aside className="p-8 col-span-1 lg:col-span-1 sm:col-span-1">
           <div className="sticky top-0">
             {/* Bio Section */}
             <P5ShadowController />
-            <p className="leading-relaxed mb-8">
+            <p className="leading-relaxed mb-8 text-left">
               Fuguo Xue is a media artist and frontend developer specializing in interactive installations and creative technologies. Her work blends AI, creative coding, and experience design. Exhibitions include Ars Electronica and more.
             </p>
 
             {/* Tag Filter */}
-            <div className="mb-8 flex flex-col space-y-2">
+            <div className="mb-8 lg:flex lg:flex-col space-y-2 justify-center">
               {allTags.map((tag) => (
                 <button
                   key={tag}
@@ -56,18 +56,18 @@ export default function Home() {
             </div>
 
             {/* Social Media Links */}
-            <footer>
+            <footer className="sm:mt-4 flex justify-center lg:justify-start">
               <Footer />
             </footer>
           </div>
         </aside>
 
         {/* Main Content - Projects Section */}
-        <main className="col-span-4">
+        <main className="col-span-1 lg:col-span-4 sm:col-span-1">
           {/* Project Gallery */}
           <motion.div
             layout
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0"
+            className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0"
           >
             <AnimatePresence>
               {filteredProjects
@@ -94,7 +94,7 @@ export default function Home() {
                           alt={project.name}
                           fill
                           style={{ objectFit: "cover" }}
-                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
                         />
                       </Link>
                     </div>
@@ -106,12 +106,12 @@ export default function Home() {
                         .toLowerCase()}`}
                     >
                       <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-                        <div className="text-center">
+                        <div className="text-center mx-2">
                           <h3 className="text-white text-xl font-bold">
                             {project.name}
                           </h3>
-                          <p className="text-gray-300">{project.year}</p>
-                          <p className="text-gray-300">
+                          <p className="text-gray-300 text-center">{project.year}</p>
+                          <p className="text-gray-300 text-center">
                             {project.tags.join(", ")}
                           </p>
                         </div>

@@ -48,7 +48,7 @@ export default function Main() {
           className="external-link supplementary"
         >
           <FaGithub className="external-link-icon" />
-          Download on Github and play
+          GitHub Download
         </Link>
       </aside>
       <main className="col-span-3 p-4 mb-8">

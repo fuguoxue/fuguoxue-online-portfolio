@@ -63,7 +63,7 @@ export default function Main() {
           className="external-link supplementary"
         >
           <FaLink className="external-link-icon" />
-          Generate your city
+          Generate your Surface City
         </Link>
         <Link
           href="https://github.com/cyeeee/surface-city"
