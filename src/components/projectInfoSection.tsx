@@ -1,5 +1,5 @@
 "use client";
-import projectData from "../app/data/projectData.json";
+import projectData from "../data/projectData.json";
 import { NavigationTab } from "./webpageReusables";
 
 interface ProjectInfoSectionProps {

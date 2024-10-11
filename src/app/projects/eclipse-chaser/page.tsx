@@ -37,7 +37,7 @@ export default function Main() {
             width="full"
             height="auto"
             src="https://www.youtube.com/embed/nXr15_67Gpo?si=IhUSmGMsyatRb5qT"
-            title="YouTube video player"
+            title="Eclipse Chaser Screen recording on YouTube"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen

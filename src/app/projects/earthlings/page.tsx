@@ -44,11 +44,11 @@ export default function Main() {
       <aside className="col-span-1">
         <ProjectInfoSection projectName={projectName} />
         <Link
-          href="https://github.com/fuguoxue/Earthlings"
+          href="https://github.com/fuguoxue/Earthlings/releases/tag/v1.0.0"
           className="external-link supplementary"
         >
           <FaGithub className="external-link-icon" />
-          GitHub Download
+          Download Game on GitHub
         </Link>
       </aside>
       <main className="col-span-1 md:col-span-3 p-4 mb-8">
@@ -215,7 +215,7 @@ export default function Main() {
               width="full"
               height="auto"
               src="https://player.vimeo.com/video/765940626?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              title="Earthlings video on Vimeo"
+              title="Earthlings Game video on Vimeo"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen

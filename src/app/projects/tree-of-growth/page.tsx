@@ -17,7 +17,6 @@ const gifs = [
   "/imgs/tree-of-growth/interaction1.gif",
   "/imgs/tree-of-growth/interaction2.gif",
 ];
-const ScreenshotTree = "/imgs/tree-of-growth/Screenshot 2024-05-06 154747.png";
 
 const projectName = "Tree of Growth";
 
@@ -36,7 +35,7 @@ export default function Main() {
             width="full"
             height="auto"
             src="https://www.youtube.com/embed/nKgBetR-J_k?si=Qa2zERKLLu6fo-Hh"
-            title="YouTube video player"
+            title="Tree of Growth video on YouTube"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
@@ -75,7 +74,7 @@ export default function Main() {
             branches. This way, each tree generated is unique.
           </p>
           <ImageWithCaption
-            src={ScreenshotTree}
+            src="/imgs/tree-of-growth/Screenshot 2024-05-06 154747.png"
             alt={`Screenshot of a tree pattern. `}
             caption="Screenshot of a tree pattern generated with L-system programmed in Max MSP. "
             widthPercentage={50}

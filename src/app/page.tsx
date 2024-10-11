@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import projectData from "./data/projectData.json"; // Import your project data
+import projectData from "../data/projectData.json"; // Import your project data
 import P5ShadowController from "../components/P5TitleShadow";
 import Footer from "@/components/Footer";
 
@@ -35,10 +35,7 @@ export default function Home() {
             {/* Bio Section */}
             <P5ShadowController />
             <p className="leading-relaxed mb-4 text-left">
-              Fuguo Xue is a media artist and frontend developer specializing in
-              interactive installations and creative technologies. Her work
-              blends AI, creative coding, and experience design. Exhibitions
-              include Ars Electronica and more.
+              Fuguo Xue is a media artist and frontend developer specializing in interactive installations and creative technologies. Her work blends AI, creative coding, and experience design, and was featured at Ars Electronica Festival and more.
             </p>
             <Link href="/bio" className="group inline-flex items-center text-tag transition-all duration-300 transform hover:scale-105 text-lg">
               <span className="transition-all group-hover:underline">Bio</span>

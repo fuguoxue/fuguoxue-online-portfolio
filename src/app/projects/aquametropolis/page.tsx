@@ -123,7 +123,7 @@ export default function Main() {
             width="full"
             height="auto"
             src="https://www.youtube.com/embed/KRVFeQgstpM?si=bQNnkA-VEh3XLIsm"
-            title="YouTube video player"
+            title="Aquametropolis animation on YouTube"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
