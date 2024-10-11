@@ -34,12 +34,21 @@ export default function Home() {
           <div className="sticky top-0">
             {/* Bio Section */}
             <P5ShadowController />
-            <p className="leading-relaxed mb-8 text-left">
-              Fuguo Xue is a media artist and frontend developer specializing in interactive installations and creative technologies. Her work blends AI, creative coding, and experience design. Exhibitions include Ars Electronica and more.
+            <p className="leading-relaxed mb-4 text-left">
+              Fuguo Xue is a media artist and frontend developer specializing in
+              interactive installations and creative technologies. Her work
+              blends AI, creative coding, and experience design. Exhibitions
+              include Ars Electronica and more.
             </p>
+            <Link href="/bio" className="group inline-flex items-center text-tag transition-all duration-300 transform hover:scale-105 text-lg">
+              <span className="transition-all group-hover:underline">Bio</span>
+              <span className="transition-all transform group-hover:scale-105">
+                &nbsp;&#8594;
+              </span>
+            </Link>
 
             {/* Tag Filter */}
-            <div className="mb-8 lg:flex lg:flex-col space-y-2 justify-center">
+            <div className="my-10 lg:flex lg:flex-col space-y-2 justify-center">
               {allTags.map((tag) => (
                 <button
                   key={tag}
@@ -110,7 +119,9 @@ export default function Home() {
                           <h3 className="text-white text-xl font-bold">
                             {project.name}
                           </h3>
-                          <p className="text-gray-300 text-center">{project.year}</p>
+                          <p className="text-gray-300 text-center">
+                            {project.year}
+                          </p>
                           <p className="text-gray-300 text-center">
                             {project.tags.join(", ")}
                           </p>

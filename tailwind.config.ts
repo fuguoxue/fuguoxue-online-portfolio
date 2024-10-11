@@ -14,7 +14,7 @@ const config: Config = {
         secondary: "#3A3D98",
         tag: "#008080",
         selected:"#FF6F61",
-        caption:"#5A6B95"
+        caption:"#5A6B95",
       },
     },
   },
