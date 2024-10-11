@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inconsolata } from "next/font/google";
+import { Analytics } from '@vercel/analytics/react';
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -37,6 +38,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${inconsolata.variable} antialiased`}
       >
         {children} {/* Content will be rendered here */}
+        <Analytics />
       </body>
     </html>
   );
