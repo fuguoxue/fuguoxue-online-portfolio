@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inconsolata } from "next/font/google";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
+
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -34,6 +35,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          type="image/png"
+          href="/my-favicon/favicon-48x48.png"
+          sizes="48x48"
+        />
+        <link rel="icon" type="image/svg+xml" href="/my-favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/my-favicon/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/my-favicon/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="Fuguo's Media Space" />
+        <link rel="manifest" href="/my-favicon/site.webmanifest" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inconsolata.variable} antialiased`}
       >
