@@ -99,6 +99,17 @@
         "mentors": ["Brandon Tay", "Kristy H.A. Kang"]
     },
     {
+        "name": "SwipeX",
+        "tags": ["UX Design"],
+        "year": "2021",
+        "imgURL": "/imgs/swipex-cover.png",
+        "hidden": false,
+        "description": "\"SwipeX: News on the Go\" is a mobile web feature that provide effective news reading reading experience in bite-sized summaries. It aims to:\n1. Pique curiosity – it delivers news in summaries to make news reading more productive.\n2. Personalization – It learns readers’ reading habits and topics of interest and pushes news that may be of interest to them.\nIn our team of 8, I co-developed the front-end of SwipeX and co-designed the UI and logo of SwipeX.\nThis project is supported by NTU News Media Lab.",
+        "time": "3 months",
+        "media": "mobile web feature built with React.js.",
+        "mentors": ["Jessica Tan", "Joan Kelly", "Amanda Eber"]
+    },
+    {
         "name": "Cat Jazz",
         "tags": ["Animation", "Storytelling"],
         "year": "2020",

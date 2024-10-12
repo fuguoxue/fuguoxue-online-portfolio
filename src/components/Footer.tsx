@@ -1,4 +1,4 @@
-import { FaVimeoV, FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaVimeoV, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Footer() {
@@ -14,12 +14,12 @@ export default function Footer() {
         <Link href="https://github.com/fuguoxue-nyu" target="_blank">
           <FaGithub className="w-6 h-6 text-primary hover:text-tag transition" />
         </Link>
-        <Link
+        {/* <Link
           href="https://www.instagram.com/fuguosmediaspace/"
           target="_blank"
         >
           <FaInstagram className="w-6 h-6 text-primary hover:text-tag transition" />
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

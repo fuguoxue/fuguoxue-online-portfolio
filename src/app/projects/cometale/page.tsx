@@ -79,6 +79,7 @@ export default function Main() {
         <Link
           href="https://ars.electronica.art/who-owns-the-truth/en/cometale/"
           className="external-link supplementary"
+          target="_blank"
         >
           <Image
             src="/imgs/ars-electronica-icon.png"
@@ -92,6 +93,7 @@ export default function Main() {
         <Link
           href="https://dr.ntu.edu.sg/handle/10356/167573"
           className="external-link supplementary"
+          target="_blank"
         >
           <FaBook className="external-link-icon" />
           Thesis Paper

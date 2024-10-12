@@ -29,6 +29,7 @@ export default function Main() {
         <Link
           href="https://wp.nyu.edu/tandonschoolofengineering-fuguoxue_interactive_installation/category/final/"
           className="external-link supplementary"
+          target="_blank"
         >
           <FaBook className="external-link-icon" />
           Project Blog

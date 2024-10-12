@@ -105,6 +105,7 @@ export default function Main() {
         <Link
           href="https://chatgpt.com/g/g-x99S0do7b-aquametropolis-guide"
           className="external-link supplementary"
+          target="_blank"
         >
           <RiOpenaiFill className="external-link-icon" />
           Chat with AquaMetropolis Guide
@@ -141,12 +142,17 @@ export default function Main() {
                   "https://open.spotify.com/album/7Mj25Vp9Di3YbZntQmwwqh?si=YKnB4RFVRXiqk9QQ12SRbg"
                 }
                 className="text-tag underline"
+                target="_blank"
               >
                 The Last Aquarium
               </Link>
             </i>
           </p>
-          <p>What if the animals in the songs are humanized and humans turn out to be the exhibits and consumables? An imagination of the power reversal between humans and marine animals.</p>
+          <p>
+            What if the animals in the songs are humanized and humans turn out
+            to be the exhibits and consumables? An imagination of the power
+            reversal between humans and marine animals.
+          </p>
         </section>
         <section>
           <h3>Production</h3>
@@ -230,15 +236,43 @@ export default function Main() {
             required.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 gap-4 my-4">
-            <ImageWithCaption src="/imgs/aquametropolis/skyscrapers5.png" alt="Original image by Midjouney. The image has water surface, but there should be no water surface in an underwater environment." caption="Original image by Midjouney. The image has water surface, but there should be no water surface in an underwater environment." />
-            <ImageWithCaption src="/imgs/aquametropolis/skyscrapers5-expand.png" alt="Expanded the image with Photoshop Generative Fill. I also replaced watersurface with seafloor, and expand the image dimension." caption="Expanded the image with Photoshop Generative Fill. I also replaced watersurface with seafloor, and expand the image dimension." />
-            <ImageWithCaption src="/imgs/aquametropolis/midjourney-portrait.png" alt="Portrait image generated with Midjourney." caption="Portrait image generated with Midjourney." />
-            <ImageWithCaption src="/imgs/aquametropolis/ps.png" alt="Expanded the portrait background with Photoshop Generative Fill." caption="Expanded the portrait background with Photoshop Generative Fill." />
+            <ImageWithCaption
+              src="/imgs/aquametropolis/skyscrapers5.png"
+              alt="Original image by Midjouney. The image has water surface, but there should be no water surface in an underwater environment."
+              caption="Original image by Midjouney. The image has water surface, but there should be no water surface in an underwater environment."
+            />
+            <ImageWithCaption
+              src="/imgs/aquametropolis/skyscrapers5-expand.png"
+              alt="Expanded the image with Photoshop Generative Fill. I also replaced watersurface with seafloor, and expand the image dimension."
+              caption="Expanded the image with Photoshop Generative Fill. I also replaced watersurface with seafloor, and expand the image dimension."
+            />
+            <ImageWithCaption
+              src="/imgs/aquametropolis/midjourney-portrait.png"
+              alt="Portrait image generated with Midjourney."
+              caption="Portrait image generated with Midjourney."
+            />
+            <ImageWithCaption
+              src="/imgs/aquametropolis/ps.png"
+              alt="Expanded the portrait background with Photoshop Generative Fill."
+              caption="Expanded the portrait background with Photoshop Generative Fill."
+            />
           </div>
           <h4>Audio & Video Editing</h4>
-          <p>To generate narrated audio, I put the transcript into Elevenlabs, a text-to-speech AI tool. ElevenLabs provides many voices and allows voice customizations including Stability, Clarity+Similarity Enhancement, and Style Exaggeration. </p>
-          <p>I used Stable Audio to generate the BGM and it worked better than my expectation. I used MyEdit for generating sound effects like the explosion sounds. </p>
-          <p>For video editing, I tried Descript, Premiere Pro, and CapCut. I found CapCut most handy and efficient for my project.</p>
+          <p>
+            To generate narrated audio, I put the transcript into Elevenlabs, a
+            text-to-speech AI tool. ElevenLabs provides many voices and allows
+            voice customizations including Stability, Clarity+Similarity
+            Enhancement, and Style Exaggeration.{" "}
+          </p>
+          <p>
+            I used Stable Audio to generate the BGM and it worked better than my
+            expectation. I used MyEdit for generating sound effects like the
+            explosion sounds.{" "}
+          </p>
+          <p>
+            For video editing, I tried Descript, Premiere Pro, and CapCut. I
+            found CapCut most handy and efficient for my project.
+          </p>
         </section>
       </main>
       <div className="col-span-1 sm:hidden md:block lg:hidden"></div>

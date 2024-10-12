@@ -46,9 +46,10 @@ export default function Main() {
         <Link
           href="https://github.com/fuguoxue/Earthlings/releases/tag/v1.0.0"
           className="external-link supplementary"
+          target="_blank"
         >
           <FaGithub className="external-link-icon" />
-          Download Game on GitHub
+          Download Game from GitHub
         </Link>
       </aside>
       <main className="col-span-1 md:col-span-3 p-4 mb-8">
