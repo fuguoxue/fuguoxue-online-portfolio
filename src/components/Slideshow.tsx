@@ -45,7 +45,7 @@ export default function Slideshow({ slides }: SlideshowProps) {
                 width={400}
                 height={400}
                 className="w-full h-auto object-cover"
-                onLoadingComplete={() => {
+                onLoad={() => {
                   if (swiperInstance) swiperInstance.update(); // Recalculate Swiper dimensions
                 }}
               />
@@ -77,7 +77,7 @@ export default function Slideshow({ slides }: SlideshowProps) {
               width={50}
               height={50}
               className="w-full h-full object-cover"
-              onLoadingComplete={() => {
+              onLoad={() => {
                 if (thumbsSwiper) thumbsSwiper.update(); // Ensure Swiper dimensions are updated after image load
               }}
             />

@@ -12,13 +12,13 @@
     },
     {
         "name": "The Surface City",
-        "tags": ["Creative Coding", "Storytelling"],
+        "tags": ["Creative Coding", "Storytelling", "Game"],
         "year": "2024",
         "imgURL": "/imgs/The-Surface-City-cover.gif",
         "hidden": false,
-        "description": "The Surface City is a concept design and storytelling experience enhanced by creative coding. It aims to explore the patterns of cities with code and the potential of 2D tiles in creating 3D visual effects.\nThe Surface City is a collaboration between Fuguo and Chenyi. It is part of the Visible Cities: Workshop Exhibition organized by CritLab Review.",
+        "description": "Urban planning throughout history is often closely related to its geographical location and culture. In a world where information technology is increasingly developed, people have less and less privacy. What would a city without privacy be like? The Surface City poetically explores this question.\nThe project consists of the story of The Surface City, and a p5.js game that allows player to generate 3D cityscapes of several districts of The Surface City. \nThe Surface City is a collaboration between Fuguo and Chenyi. It is part of the Visible Cities: Workshop Exhibition organized by CritLab Review.",
         "time": "2 weeks",
-        "media": "generative landscape done by p5.js coding and Adobe Illustrator.",
+        "media": "web-based game developed with p5.js.",
         "mentors": ["Thiago Hersan", "Alexandra Marraccini"]
     },
     {

@@ -2,7 +2,7 @@ import {
   ProjectInfoSection,
   ProjectSwitch,
 } from "../../../components/projectInfoSection";
-import Image from "next/image";
+// import Image from "next/image";
 import TitleLine from "../../../components/TitleLine";
 import Slideshow from "@/components/Slideshow";
 import ImageWithCaption from "@/components/ImageWithCaption";
@@ -76,14 +76,17 @@ export default function Main() {
         </Link>
       </aside>
       <main className="col-span-1 md:col-span-3 p-4 mb-8">
-        <div className="relative w-full mb-4">
-          <Image
-            src={`/imgs/The-Surface-City-cover.gif`}
-            alt={`The Suface City cover image`}
-            width={400}
-            height={400}
-            className="w-full h-full object-cover"
-          />
+      <div className="relative w-full pb-[56.25%] mb-4">
+          <iframe
+            width="full"
+            height="auto"
+            src="https://www.youtube.com/embed/St6ufOu_5ao?si=Up0n_5L8ot8r8Tct"
+            title="Tree of Growth video on YouTube"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="absolute top-0 left-0 w-full h-full"
+          ></iframe>
         </div>
         <section>
           <h3>Story of The Surface City</h3>
