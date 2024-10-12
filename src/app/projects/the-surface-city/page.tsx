@@ -59,18 +59,18 @@ export default function Main() {
       <aside className="col-span-1">
         <ProjectInfoSection projectName={projectName} />
         <Link
-          href="https://cyeeee.github.io/surface-city/"
+          href="https://fuguoxue-nyu.github.io/surface-city/"
           className="external-link supplementary"
         >
           <FaLink className="external-link-icon" />
           Generate your Surface City
         </Link>
         <Link
-          href="https://github.com/cyeeee/surface-city"
+          href="https://github.com/fuguoxue-nyu/surface-city"
           className="external-link supplementary"
         >
           <FaGithub className="external-link-icon" />
-          Project source code
+          GitHub Project Page
         </Link>
       </aside>
       <main className="col-span-1 md:col-span-3 p-4 mb-8">
