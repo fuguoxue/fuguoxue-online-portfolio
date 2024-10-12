@@ -56,16 +56,18 @@ export default function Main() {
         <SeparationLine thickness="2px" />
 
         {/* Work Experiences */}
-        <section className="grid grid-cols-3 gap-4">
-          <h3 className="col-span-3">Work Experiences</h3>
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <h3 className="col-span-1 md:col-span-3 mt-6">Work Experiences</h3>
           <div className="col-span-1">
             <h4>Museum Accessibility Designer</h4>
-            <p className="text-secondary text-opacity-70">Feb 2024 — May 2024</p>
+            <p className="text-secondary text-opacity-70">
+              Feb 2024 — May 2024
+            </p>
             <p className="text-secondary text-opacity-70">
               <b>HeartShare Human Services of New York</b>, New York
             </p>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1 md:col-span-2">
             <ul className="list-disc ml-4">
               <li>
                 Collaborated with clients to ensure on-site accessibility of
@@ -85,12 +87,14 @@ export default function Main() {
           <SeparationLine thickness="1px" />
           <div className="col-span-1">
             <h4>Stage Manager & Web Editor</h4>
-            <p className="text-secondary text-opacity-70">Jan 2024 — May 2024</p>
+            <p className="text-secondary text-opacity-70">
+              Jan 2024 — May 2024
+            </p>
             <p className="text-secondary text-opacity-70">
               <b>Harvestworks Digital Media Art</b>, New York
             </p>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1 md:col-span-2">
             <ul className="list-disc ml-4">
               <li>
                 Collaborated with artists to organize a six-day event including
@@ -109,12 +113,14 @@ export default function Main() {
           <SeparationLine thickness="1px" />
           <div className="col-span-1">
             <h4>Software Marketing Intern</h4>
-            <p className="text-secondary text-opacity-70">Jul 2021 — Dec 2021</p>
+            <p className="text-secondary text-opacity-70">
+              Jul 2021 — Dec 2021
+            </p>
             <p className="text-secondary text-opacity-70">
               <b>Philips Electronics APAC Center</b>, Singapore
             </p>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1 md:col-span-2">
             <ul className="list-disc ml-4">
               <li>
                 Proposed and developed a Customer-Facing Document template with
@@ -135,12 +141,14 @@ export default function Main() {
           <SeparationLine thickness="1px" />
           <div className="col-span-1">
             <h4>News Product Designer</h4>
-            <p className="text-secondary text-opacity-70">Jan 2021 — Apr 2021</p>
+            <p className="text-secondary text-opacity-70">
+              Jan 2021 — Apr 2021
+            </p>
             <p className="text-secondary text-opacity-70">
               <b>TODAY Online</b>, Singapore
             </p>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1 md:col-span-2">
             <ul className="list-disc ml-4">
               <li>
                 Researched the news industry in Singapore; engaged with TODAY
@@ -161,8 +169,8 @@ export default function Main() {
         <SeparationLine thickness="2px" />
 
         {/* Exhibitions */}
-        <section className="grid grid-cols-3 gap-4">
-          <h3 className="col-span-3">Exhibitions</h3>
+        <section className="grid col-span-1 md:grid-cols-3 md:gap-4">
+          <h3 className="col-span-1 md:col-span-3 my-6">Exhibitions</h3>
           <div className="col-span-1">
             <h4 className="italic">
               <Link
@@ -172,9 +180,9 @@ export default function Main() {
                 <b>Tree of Growth</b>
               </Link>
             </h4>
-            <p className="text-secondary">May 2024</p>
+            <p className="text-secondary my-0">May 2024</p>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1 md:col-span-2">
             <Link
               href="https://partiful.com/e/QlvcgLbCcU1k8H4nYzu3"
               className="text-tag hover:underline"
@@ -188,9 +196,9 @@ export default function Main() {
             <h4 className="italic">
               <b>Attractiverse-III</b>
             </h4>
-            <p className="text-secondary">Apr 2024</p>
+            <p className="text-secondary my-0">Apr 2024</p>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1 md:col-span-2">
             <Link
               href="https://www.harvestworks.org/livecodenyc2024-apr-26-may-5/"
               className="text-tag hover:underline"
@@ -209,9 +217,9 @@ export default function Main() {
                 <b>The Surface City</b>
               </Link>
             </h4>
-            <p className="text-secondary">Apr 2023</p>
+            <p className="text-secondary  my-0">Apr 2023</p>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1 md:col-span-2">
             <Link
               href="https://www.critlabreview.com/articles/visible-cities"
               className="text-tag hover:underline"
@@ -230,9 +238,9 @@ export default function Main() {
                 <b>Cometale</b>
               </Link>
             </h4>
-            <p className="text-secondary">Sep 2023</p>
+            <p className="text-secondary my-0">Sep 2023</p>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1 md:col-span-2">
             <Link
               href="https://ars.electronica.art/who-owns-the-truth/en/"
               className="text-tag hover:underline"
@@ -251,9 +259,9 @@ export default function Main() {
                 <b>Earthlings</b>
               </Link>
             </h4>
-            <p className="text-secondary">Sep 2022</p>
+            <p className="text-secondary my-0">Sep 2022</p>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1 md:col-span-2">
             <Link
               href="https://ars.electronica.art/who-owns-the-truth/en/"
               className="text-tag hover:underline"
@@ -267,34 +275,39 @@ export default function Main() {
         <SeparationLine thickness="2px" />
 
         {/* Honors & Awards */}
-        <section className="grid grid-cols-3 gap-4">
-          <h3 className="col-span-3">Honors & Awards</h3>
-          <p className="col-span-2 mb-0">
+
+        <section className="grid grid-cols-1 md:grid-cols-3 md:gap-4">
+          <h3 className="col-span-1 md:col-span-3 my-6">Honors & Awards</h3>
+          <p className="col-span-1 md:col-span-2 my-0">
             <b>NYU Tandon School of Engineering Merit-based Scholarship</b>
           </p>
-          <p className="text-secondary text-right mt-0">2023</p>
-          <p className="mb-6 col-span-3">Issued by New York University.</p>
-
-          <p className="col-span-2 mb-0">
+          <p className="text-secondary col-span-1 md:text-right my-0">2023</p>
+          <p className="col-span-1 md:col-span-3 my-0">
+            Issued by New York University.
+          </p>
+        </section>
+        <section className="grid grid-cols-1 md:grid-cols-3 md:gap-4">
+          <p className="col-span-1 md:col-span-2 my-0">
             <b>Ministry of Education Scholarship</b>
           </p>
-          <p className="text-secondary text-right mt-0">2018</p>
-          <p className="mb-6 col-span-3">Issued by Ministry of Education, Singapore.</p>
-          
-          <p className="col-span-2 mb-0">
+          <p className="text-secondary col-span-1 md:text-right my-0">2018</p>
+          <p className="col-span-1 md:col-span-3 my-0">
+            Issued by Ministry of Education, Singapore.
+          </p>
+        </section>
+        <section className="grid grid-cols-1 md:grid-cols-3 md:gap-4">
+          <p className="col-span-1 md:col-span-2 my-0">
             <b>NTU Science and Engineering Scholarship</b>
           </p>
-          <p className="text-secondary text-right mt-0">2018</p>
-          <p className="mb-6 col-span-3">Issued by Nanyang Technological University, Singapore.</p>
+          <p className="text-secondary col-span-1 md:text-right my-0">2018</p>
+          <p className="col-span-1 md:col-span-3 my-0">
+            Issued by Nanyang Technological University, Singapore.
+          </p>
         </section>
-
         <div className="sm:block md:block lg:hidden">
           <BackToTop />
         </div>
       </main>
-      <div className="col-span-1 sm:hidden md:hidden lg:block">
-        <BackToTop />
-      </div>
     </div>
   );
 }
