@@ -22,6 +22,17 @@
         "mentors": ["Thiago Hersan", "Alexandra Marraccini"]
     },
     {
+        "name": "Attractiverse-III",
+        "tags": ["Interactive Installation", "Creative Coding", "Game"],
+        "year": "2024",
+        "imgURL": "/imgs/attractiverse-iii-cover.png",
+        "hidden": false,
+        "description": "Attractiverse-III is an interactive installation that dives into the mesmerizing world of attractors. Through a digital screen and MIDI controller, the viewers can experience the magic of mathematical beauty as chaotic randomness transforms into stunning 3D formations with dynamic colors and interactive audio.\nIn the mathematical field of dynamical systems, an attractor is a set of states toward which a system tends to evolve for a wide variety of starting conditions. Given a set of randomly positioned particles within a 3D space and an equation set defining the displacement of each particle per unit time, we shall see a stable 3D shape gradually evolving from the initial randomness as time progresses.",
+        "time": "1 month",
+        "media": "interactive installation built with Max MSP and MIDI controller.",
+        "mentors": ["Joshua Goldberg", "Rob Ramirez"]
+    },
+    {
         "name": "WildWeb",
         "tags": ["Interactive Installation", "Creative Coding"],
         "year": "2023",

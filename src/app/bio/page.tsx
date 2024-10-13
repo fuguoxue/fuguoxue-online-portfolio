@@ -186,7 +186,7 @@ export default function Main() {
             <Link
               href="https://partiful.com/e/QlvcgLbCcU1k8H4nYzu3"
               className="text-tag hover:underline"
-          target="_blank"
+              target="_blank"
             >
               An Evening of Immersive Entertainment
             </Link>
@@ -195,7 +195,12 @@ export default function Main() {
 
           <div className="col-span-1">
             <h4 className="italic">
-              <b>Attractiverse-III</b>
+              <Link
+                href="/projects/attractiverse-iii"
+                className="text-tag hover:underline"
+              >
+                <b>Attractiverse-III</b>
+              </Link>
             </h4>
             <p className="text-secondary my-0">Apr 2024</p>
           </div>
@@ -203,7 +208,7 @@ export default function Main() {
             <Link
               href="https://www.harvestworks.org/livecodenyc2024-apr-26-may-5/"
               className="text-tag hover:underline"
-          target="_blank"
+              target="_blank"
             >
               MY _____ IS AN ECOSYSTEM
             </Link>
@@ -225,7 +230,7 @@ export default function Main() {
             <Link
               href="https://www.critlabreview.com/articles/visible-cities"
               className="text-tag hover:underline"
-          target="_blank"
+              target="_blank"
             >
               Visible Cities: Workshop Exhibition (Online Exhibition)
             </Link>
@@ -247,7 +252,7 @@ export default function Main() {
             <Link
               href="https://ars.electronica.art/who-owns-the-truth/en/"
               className="text-tag hover:underline"
-          target="_blank"
+              target="_blank"
             >
               Ars Electronica Festival 2023 Campus Exhibition
             </Link>
@@ -266,10 +271,7 @@ export default function Main() {
             <p className="text-secondary my-0">Sep 2022</p>
           </div>
           <div className="col-span-1 md:col-span-2">
-            <p
-            >
-              The International Conference of Undergraduate Research 2022
-            </p>
+            <p>The International Conference of Undergraduate Research 2022</p>
             <p className="text-secondary">Singapore</p>
           </div>
         </section>
