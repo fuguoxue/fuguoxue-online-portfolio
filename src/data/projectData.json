@@ -1,5 +1,16 @@
 [
     {
+        "name": "Attractiverse-III",
+        "tags": ["Interactive Installation", "Creative Coding", "Game"],
+        "year": "2024",
+        "imgURL": "/imgs/attractiverse-iii-cover.png",
+        "hidden": false,
+        "description": "Attractiverse-III is an interactive installation that dives into the mesmerizing particle universe. Through a digital screen and MIDI controller, the viewers can experience the magic of mathematical beauty as chaotic randomness transforms into stunning 3D formations with dynamic colors and interactive audio.\nAttractiverse-III was featured at MY _____ IS AN ECOSYSTEM exhibition on Governors Island.",
+        "time": "2 months",
+        "media": "interactive installation built with Max MSP and MIDI controller.",
+        "mentors": ["Joshua Goldberg", "Rob Ramirez"]
+    },
+    {
         "name": "Tree of Growth",
         "tags": ["Creative Coding", "Interactive Installation"],
         "year": "2024",
@@ -16,21 +27,10 @@
         "year": "2024",
         "imgURL": "/imgs/The-Surface-City-cover.gif",
         "hidden": false,
-        "description": "Urban planning throughout history is often closely related to its geographical location and culture. In a world where information technology is increasingly developed, people have less and less privacy. What would a city without privacy be like? The Surface City poetically explores this question.\nThe project consists of the story of The Surface City, and a p5.js game that allows player to generate 3D cityscapes of several districts of The Surface City. \nThe Surface City is a collaboration between Fuguo and Chenyi. It is part of the Visible Cities: Workshop Exhibition organized by CritLab Review.",
+        "description": "Urban planning throughout history is often closely related to its geographical location and culture. In a world where information technology is increasingly developed, people have less and less privacy. What would a city without privacy be like? The Surface City poetically explores this question.\nThe project consists of the story of The Surface City, and a web-based interactive experience that allows player to generate 3D cityscapes of several Surface City districts. \nThe Surface City is a collaboration between Fuguo and Chenyi. It is part of the Visible Cities: Workshop Exhibition organized by CritLab Review.",
         "time": "2 weeks",
-        "media": "web-based game developed with p5.js.",
+        "media": "web-based experimental storytelling built with p5.js.",
         "mentors": ["Thiago Hersan", "Alexandra Marraccini"]
-    },
-    {
-        "name": "Attractiverse-III",
-        "tags": ["Interactive Installation", "Creative Coding", "Game"],
-        "year": "2024",
-        "imgURL": "/imgs/attractiverse-iii-cover.png",
-        "hidden": false,
-        "description": "Attractiverse-III is an interactive installation that dives into the mesmerizing world of attractors. Through a digital screen and MIDI controller, the viewers can experience the magic of mathematical beauty as chaotic randomness transforms into stunning 3D formations with dynamic colors and interactive audio.\nIn the mathematical field of dynamical systems, an attractor is a set of states toward which a system tends to evolve for a wide variety of starting conditions. Given a set of randomly positioned particles within a 3D space and an equation set defining the displacement of each particle per unit time, we shall see a stable 3D shape gradually evolving from the initial randomness as time progresses.",
-        "time": "1 month",
-        "media": "interactive installation built with Max MSP and MIDI controller.",
-        "mentors": ["Joshua Goldberg", "Rob Ramirez"]
     },
     {
         "name": "WildWeb",

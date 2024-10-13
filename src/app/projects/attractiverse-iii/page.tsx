@@ -4,7 +4,7 @@ import {
 } from "../../../components/projectInfoSection";
 // import Image from "next/image";
 import TitleLine from "../../../components/TitleLine";
-// import ImageWithCaption from "@/components/ImageWithCaption";
+import ImageWithCaption from "@/components/ImageWithCaption";
 import BackToTop from "@/components/BackToTop";
 import Slideshow from "@/components/Slideshow";
 import Link from "next/link";
@@ -12,7 +12,7 @@ import { FaLink } from "react-icons/fa";
 
 const projectName = "Attractiverse-III";
 
-const imageSources = [
+const visualImgs = [
   {
     image: "/imgs/attractiverse-iii/Screenshot (5).png",
     description: "",
@@ -75,6 +75,12 @@ const imageSources = [
   },
 ];
 
+const interactionImgs = [
+  {image:"/imgs/attractiverse-iii/IMG_1405.jpg", description:""},
+  {image:"/imgs/attractiverse-iii/IMG_1476.jpg", description:""},
+  {image:"/imgs/attractiverse-iii/IMG_1485.jpg", description:""},
+]
+
 export default function Main() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 min-h-screen m-4">
@@ -105,7 +111,52 @@ export default function Main() {
             className="absolute top-0 left-0 w-full h-full"
           ></iframe>
         </div>
-        <Slideshow slides={imageSources} />
+        <section>
+          <h3>Visuals</h3>
+          <p>
+            The visuals are inspired by attractors. In dynamic systems
+            mathematics, an attractor is a set of states toward which a system
+            tends to evolve for a wide variety of starting conditions. Given a
+            set of randomly positioned particles within a 3D space and an
+            equation set defining the displacement of each particle per unit
+            time, we shall see a stable 3D shape gradually evolving from the
+            initial randomness as time progresses.
+          </p>
+          <p>
+            I found a series of attractors on{" "}
+            <span>
+              <a
+                href="http://www.3d-meier.de/tut19/Seite0.html"
+                target="_blank"
+                className="text-secondary hover:text-tag"
+              >
+                Jürgen Meier&apos;s website
+              </a>
+            </span>
+            . Based on the attractor formulas, I coded several attractor systems
+            in Max MSP and stylized them with colors and illuminations.{" "}
+          </p>
+          <Slideshow slides={visualImgs} />
+        </section>
+        <section>
+          <h3>Interaction Design</h3>
+          <p>
+            I programmed my MIDI controller to provide control over the particle
+            mesh.
+          </p>
+          <ImageWithCaption
+            src="/imgs/attractiverse-iii/Attractiverse-III MIDI Instruction.png"
+            alt="Schematic diagram of MIDI controller functions."
+            caption=""
+          />
+        </section>
+        <section>
+          <h3>Setting Up the Scene</h3>
+          <p>The exhibition was in an old 19th century private house on Governors Island, New York. The house used to belong to a General&apos;s family during the American Civil War.</p>
+          <p>To fit into the scene, I wanted to set up a comfortable environment where people feel immersed in the beautiful meditative Attractiverse-III, and take a break from the real world.</p>
+          <p>I chose to place my installation in a closet on the second floor. It was a small semi-private space. Behind the closet door, there is another universe.</p>
+          <Slideshow slides={interactionImgs}/>
+        </section>
       </main>
       <div className="col-span-1 sm:hidden md:block lg:hidden"></div>
       <aside className="col-span-1 md:col-span-3 lg:col-span-1">

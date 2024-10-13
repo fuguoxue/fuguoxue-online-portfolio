@@ -29,6 +29,10 @@ const imageSources = [
     description: "SC-4",
   },
   {
+    image: "/imgs/the-surface-city/SC-20.png",
+    description: "SC-20",
+  },
+  {
     image: "/imgs/the-surface-city/SC-39.png",
     description: "SC-39",
   },
@@ -47,6 +51,10 @@ const imageSources = [
   {
     image: "/imgs/the-surface-city/SC-97.png",
     description: "SC-97",
+  },
+  {
+    image: "/imgs/the-surface-city/SC-unknown.png",
+    description: "SC-?",
   },
 ];
 
@@ -146,6 +154,7 @@ export default function Main() {
             </blockquote>
           </div>
           <Slideshow slides={imageSources} />
+          <ImageWithCaption src="/imgs/the-surface-city/Screenshot 2024-10-13 130301.png" alt="Screenshot of The Surface City project web interface." caption="The Surface City project web interface."/>
         </section>
         <section>
           <h3>Inspiration</h3>

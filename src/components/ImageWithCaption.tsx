@@ -26,15 +26,13 @@ export default function ImageWithCaption({
         <Image
           src={src}
           alt={alt}
-          layout="responsive" /* Maintains aspect ratio */
           width={
             100
           } /* These values represent percentage of the container’s width */
           height={
             75
           } /* Adjust the ratio accordingly or leave auto for responsive height */
-          objectFit="cover" /* Optional: Ensures the image covers the container without distortion */
-          className="w-full h-auto object-contain"
+          className="w-full h-auto object-contain aspect-auto"
         />
       </div>
       {caption && (
