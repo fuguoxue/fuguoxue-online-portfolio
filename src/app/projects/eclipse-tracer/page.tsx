@@ -7,19 +7,19 @@ import TitleLine from "../../../components/TitleLine";
 import BackToTop from "@/components/BackToTop";
 import Slideshow from "@/components/Slideshow";
 
-const projectName = "Eclipse Chaser";
+const projectName = "Eclipse Tracer";
 const imgs = [
-  { image: "/imgs/eclipse-chaser/Screenshot 2024-03-18 234327.png", description: "" },
-  { image: "/imgs/eclipse-chaser/Screenshot 2024-03-18 234353.png", description: "" },
-  { image: "/imgs/eclipse-chaser/Screenshot 2024-03-18 234527.png", description: "" },
-  { image: "/imgs/eclipse-chaser/Screenshot 2024-03-18 234619.png", description: "" },
-  { image: "/imgs/eclipse-chaser/Screenshot 2024-03-18 234644.png", description: "" },
-  { image: "/imgs/eclipse-chaser/Screenshot 2024-03-18 234707.png", description: "" },
-  { image: "/imgs/eclipse-chaser/Screenshot 2024-03-18 234730.png", description: "" },
-  { image: "/imgs/eclipse-chaser/Screenshot 2024-03-18 234753.png", description: "" },
-  { image: "/imgs/eclipse-chaser/Screenshot 2024-03-18 234833.png", description: "" },
-  { image: "/imgs/eclipse-chaser/Screenshot 2024-03-18 235000.png", description: "" },
-  { image: "/imgs/eclipse-chaser/Screenshot 2024-03-18 235021.png", description: "" },
+  { image: "/imgs/eclipse-tracer/Screenshot 2024-03-18 234327.png", description: "" },
+  { image: "/imgs/eclipse-tracer/Screenshot 2024-03-18 234353.png", description: "" },
+  { image: "/imgs/eclipse-tracer/Screenshot 2024-03-18 234527.png", description: "" },
+  { image: "/imgs/eclipse-tracer/Screenshot 2024-03-18 234619.png", description: "" },
+  { image: "/imgs/eclipse-tracer/Screenshot 2024-03-18 234644.png", description: "" },
+  { image: "/imgs/eclipse-tracer/Screenshot 2024-03-18 234707.png", description: "" },
+  { image: "/imgs/eclipse-tracer/Screenshot 2024-03-18 234730.png", description: "" },
+  { image: "/imgs/eclipse-tracer/Screenshot 2024-03-18 234753.png", description: "" },
+  { image: "/imgs/eclipse-tracer/Screenshot 2024-03-18 234833.png", description: "" },
+  { image: "/imgs/eclipse-tracer/Screenshot 2024-03-18 235000.png", description: "" },
+  { image: "/imgs/eclipse-tracer/Screenshot 2024-03-18 235021.png", description: "" },
 ];
 
 export default function Main() {
@@ -37,7 +37,7 @@ export default function Main() {
             width="full"
             height="auto"
             src="https://www.youtube.com/embed/nXr15_67Gpo?si=IhUSmGMsyatRb5qT"
-            title="Eclipse Chaser Screen recording on YouTube"
+            title="Eclipse Tracer Screen recording on YouTube"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen

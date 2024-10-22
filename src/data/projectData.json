@@ -77,12 +77,12 @@
         "mentors": ["Wesley Tan Chee Wah", "Wonkeun Chang"]
     }, 
     {
-        "name": "Eclipse Chaser",
+        "name": "Eclipse Tracer",
         "tags": ["Game", "Storytelling"],
         "year": "2024",
         "imgURL": "/imgs/eclipse-chase-cover.png",
         "hidden": false,
-        "description": "Eclipse Chaser is a 3D game about the Solar Eclipse that happened in April 2024, which is a collaboration of Ziye Zhang, Zhuoyuan Li, Shiqi Wang, and Fuguo Xue.\nThis project was built during a 2-day game jam supported by The National Esports Association, Epic Games, and NASA.",
+        "description": "Eclipse Tracer is a 3D game about the Solar Eclipse that happened in April 2024, which is a collaboration of Ziye Zhang, Zhuoyuan Li, Shiqi Wang, and Fuguo Xue.\nThis project was built during a 2-day game jam supported by The National Esports Association, Epic Games, and NASA.",
         "time": "2 days",
         "media": "3D game built with Unreal Engine for Fortnite.",
         "mentors": []
