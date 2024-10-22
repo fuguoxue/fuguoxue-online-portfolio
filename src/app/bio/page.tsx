@@ -308,7 +308,8 @@ export default function Main() {
             Issued by Nanyang Technological University, Singapore.
           </p>
         </section>
-        <div className="sm:block md:block lg:hidden">
+        <div className="col-span-1 sm:hidden md:block lg:hidden"></div>
+        <div className="col-span-1 md:col-span-3 lg:col-span-1">
           <BackToTop />
         </div>
       </main>

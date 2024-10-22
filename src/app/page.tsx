@@ -35,14 +35,38 @@ export default function Home() {
             {/* Bio Section */}
             <P5ShadowController />
             <p className="leading-relaxed mb-4 text-left">
-              Fuguo Xue is a media artist and frontend developer specializing in interactive installations and creative technologies. Her work blends AI, creative coding, and experience design, and was featured at Ars Electronica Festival and more.
+              Fuguo Xue is a media artist and frontend developer specializing in
+              interactive installations and creative technologies. Her work
+              blends AI, creative coding, and experience design, and was
+              featured at Ars Electronica Festival and more.
             </p>
-            <Link href="/bio" className="group inline-flex items-center text-tag transition-all duration-300 transform hover:scale-105 text-lg">
-              <span className="transition-all group-hover:underline">Bio</span>
-              <span className="transition-all transform group-hover:scale-105">
-                &nbsp;&#8594;
-              </span>
-            </Link>
+            <div>
+              <Link
+                href="/bio"
+                className="group inline-flex items-center text-tag transition-all duration-300 transform hover:scale-105 text-lg"
+              >
+                <span className="transition-all group-hover:underline">
+                  Bio
+                </span>
+                <span className="transition-all transform group-hover:scale-105">
+                  &nbsp;&#8594;
+                </span>
+              </Link>
+            </div>
+
+            <div>
+              <Link
+                href="/essays"
+                className="group inline-flex items-center text-tag transition-all duration-300 transform hover:scale-105 text-lg"
+              >
+                <span className="transition-all group-hover:underline">
+                  Essays
+                </span>
+                <span className="transition-all transform group-hover:scale-105">
+                  &nbsp;&#8594;
+                </span>
+              </Link>
+            </div>
 
             {/* Tag Filter */}
             <div className="my-10 lg:flex lg:flex-col space-y-2 justify-center">
