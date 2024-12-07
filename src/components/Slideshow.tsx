@@ -14,10 +14,11 @@ import "swiper/css/thumbs";
 import "@/styles/slideshow.css";
 
 interface SlideshowProps {
-  slides: { image: string; description: string }[]; // Array of image objects with description
+  slides: { image: string; description: string }[];
+  autoplay?: boolean;
 }
 
-export default function Slideshow({ slides }: SlideshowProps) {
+export default function Slideshow({ slides, autoplay = true }: SlideshowProps) {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
 
@@ -25,14 +26,14 @@ export default function Slideshow({ slides }: SlideshowProps) {
     <div className="swiper-container justify-center my-8 z-0">
       {/* Main Swiper with Images */}
       <Swiper
-        modules={[FreeMode, Navigation, Pagination, Thumbs, Autoplay]}
+        modules={[FreeMode, Navigation, Pagination, Thumbs, ...(autoplay ? [Autoplay] : [])]}
         navigation
         pagination={{ clickable: true }}
         thumbs={{ swiper: thumbsSwiper }}
         spaceBetween={50}
         slidesPerView={1}
         loop={true}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={autoplay ? { delay: 3000, disableOnInteraction: autoplay } : undefined}
         className="main-swiper mb-4"
         onInit={(swiper) => setSwiperInstance(swiper)}
       >

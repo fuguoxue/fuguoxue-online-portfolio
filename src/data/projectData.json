@@ -66,6 +66,17 @@
         "mentors": ["Ina Conradi", "Louis-Philippe Demers", "Chua Hock Chuan"]
     },
     {
+        "name": "NYC Subway Navigation",
+        "tags": ["UX Design"],
+        "year": "2023",
+        "imgURL": "/imgs/nyc-subway-navigation-cover.png",
+        "hidden": false,
+        "description": "NYC Subway Navigation is a UX Design Research Project aiming at improving the subway navigation experience of NYC subway users. Developed by our team of four, the final intervention focuses on improving the in-station signage of NYC subways.\nWe first did a brainstorming session to create a mess map about subway navigation. Then, we conducted secondary research to determine the scope of our intervention and updated our mess map based on knowledge from secondary research. Next, we conducted primary research including transect tours and interviews to gain deeper insights into our stakeholders. Finally, we ideated and prototyped a new NYC subway in-station signage index system, gathered feedback from A/B testing, and did one iteration over our intervention.\nThis project was done by Cassandra Mao, Chenyi Wang, Fuguo Xue, and Hanwen Gu.",
+        "time": "7 weeks",
+        "media": "UX design in Figma, with A/B testing and an interation.",
+        "mentors": ["Alex Nathanson"]
+    },
+    {
         "name": "Earthlings",
         "tags": ["Game", "Storytelling"],
         "year": "2022",

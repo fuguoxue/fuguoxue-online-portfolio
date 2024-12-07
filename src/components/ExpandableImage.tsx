@@ -45,15 +45,25 @@ export default function ExpandableImage({
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
           onClick={handleOutsideClick}
         >
-          <div className="relative">
+          {/* Close button */}
+          <button
+            onClick={closeModal}
+            className="absolute top-4 right-4 text-white bg-transparent border-none text-6xl cursor-pointer"
+            aria-label="Close"
+          >
+            &times;
+          </button>
+          {/* Scrollable content container */}
+          <div className="relative flex flex-col items-center justify-center max-h-screen overflow-auto p-2">
             {/* Expanded image */}
             <Image
               src={src}
               alt={alt}
-              className="w-auto h-auto max-w-full max-h-full object-contain"
+              className="w-auto h-auto max-w-full max-h-[90vh] object-contain"
               width={800}
               height={600}
             />
+            {/* Caption */}
             <p className="text-white mt-4 text-center">{description}</p>
           </div>
         </div>
