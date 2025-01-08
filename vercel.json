@@ -1,0 +1,11 @@
+{
+    "headers": [
+      {
+        "source": "/unity-build/:all*",
+        "headers": [
+          { "key": "Content-Type", "value": "application/wasm" }
+        ]
+      }
+    ]
+  }
+  
