@@ -1,4 +1,5 @@
-// import ExpandableImage from "@/components/ExpandableImage";
+'use client'; 
+import { useEffect, useState } from "react";
 import {
   ProjectInfoSection,
   ProjectSwitch,
@@ -11,11 +12,16 @@ import Image from "next/image";
 const playtestingPhotos = [
   "/imgs/hearing-the-forest/Weixin Image_20241215143419.jpg",
   "/imgs/hearing-the-forest/Weixin Image_20241215143428.jpg",
-  "/imgs/hearing-the-forest/Weixin Image_20241215143446.jpg"
+  "/imgs/hearing-the-forest/Weixin Image_20241215143446.jpg",
 ];
 const projectName = "Hearing the Forest";
 
 export default function Main() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true); // Ensures iframe is rendered only on the client
+  }, []);
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 min-h-screen m-4">
       <div className="col-span-1 md:col-span-4 lg:col-span-5">
@@ -33,12 +39,13 @@ export default function Main() {
             height: "70vh",
             backgroundColor: "#000",
           }}
+           className="w-full aspect-[3/2]"
         >
-          <iframe
-            src="/unity-build/index.html"
-            style={{ width: "100%", height: "100%", border: "none" }}
-            allow="fullscreen"
-          ></iframe>
+          {/* Conditionally render the iframe on the client */}
+          {isClient && (
+            <iframe src="https://itch.io/embed-upload/12446200?color=333333" allowFullScreen
+            className="w-full h-full border-none"><a href="https://oursblancitalien.itch.io/hearing-the-forest">Play Hearing the Forest on itch.io</a></iframe>
+          )}
         </div>
         <b>How to play:</b>
         <ol className="list-decimal ml-4">
@@ -121,7 +128,9 @@ export default function Main() {
               <div key={index} className="w-full h-auto">
                 <Image
                   src={imgSrc}
-                  alt={`Photo ${index + 1} from Hearing the Forest project playtesting.`}
+                  alt={`Photo ${
+                    index + 1
+                  } from Hearing the Forest project playtesting.`}
                   height={800}
                   width={800}
                 />
