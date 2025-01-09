@@ -8,6 +8,8 @@ import TitleLine from "../../../components/TitleLine";
 import BackToTop from "@/components/BackToTop";
 import ImageWithCaption from "@/components/ImageWithCaption";
 import Image from "next/image";
+import { FaItchIo } from "react-icons/fa";
+import Link from "next/link";
 // Array of image paths
 const playtestingPhotos = [
   "/imgs/hearing-the-forest/Weixin Image_20241215143419.jpg",
@@ -29,6 +31,14 @@ export default function Main() {
       </div>
       <aside className="col-span-1">
         <ProjectInfoSection projectName={projectName} />
+        <Link
+          href="https://oursblancitalien.itch.io/hearing-the-forest"
+          className="external-link supplementary"
+          target="_blank"
+        >
+          <FaItchIo className="external-link-icon" />
+          Play Hearing the Forest on itch.io
+        </Link>
       </aside>
       <main className="col-span-1 md:col-span-3 p-4 mb-8">
         <div
