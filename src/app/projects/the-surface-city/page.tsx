@@ -84,7 +84,15 @@ export default function Main() {
         </Link>
       </aside>
       <main className="col-span-1 md:col-span-3 p-4 mb-8">
-      <div className="relative w-full pb-[56.25%] mb-4">
+        <h3>Project Showcase</h3>
+        <div className="w-full h-screen mb-4">
+          <iframe
+            src="https://fuguoxue-nyu.github.io/surface-city/"
+            className="w-full h-full border-0"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <div className="relative w-full pb-[56.25%] mb-4">
           <iframe
             width="full"
             height="auto"
@@ -154,7 +162,11 @@ export default function Main() {
             </blockquote>
           </div>
           <Slideshow slides={imageSources} />
-          <ImageWithCaption src="/imgs/the-surface-city/Screenshot 2024-10-13 130301.png" alt="Screenshot of The Surface City project web interface." caption="The Surface City project web interface."/>
+          <ImageWithCaption
+            src="/imgs/the-surface-city/Screenshot 2024-10-13 130301.png"
+            alt="Screenshot of The Surface City project web interface."
+            caption="The Surface City project web interface."
+          />
         </section>
         <section>
           <h3>Inspiration</h3>

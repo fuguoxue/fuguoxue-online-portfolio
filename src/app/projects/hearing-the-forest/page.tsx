@@ -41,6 +41,7 @@ export default function Main() {
         </Link>
       </aside>
       <main className="col-span-1 md:col-span-3 p-4 mb-8">
+        <h3>Project Showcase</h3>
         <div
           style={{
             display: "flex",
@@ -60,8 +61,8 @@ export default function Main() {
         <b>How to play:</b>
         <ol className="list-decimal ml-4">
           <li>Find an NPC in game.</li>
-          <li>Press &quot;E&quot; to interact with an NPC.</li>
-          <li>Left-click on a seed in seed repository obtained from NPCs.</li>
+          <li>Press &quot;E&quot; to interact with the NPC.</li>
+          <li>Left-click on a seed in seed repository obtained from the NPC.</li>
           <li>Face any direction and press &quot;T&quot; to plant a tree.</li>
         </ol>
         <section>
@@ -126,7 +127,7 @@ export default function Main() {
           adding a new channel, etc. This way, the audio is generated real-time
           together with the tree growth.
         </p>
-        <h4>Playtesting</h4>
+        <h4>Playtesting Documnetation</h4>
         <ImageWithCaption
           src="/imgs/hearing-the-forest/Hearing the Forest Poster.png"
           alt="Playtesting session poster."
