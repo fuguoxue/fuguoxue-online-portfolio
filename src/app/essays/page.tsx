@@ -21,6 +21,17 @@ export default function Main() {
 
             {/* Year and title should be in the same line on lg screens */}
             <div className="col-span-1 md:col-span-3 grid grid-cols-5 gap-4">
+              <p className="col-span-1 mb-4">2024</p>
+              <Link
+                href=""
+                className="text-tag hover:underline col-span-1 lg:col-span-3 mb-4"
+                target="_blank"
+              >
+                Open-Source Ecosystem and Internet Art in the Post-AI Age
+              </Link>
+            </div>
+
+            <div className="col-span-1 md:col-span-3 grid grid-cols-5 gap-4">
               <p className="col-span-1 mb-4">2023</p>
               <Link
                 href="https://dr.ntu.edu.sg/handle/10356/167573"
@@ -43,8 +54,7 @@ export default function Main() {
                 className="text-tag hover:underline col-span-1 lg:col-span-3 mb-4"
                 target="_blank"
               >
-                Functions of Fantasy: An Analysis of{" "}
-                <i>VA-11 Hall-A: Cyberpunk Bartender Action</i>
+                Functions of Fantasy: An Analysis of<i>VA-11 Hall-A: Cyberpunk Bartender Action</i>
               </Link>
             </div>
 
