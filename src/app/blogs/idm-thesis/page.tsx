@@ -1,7 +1,7 @@
 "use client";
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
-import blogData from "@/data/blogs.json"; // Import your Blogs data
+import blogData from "@/data/blogs.json"; // Import Blogs data
 import TitleLine from "@/components/TitleLine";
 import BackToTop from "@/components/BackToTop";
 import blogIDName from "@/data/blog-series.json";
@@ -11,7 +11,9 @@ const blogSeriesName = blogIDName[0][blogTag];
 
 export default function Home() {
   // Filter the Blogs based on selected tag
-  const filteredBlogs = blogData.filter((blogs) => (blogs.tag === blogTag) && (blogs.posted));
+  const filteredBlogs = blogData.filter(
+    (blogs) => blogs.tag === blogTag && blogs.posted
+  );
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 min-h-screen m-4">
@@ -35,11 +37,24 @@ export default function Home() {
             >
               <Link
                 href={`/blogs/${blogTag}/${blog.id}`}
-                className="w-full rounded-lg transition-all duration-300 ease-in-out bg-transparent group-hover:bg-gray-300 group-hover:bg-opacity-50 group-hover:backdrop-blur-md p-4"
+                className="w-full rounded-lg transition-all duration-300 ease-in-out bg-transparent group-hover:bg-black group-hover:bg-opacity-20 group-hover:backdrop-blur-md p-4 grid grid-cols-1 md:grid-cols-2 gap-4"
               >
-                <h3>{blog.title}</h3>
-                <p className="text-date">{blog.date}</p>
-                <p>{blog.description}</p>
+                <div className="col-span-1">
+                  <h3>{blog.title}</h3>
+                  <p className="text-date">{blog.date}</p>
+                  <p>{blog.description}</p>
+                </div>
+                <div className="col-span-1 relative w-full">
+                  <Image
+                    src={blog.featureImgURL}
+                    alt="Feature image."
+                    layout="responsive"
+                    objectFit="cover"
+                    width={400}
+                    height={400}
+                    className="drop-shadow-md"
+                  />
+                </div>
               </Link>
             </div>
           ))}

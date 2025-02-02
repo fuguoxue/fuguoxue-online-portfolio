@@ -1,24 +1,26 @@
-// Structure: metadata, blog content
 import TitleLine from "@/components/TitleLine";
 import BackToTop from "@/components/BackToTop";
 import Link from "next/link";
 import blogData from "@/data/blogs.json";
-import blogIDNameJSON from "@/data/blog-series.json";
+import blogTagToSeriesNameJSON from "@/data/blog-series.json";
 import path from "path";
 import { fileURLToPath } from "url";
+import ExpandableImage from "@/components/ExpandableImage";
+import Image from "next/image";
 
 // Define types
-type BlogIDNameType = { [key: string]: string };
+type BlogTagToSeriesNameType = { [key: string]: string };
 type BlogPostType = {
   title: string;
   id: string;
   date: string;
   tag: string;
   description: string;
+  featureImgURL: string;
 };
 
-// Parse blogIDName from JSON
-const blogIDName: BlogIDNameType = blogIDNameJSON[0];
+// Parse blogTagToSeriesName from JSON
+const blogTagToSeriesName: BlogTagToSeriesNameType = blogTagToSeriesNameJSON[0];
 
 // Resolve file path
 const __filename = fileURLToPath(import.meta.url);
@@ -40,7 +42,7 @@ if (!selectedBlog) {
 }
 
 // Find the blog series title
-const selectedBlogSeries = blogIDName[selectedBlog.tag];
+const selectedBlogSeries = blogTagToSeriesName[selectedBlog.tag];
 
 export default function Main() {
   return (
@@ -72,6 +74,7 @@ export default function Main() {
           >
             Link to week 1 presentation
           </Link>
+
           {/* blog content */}
           {/* project idea */}
           <div>
@@ -92,6 +95,13 @@ export default function Main() {
               that shape its sustainability and evolution.
             </p>
             <h4>Game Design</h4>
+            <div className="w-3/4 mx-auto items-center">
+              <ExpandableImage
+                src={selectedBlog!.featureImgURL}
+                alt="Diagram of the incremental gameplay design."
+                description="Diagram of the incremental gameplay design."
+              />
+            </div>
             <p>
               To immerse the player in the the open-source ecosystem evolution,
               they will take on the role of a code contributor, actively shaping
@@ -117,8 +127,16 @@ export default function Main() {
                   Stage 2.
                 </p>
               </div>
-              <div className="col-span-1">
-                <p>[Insert img1]</p>
+              <div className="col-span-1 justify-start">
+                <Image
+                  src="/imgs/blogs/idm-thesis/wk1-stage-1.jpg"
+                  alt="Gameplay stage 1."
+                  layout="responsive"
+                  objectFit="cover"
+                  width={400}
+                  height={400}
+                  className="drop-shadow-md"
+                />
               </div>
               {/* Stage 2 */}
               <div className="col-span-1">
@@ -140,7 +158,15 @@ export default function Main() {
                 </p>
               </div>
               <div className="col-span-1">
-                <p>[Insert img2]</p>
+                <Image
+                  src="/imgs/blogs/idm-thesis/wk1-stage-2.jpg"
+                  alt="Gameplay stage 2."
+                  layout="responsive"
+                  objectFit="cover"
+                  width={400}
+                  height={400}
+                  className="drop-shadow-md"
+                />
               </div>
               {/* Stage 3 */}
               <div className="col-span-1">
@@ -157,7 +183,15 @@ export default function Main() {
                 </p>
               </div>
               <div className="col-span-1">
-                <p>[Insert img3]</p>
+                <Image
+                  src="/imgs/blogs/idm-thesis/wk1-stage-3.jpg"
+                  alt="Gameplay stage 3."
+                  layout="responsive"
+                  objectFit="cover"
+                  width={400}
+                  height={400}
+                  className="drop-shadow-md"
+                />
               </div>
             </div>
             <p>
