@@ -62,9 +62,7 @@ export default function Main() {
               {selectedBlogSeries}
             </Link>
           </p>
-          <p>
-            {selectedBlog?.description}
-          </p>
+          <p>{selectedBlog?.description}</p>
           <Link
             href="https://www.canva.com/design/DAGdTxiqvJY/Cr_3iyv3vIcjKj2kVApNBQ/edit?utm_content=DAGdTxiqvJY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
             className="text-tag hover:underline col-span-1 lg:col-span-3 mb-4"
@@ -93,22 +91,44 @@ export default function Main() {
           {/* project idea */}
           <div>
             <h3>Project Idea</h3>
+            <h4>Concept</h4>
             <p>
-              I aim to develop an incremental game designed for those interested
-              in understanding the open-source ecosystem and speculating on its
-              future. The game will simulate the evolution of open-source
-              development, tracing its growth from decentralized individual
-              contributions to structured organizations. It will also explore
-              the impact of incidental events, such as the emergence of
-              generative AI, on this process.
+              The aim of the incremental game is to introduce the evolution
+              process of the open-source ecosystem from decentralized individual
+              contributors to a structured organization, and imagine how
+              incidental events like GenAI emergence will affect this process.
             </p>
             <p>
-              Through this interactive experience, I want players to recognize
-              the indispensable role and unique value of the open-source
-              ecosystem while engaging with the challenges and opportunities
-              that shape its sustainability and evolution.
+              The game is designed for people who want to learn about the
+              open-source ecosystem and speculate about its future. By
+              developing this game, I want the audience to feel the
+              indispensable and unique values of the open-source ecosystem, as
+              well as the challenges and opportunities facing it.
             </p>
-            <h4>Game Design</h4>
+            <h4>Game Narrative</h4>
+            <p>
+              The game will be a single-player incremental game. In this game,
+              the player gradually evolves from a programmer to an open-source
+              organization founder. There are four major events in the game: 1)
+              emergence of the Internet, 2) tech companies oppose open-source
+              concept, 3) tech industry accepts open-source, and 4) emergence of
+              GenAI. There will be a series of sub-events for each major event,
+              and the tasks for players at each stage are 1) creating
+              open-source tools and 2) optimizing personal influence, speed of
+              value generation, and/or investment.{" "}
+            </p>
+            <p>
+              I have included a table of game narrative with more details in the{" "}
+              <Link
+                href="https://docs.google.com/document/d/1A5UT7ys3OtFN0Olz70PnBf7Y2urC8QQnDGpZhMqb1tA/edit?usp=sharing"
+                className="text-tag hover:underline col-span-1 lg:col-span-3 mb-4"
+                target="_blank"
+              >
+                Game Design Document
+              </Link>
+              .
+            </p>
+            <h4>Game Structure</h4>
             <div className="w-3/4 mx-auto items-center">
               <ExpandableImage
                 src={selectedBlog!.featureImgURL}
@@ -230,9 +250,24 @@ export default function Main() {
           </div>
           {/* project plan */}
           <div>
-            <h3>Project Plan</h3>
+            <h3>Project Plans</h3>
+            <ul className="list-disc ml-4">
+              <li>
+                <b>Plan A: </b>finish developing the game with complete
+                storytelling, progression logic, AI integration, game art and
+                UI, badge system, and store system.
+              </li>
+              <li>
+                <b>Plan B: </b>if time is limited, leave out the badge system
+                and store system, and use royalty-free game assets by others.
+              </li>
+              <li>
+                <b>Plan C: </b>at the very least, finish the game narrative and
+                progression logic with minimal UI.
+              </li>
+            </ul>
             <p>
-              Please refer to:{" "}
+              Weekly project plan:{" "}
               <Link
                 href="https://docs.google.com/document/d/1W-Nvq5Ca8MHERcHwgMNmDSjuzYNOpOR2UxgkgE35p8k/edit?usp=sharing"
                 className="text-tag hover:underline col-span-1 lg:col-span-3 mb-4"
