@@ -63,16 +63,30 @@ export default function Main() {
             </Link>
           </p>
           <p>
-            This week, I presented my idea in class, built the project website,
-            and fleshed out my idea into an incremental game with a more
-            detailed storytelling, target players, and project plan.
+            {selectedBlog?.description}
           </p>
           <Link
             href="https://www.canva.com/design/DAGdTxiqvJY/Cr_3iyv3vIcjKj2kVApNBQ/edit?utm_content=DAGdTxiqvJY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
             className="text-tag hover:underline col-span-1 lg:col-span-3 mb-4"
             target="_blank"
           >
-            Link to week 1 presentation
+            Link to Week 1 Presentation
+          </Link>
+          <br />
+          <Link
+            href="https://docs.google.com/document/d/1A5UT7ys3OtFN0Olz70PnBf7Y2urC8QQnDGpZhMqb1tA/edit?usp=sharing"
+            className="text-tag hover:underline col-span-1 lg:col-span-3 mb-4"
+            target="_blank"
+          >
+            Link to Game Design Document (work in progress)
+          </Link>
+          <br />
+          <Link
+            href="https://docs.google.com/document/d/1W-Nvq5Ca8MHERcHwgMNmDSjuzYNOpOR2UxgkgE35p8k/edit?usp=sharing"
+            className="text-tag hover:underline col-span-1 lg:col-span-3 mb-4"
+            target="_blank"
+          >
+            Link to Project Plan
           </Link>
 
           {/* blog content */}
@@ -202,10 +216,31 @@ export default function Main() {
               challenges or opportunities brought by the events, and the choices
               will affect the system&apos;s evolvement.
             </p>
+            <p>
+              More details are included in the{" "}
+              <Link
+                href="https://docs.google.com/document/d/1A5UT7ys3OtFN0Olz70PnBf7Y2urC8QQnDGpZhMqb1tA/edit?usp=sharing"
+                className="text-tag hover:underline col-span-1 lg:col-span-3 mb-4"
+                target="_blank"
+              >
+                Game Design Document
+              </Link>
+              .
+            </p>
           </div>
           {/* project plan */}
           <div>
             <h3>Project Plan</h3>
+            <p>
+              Please refer to:{" "}
+              <Link
+                href="https://docs.google.com/document/d/1W-Nvq5Ca8MHERcHwgMNmDSjuzYNOpOR2UxgkgE35p8k/edit?usp=sharing"
+                className="text-tag hover:underline col-span-1 lg:col-span-3 mb-4"
+                target="_blank"
+              >
+                Project Plan
+              </Link>
+            </p>
           </div>
         </div>
         <div className="col-span-1 md:col-span-3 lg:col-span-1">
