@@ -1,5 +1,14 @@
 [
     {
+        "title": "Week 2",
+        "id": "wk2",
+        "date": "Feb 10, 2025",
+        "tag": "idm-thesis",
+        "posted": true,
+        "description": "This week, I designed my prelimilary prototype in storyboard form in Figma, formed a moodboard, and iterated the prototype UI based on suggestions from my friends and ChatGPT.",
+        "featureImgURL": "/imgs/blogs/idm-thesis/wk2/AI_1.png"
+    },
+    {
         "title": "Week 1",
         "id": "wk1",
         "date": "Jan 31, 2025",
