@@ -26,6 +26,19 @@ export default function Home() {
             <b>Blog Series: </b>
           </h2>
           <h2>{blogSeriesName}</h2>
+          <div>
+            <Link
+              href="/blogs"
+              className="group inline-flex items-center text-tag transition-all duration-300 transform hover:scale-105 text-lg"
+            >
+            <span className="transition-all transform group-hover:scale-105">
+              &#8592;&nbsp;
+            </span>
+              <span className="transition-all group-hover:underline">
+              All blogs
+              </span>
+            </Link>
+          </div>
         </div>
       </aside>
       <main className="col-span-1 md:col-span-3 p-4 mb-8">
@@ -37,7 +50,7 @@ export default function Home() {
             >
               <Link
                 href={`/blogs/${blogTag}/${blog.id}`}
-                className="w-full rounded-lg transition-all duration-300 ease-in-out bg-transparent group-hover:bg-black group-hover:bg-opacity-20 group-hover:backdrop-blur-md p-4 grid grid-cols-1 md:grid-cols-2 gap-4"
+                className="w-full transition-all duration-300 ease-in-out bg-transparent group-hover:bg-black group-hover:bg-opacity-20 group-hover:backdrop-blur-md p-4 grid grid-cols-1 md:grid-cols-2 gap-4"
               >
                 <div className="col-span-1">
                   <h3>{blog.title}</h3>

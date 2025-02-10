@@ -68,6 +68,20 @@ export default function Home() {
               </Link>
             </div>
 
+            <div>
+              <Link
+                href="/blogs"
+                className="group inline-flex items-center text-tag transition-all duration-300 transform hover:scale-105 text-lg"
+              >
+                <span className="transition-all group-hover:underline">
+                  Blogs
+                </span>
+                <span className="transition-all transform group-hover:scale-105">
+                  &nbsp;&#8594;
+                </span>
+              </Link>
+            </div>
+
             {/* Tag Filter */}
             <div className="my-10 lg:flex lg:flex-col space-y-2 justify-center">
               {allTags.map((tag) => (
