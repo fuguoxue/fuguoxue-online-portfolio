@@ -1,6 +1,14 @@
 [
     {
-        "title": "Week 2",
+        "title": "Week 3: Starting Game Development",
+        "id": "wk3",
+        "date": "Feb 18, 2025",
+        "tag": "idm-thesis",
+        "posted": true,
+        "description": "This week, I updated my game UI based on feedback from my friends, classmates, and professors. After UI modifications, I learned the basics of numerical planning and planned the progression of variables based on the game storyline. Then, I started game development using Next.js framework and deployed it on the Vercel platform.",
+        "featureImgURL": "/imgs/blogs/idm-thesis/wk3/wk3-featureImg.gif"
+    },{
+        "title": "Week 2: Preliminary Prototype",
         "id": "wk2",
         "date": "Feb 10, 2025",
         "tag": "idm-thesis",
@@ -9,7 +17,7 @@
         "featureImgURL": "/imgs/blogs/idm-thesis/wk2/AI_1.png"
     },
     {
-        "title": "Week 1",
+        "title": "Week 1: Ideation",
         "id": "wk1",
         "date": "Jan 31, 2025",
         "tag": "idm-thesis",
