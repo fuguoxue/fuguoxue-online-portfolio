@@ -1,5 +1,13 @@
 [
     {
+        "title": "Week 4: Media Theory Reading, and Game UI Update",
+        "id": "wk4",
+        "date": "Feb 24, 2025",
+        "tag": "idm-thesis",
+        "posted": true,
+        "description": "This week, I read a book and several online articles about the open-source philosophy and the history of user interface, which inspired me a lot on my game logic design and UI design. With these inspirations, I updated my game logic and UI and started to refine my game story.",
+        "featureImgURL": "/imgs/blogs/idm-thesis/wk4/wk4-featureImg.gif"
+    },{
         "title": "Week 3: Starting Game Development",
         "id": "wk3",
         "date": "Feb 18, 2025",
