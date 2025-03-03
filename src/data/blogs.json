@@ -1,5 +1,13 @@
 [
     {
+        "title": "Week 5: Revised Game Design, and Storyline Update",
+        "id": "wk5",
+        "date": "Mar 2, 2025",
+        "tag": "idm-thesis",
+        "posted": true,
+        "description": "After this week's science fair demo and following discussions with professors and classmates, I revised my game design and created a storyline in flowchart form. I also did more research on the milestones of the Internet history and open-source history, and did a case study on the funding mode, operation mode, and governance mode of several successful open-source projects.",
+        "featureImgURL": "/imgs/blogs/idm-thesis/wk5/wk5-wireframe.jpg"
+    },{
         "title": "Week 4: Media Theory Reading, and Game UI Update",
         "id": "wk4",
         "date": "Feb 24, 2025",

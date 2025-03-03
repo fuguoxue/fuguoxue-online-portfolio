@@ -124,6 +124,10 @@ button {
   @apply text-sm text-caption hover:text-tag transition flex mb-2 align-middle;
 }
 
+.external-link-for-blog {
+  @apply text-tag hover:underline mb-4;
+}
+
 .external-link-icon {
   @apply w-4 h-4 mr-2 align-middle;
 }
