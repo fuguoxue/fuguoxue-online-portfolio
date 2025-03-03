@@ -232,12 +232,27 @@ export default function Main() {
                 </Link>
               </li>
             </ul>
+            <p>A useful report from Tidelift: </p>
+            <ul className="list-disc ml-4">
+              <li>
+                <Link
+                  href="https://4008838.fs1.hubspotusercontent-na1.net/hubfs/4008838/2024-tidelift-state-of-the-open-source-maintainer-report.pdf"
+                  className="external-link-for-blog col-span-1 lg:col-span-3"
+                  target="_blank"
+                >
+                  THE 2024 TIDELIFT STATE OF THE OPEN SOURCE MAINTAINER REPORT
+                </Link>
+              </li>
+            </ul>
           </section>
           {/* Next steps */}
           <section>
             <h3>Next Steps</h3>
             <ul className="list-disc ml-4">
-              <li>Refine storyboard: clarify protagonist&apos;s emotion arc, and think about what historical events and details to include.</li>
+              <li>
+                Refine storyboard: clarify protagonist&apos;s emotion arc, and
+                think about what historical events and details to include.
+              </li>
               <li>Build the Act 2 before Mid-term demo.</li>
             </ul>
           </section>
