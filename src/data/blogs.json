@@ -1,5 +1,13 @@
 [
     {
+        "title": "Week 6: Game Refactoring and Naming, UI Design, Midterm Demo, and more Readings",
+        "id": "wk6",
+        "date": "Mar 10, 2025",
+        "tag": "idm-thesis",
+        "posted": true,
+        "description": "Based on my revised game storyboard created last week, I modified my game structure this week, created more UIs for some key moments in the Internet and open-source history, and started working on my midterm demo, which will consist of UI for two eras: 1970s to 1990s, and 1990s to 2000s. I named my game 'Bazaar.log' for its open-source theme and history-based storyline. Lastly, I read more interesting articles during my research and have some interesting observation to share.",
+        "featureImgURL": "/imgs/blogs/idm-thesis/wk6/preInternet.jpg"
+    },{
         "title": "Week 5: Revised Game Design, and Storyline Update",
         "id": "wk5",
         "date": "Mar 2, 2025",
