@@ -17,6 +17,9 @@ const config: Config = {
         caption:"#5A6B95",
         date:"#7a7a7a",
       },
+      listStyleType: {
+        circle: 'circle',
+      },
     },
   },
   plugins: [],
