@@ -4,10 +4,10 @@ import Link from "next/link";
 import blogData from "@/data/blogs.json"; // Import Blogs data
 import TitleLine from "@/components/TitleLine";
 import BackToTop from "@/components/BackToTop";
-import blogIDName from "@/data/blog-series.json";
+import blogSeries from "@/data/blog-series.json";
 
 const blogTag = "idm-thesis";
-const blogSeriesName = blogIDName[0][blogTag];
+const blogSeriesName = blogSeries[(blogSeries.findIndex((item) => item.blogTag == blogTag))].blogName;
 
 export default function Home() {
   // Filter the Blogs based on selected tag

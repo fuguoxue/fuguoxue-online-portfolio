@@ -1,6 +1,12 @@
 [
     {
-        "idm-thesis": "IDM Thesis Project",
-        "media-theory": "Media Theory"
+        "blogTag": "idm-thesis",
+        "blogName": "Bazaar.log (IDM Thesis Project)",
+        "posted": true
+    },
+    {
+        "blogTag": "media-theory",
+        "blogName": "Media Theory",
+        "posted": false
     }
 ]

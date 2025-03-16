@@ -2,7 +2,7 @@ import TitleLine from "@/components/TitleLine";
 import BackToTop from "@/components/BackToTop";
 import Link from "next/link";
 import blogData from "@/data/blogs.json";
-import blogTagToSeriesNameJSON from "@/data/blog-series.json";
+import blogSeries from "@/data/blog-series.json";
 import path from "path";
 import { fileURLToPath } from "url";
 // import ExpandableImage from "@/components/ExpandableImage";
@@ -10,8 +10,7 @@ import { fileURLToPath } from "url";
 // import ImageWithCaption from "@/components/ImageWithCaption";
 import Slideshow from "@/components/Slideshow";
 
-// Define types
-type BlogTagToSeriesNameType = { [key: string]: string };
+// Define type
 type BlogPostType = {
   title: string;
   id: string;
@@ -20,9 +19,6 @@ type BlogPostType = {
   description: string;
   featureImgURL: string;
 };
-
-// Parse blogTagToSeriesName from JSON
-const blogTagToSeriesName: BlogTagToSeriesNameType = blogTagToSeriesNameJSON[0];
 
 // Resolve file path
 const __filename = fileURLToPath(import.meta.url);
@@ -44,7 +40,7 @@ if (!selectedBlog) {
 }
 
 // Find the blog series title
-const selectedBlogSeries = blogTagToSeriesName[selectedBlog.tag];
+const selectedBlogSeries = blogSeries[(blogSeries.findIndex((item) => item.blogTag == tag))].blogName;;
 
 const uiImgs = [
   {
@@ -146,7 +142,7 @@ export default function Main() {
             </Link>
             <br />
             <Link
-              href="https://open-source-galaxy.vercel.app/"
+              href="https://bazaar-log.vercel.app/"
               className="external-link-for-blog col-span-1 lg:col-span-3"
               target="_blank"
             >
@@ -175,7 +171,7 @@ export default function Main() {
             </p>
             <p>I also name my game as &quot;Bazaar.log&quot;. This name comes from the book title, <i>The Cathedral and The Bazaar</i>, in which &quot;Bazaar&quot; refers to open-source environment. The &quot;.log&quot; might remind the viewer of the type of file that records events in a computer. &quot;Bazaar.log&quot;nicely summarizes the theme of my game and its history-based story.</p>
             <Link
-              href="https://open-source-galaxy.vercel.app/"
+              href="https://bazaar-log.vercel.app/"
               className="external-link-for-blog col-span-1 lg:col-span-3"
               target="_blank"
             >

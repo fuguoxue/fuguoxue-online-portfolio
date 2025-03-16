@@ -2,15 +2,16 @@ import TitleLine from "@/components/TitleLine";
 import BackToTop from "@/components/BackToTop";
 import Link from "next/link";
 import blogData from "@/data/blogs.json";
-import blogTagToSeriesNameJSON from "@/data/blog-series.json";
+import blogSeries from "@/data/blog-series.json";
 import path from "path";
 import { fileURLToPath } from "url";
+import ImageWithCaption from "@/components/ImageWithCaption";
 // import ExpandableImage from "@/components/ExpandableImage";
 // import Image from "next/image";
-import ImageWithCaption from "@/components/ImageWithCaption";
+// import ImageWithCaption from "@/components/ImageWithCaption";
+// import Slideshow from "@/components/Slideshow";
 
-// Define types
-type BlogTagToSeriesNameType = { [key: string]: string };
+// Define type
 type BlogPostType = {
   title: string;
   id: string;
@@ -19,9 +20,6 @@ type BlogPostType = {
   description: string;
   featureImgURL: string;
 };
-
-// Parse blogTagToSeriesName from JSON
-const blogTagToSeriesName: BlogTagToSeriesNameType = blogTagToSeriesNameJSON[0];
 
 // Resolve file path
 const __filename = fileURLToPath(import.meta.url);
@@ -43,7 +41,7 @@ if (!selectedBlog) {
 }
 
 // Find the blog series title
-const selectedBlogSeries = blogTagToSeriesName[selectedBlog.tag];
+const selectedBlogSeries = blogSeries[(blogSeries.findIndex((item) => item.blogTag == tag))].blogName;
 
 export default function Main() {
   return (
