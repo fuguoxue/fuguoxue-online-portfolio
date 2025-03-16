@@ -34,9 +34,12 @@ export default function Home() {
           <div className="sticky top-0">
             {/* Bio Section */}
             <P5ShadowController />
+            <p className="text-tag">
+              Product Designer | Front-End Developer | Interactive Media Artist
+            </p>
             <p className="leading-relaxed mb-4 text-left">
-              Fuguo Xue is a media artist and frontend developer specializing in
-              interactive installations and creative technologies. Her work
+              Fuguo Xue is a web developer and creative technologist
+              specializing in front-end and multimedia technologies. Her work
               blends AI, creative coding, and experience design, and was
               featured at Ars Electronica Festival and more.
             </p>
