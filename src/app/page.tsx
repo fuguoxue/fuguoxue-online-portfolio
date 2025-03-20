@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import projectData from "../data/projectData.json"; // Import your project data
 import P5ShadowController from "../components/P5TitleShadow";
 import Footer from "@/components/Footer";
+// import ThreeScene from '@/components/ThreeScene';
 
 export default function Home() {
   const [selectedTag, setSelectedTag] = useState<string>("All Works"); // Explicitly setting the type to 'string'
@@ -28,6 +29,7 @@ export default function Home() {
 
   return (
     <div className="relative">
+      {/* <ThreeScene /> */}
       <div className="grid grid-cols-1 lg:grid-cols-5 min-h-screen">
         {/* Sidebar */}
         <aside className="p-8 col-span-1 lg:col-span-1 sm:col-span-1">
