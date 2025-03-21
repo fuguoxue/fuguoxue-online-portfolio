@@ -272,7 +272,7 @@ export default function Main() {
           </div>
         </section>
         <section>
-          <h3>Iterations</h3>
+          <h3>Iteration</h3>
           <p>
             Upon finishing the first prototype, we conducted rounds of user
             testing, recording and observing user interactions with out
@@ -299,7 +299,7 @@ export default function Main() {
             With these user insights in mind, we iterated over our prototype to
             level up the affordance of our product.
           </p>
-          <h4>Iteration</h4>
+          <h4>Iteration Result</h4>
           <div className="grid grid-cols-2 gap-4">
             {/* Iteration Image 1 */}
             <div className="col-span-1">
