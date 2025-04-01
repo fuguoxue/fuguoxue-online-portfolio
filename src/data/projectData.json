@@ -2,6 +2,7 @@
     {
         "name": "Hearing the Forest",
         "tags": ["Interactive Experience"],
+        "tools": "Unity3D, RESTful API",
         "year": "2024",
         "imgURL": "/imgs/hearing-the-forest-cover.png",
         "hidden": false,
@@ -13,6 +14,7 @@
     {
         "name": "Attractiverse-III",
         "tags": ["Interactive Experience"],
+        "tools": "Max MSP, MIDI",
         "year": "2024",
         "imgURL": "/imgs/attractiverse-iii-cover.png",
         "hidden": false,
@@ -24,6 +26,7 @@
     {
         "name": "Tree of Growth",
         "tags": ["Interactive Experience"],
+        "tools": "Max MSP",
         "year": "2024",
         "imgURL": "/imgs/Tree-of-Growth.jpg",
         "hidden": false,
@@ -34,7 +37,7 @@
     },
     {
         "name": "The Surface City",
-        "tags": ["Interactive Experience"],
+        "tags": ["p5.js"],
         "year": "2024",
         "imgURL": "/imgs/The-Surface-City-cover.gif",
         "hidden": false,
@@ -46,6 +49,7 @@
     {
         "name": "WildWeb",
         "tags": ["Interactive Experience"],
+        "tools": "Max MSP, Arduino",
         "year": "2023",
         "imgURL": "/imgs/wildweb-cover.jpg",
         "hidden": false,
@@ -57,6 +61,7 @@
     {
         "name": "AquaMetropolis",
         "tags": ["Animation"],
+        "tools": "Generative AI",
         "year": "2023",
         "imgURL": "/imgs/aquametropolis-cover.gif",
         "hidden": true,
@@ -68,6 +73,7 @@
     {
         "name": "Cometale",
         "tags": ["Interactive Experience"],
+        "tools": "TouchDesigner, Kinect",
         "year": "2023",
         "imgURL": "/imgs/cometale-cover.gif",
         "hidden": false,
@@ -79,6 +85,7 @@
     {
         "name": "NYC Subway Navigation",
         "tags": ["Experience Design"],
+        "tools": "Figma",
         "year": "2023",
         "imgURL": "/imgs/nyc-subway-navigation-cover.png",
         "hidden": true,
@@ -90,6 +97,7 @@
     {
         "name": "Earthlings",
         "tags": ["Game"],
+        "tools": "Unity3D",
         "year": "2022",
         "imgURL": "/imgs/earthlings-cover.gif",
         "hidden": false,
@@ -101,6 +109,7 @@
     {
         "name": "Eclipse Tracer",
         "tags": ["Game"],
+        "tools": "Unreal Engine",
         "year": "2024",
         "imgURL": "/imgs/eclipse-chase-cover.png",
         "hidden": false,
@@ -112,6 +121,7 @@
     {
         "name": "Bones",
         "tags": ["Game"],
+        "tools": "Unity3D",
         "year": "2022",
         "imgURL": "/imgs/bones-cover.gif",
         "hidden": false,
@@ -123,6 +133,7 @@
     {
         "name": "Synthetica Boletus",
         "tags": ["Interactive Experience"],
+        "tools": "Unity3D, TouchOSC",
         "year": "2022",
         "imgURL": "/imgs/synthetica-boletus.gif",
         "hidden": false,
@@ -134,6 +145,7 @@
     {
         "name": "SwipeX",
         "tags": ["Experience Design"],
+        "tools": "Figma, React.js",
         "year": "2021",
         "imgURL": "/imgs/swipex-cover.png",
         "hidden": true,
@@ -145,6 +157,7 @@
     {
         "name": "Cat Jazz",
         "tags": ["Animation"],
+        "tools": "After Effects",
         "year": "2020",
         "imgURL": "/imgs/cat-jazz-cover.gif",
         "hidden": true,

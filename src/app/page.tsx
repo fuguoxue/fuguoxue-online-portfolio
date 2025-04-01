@@ -154,7 +154,7 @@ export default function Home() {
                         .replace(/\s+/g, "-")
                         .toLowerCase()}`}
                     >
-                      <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+                      <div className="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
                         <div className="text-center mx-2">
                           <h3 className="text-white text-xl font-bold">
                             {project.name}
@@ -163,7 +163,8 @@ export default function Home() {
                             {project.year}
                           </p>
                           <p className="text-gray-300 text-center">
-                            {project.tags.join(", ")}
+                            {/* {project.tags.join(", ")} */}
+                            {project.tools}
                           </p>
                         </div>
                       </div>

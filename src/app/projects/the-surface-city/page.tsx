@@ -85,13 +85,13 @@ export default function Main() {
       </aside>
       <main className="col-span-1 md:col-span-3 p-4 mb-8">
         <h3>Project Showcase</h3>
-        <div className="w-full h-screen mb-4">
+        {/* <div className="w-full h-screen mb-4">
           <iframe
             src="https://fuguoxue-nyu.github.io/surface-city/"
             className="w-full h-full border-0"
             allowFullScreen
           ></iframe>
-        </div>
+        </div> */}
         <div className="relative w-full pb-[56.25%] mb-4">
           <iframe
             width="full"
