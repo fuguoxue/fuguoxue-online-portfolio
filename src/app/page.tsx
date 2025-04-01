@@ -116,7 +116,7 @@ export default function Home() {
           {/* Project Gallery */}
           <motion.div
             layout
-            className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0"
+            className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
           >
             <AnimatePresence>
               {filteredProjects
@@ -148,13 +148,13 @@ export default function Home() {
                       </Link>
                     </div>
 
-                    {/* Hover Information */}
+                    {/* Hover Animation */}
                     <Link
                       href={`/projects/${project.name
                         .replace(/\s+/g, "-")
                         .toLowerCase()}`}
                     >
-                      <div className="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+                      {/* <div className="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
                         <div className="text-center mx-2">
                           <h3 className="text-white text-xl font-bold">
                             {project.name}
@@ -163,12 +163,16 @@ export default function Home() {
                             {project.year}
                           </p>
                           <p className="text-gray-300 text-center">
-                            {/* {project.tags.join(", ")} */}
                             {project.tools}
                           </p>
                         </div>
-                      </div>
+                      </div> */}
                     </Link>
+
+                    {/* Project Info */}
+                    <h3>{project.name}</h3>
+                    <p>{project.media}</p>
+                    <p className="my-4"><b>Tools:</b> {project.tools}</p>
                   </motion.div>
                 ))}
             </AnimatePresence>

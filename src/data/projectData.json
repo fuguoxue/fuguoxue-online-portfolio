@@ -2,13 +2,13 @@
     {
         "name": "Hearing the Forest",
         "tags": ["Interactive Experience"],
-        "tools": "Unity3D, RESTful API",
+        "tools": "Unity3D, RESTful API, Max MSP",
         "year": "2024",
         "imgURL": "/imgs/hearing-the-forest-cover.png",
         "hidden": false,
         "description": "Hearing the Forest is an immersive tree planting experience set in a virtual forest at night. By talking to NPCs in the scene, players get a unique seed for every new conversation and can use these seeds to plant trees. Every tree is unique, even for those that grow from the same seed. Tree planting comes with a chime melody, enhancing the chilling atmosphere.\nHearing the Forest invites players into an interactive, meditative experience where every conversation with an NPC becomes a seed of creativity. With each seed plant, a one-of-a-kind tree blossoms before the player’s eyes, shaped by the magic of L-systems. No two trees are alike—even those grown from the same seed. It’s both a visual and audio experience: as the player plants a tree, a delicate chime melody plays, resonating with the tree growth and adding to the soothing ambiance. It's more than planting a tree — it’s planting a moment of peace.",
         "time": "2 months",
-        "media": "digital immersive experience built with Unity 3D and Max MSP.",
+        "media": "A virtual tree-planting experience, featuring real-time tree pattern generation.",
         "mentors": ["Thomas Martinez"]
     },
     {
@@ -20,7 +20,7 @@
         "hidden": false,
         "description": "Attractiverse-III is an interactive installation that dives into the mesmerizing particle universe. Through a digital screen and MIDI controller, the viewers can experience the magic of mathematical beauty as chaotic randomness transforms into stunning 3D formations with dynamic colors and interactive audio.\nAttractiverse-III was featured at MY _____ IS AN ECOSYSTEM exhibition on Governors Island.",
         "time": "2 months",
-        "media": "interactive installation built with Max MSP and MIDI controller.",
+        "media": "A real-time point cloud evolution system controlled by physical interface, powerful tool for pattern generation and live performance.",
         "mentors": ["Joshua Goldberg", "Rob Ramirez"]
     },
     {
@@ -28,22 +28,23 @@
         "tags": ["Interactive Experience"],
         "tools": "Max MSP",
         "year": "2024",
-        "imgURL": "/imgs/Tree-of-Growth.jpg",
+        "imgURL": "/imgs/tree-of-growth/Weixin Image_20240728103211.jpg",
         "hidden": false,
         "description": "Inspired by L-systems, known for their flexible and customizable descriptions of recursive patterns, Tree of Growth is an interactive projection that brings the art of tree planting to life. The installation invites participants to plant and grow their own unique trees in a virtual garden, simply by positioning a red box on the floor. Every tree is distinct, reflecting nature’s diversity, powered by recursive mathematical rules.\nThis is a collaboration between Fuguo Xue and Jinyuan Liu.",
         "time": "1 month",
-        "media": "interactive projection built with Max MSP, and a block made with woodboard and acrylic paint.",
+        "media": "A physical interactive tree-planting experience. Grow a digital tree with a physical block. ",
         "mentors": ["Joshua Goldberg", "Rob Ramirez"]
     },
     {
         "name": "The Surface City",
-        "tags": ["p5.js"],
+        "tags": ["Interactive Experience"],
+        "tools": "p5.js",
         "year": "2024",
         "imgURL": "/imgs/The-Surface-City-cover.gif",
         "hidden": false,
         "description": "Urban planning throughout history is often closely related to its geographical location and culture. In a world where information technology is increasingly developed, people have less and less privacy. What would a city without privacy be like? The Surface City poetically explores this question.\nThe project consists of the story of The Surface City, and a web-based interactive experience that allows player to generate 3D cityscapes of several Surface City districts. \nThe Surface City is a collaboration between Fuguo and Chenyi. It is part of the Visible Cities: Workshop Exhibition organized by CritLab Review.",
         "time": "2 weeks",
-        "media": "web-based experimental storytelling built with p5.js.",
+        "media": "An experimental fiction about a society without privacy, accompanied by interactive conceptual visuals imagining the society's urban planning realized by programming.",
         "mentors": ["Thiago Hersan", "Alexandra Marraccini"]
     },
     {
@@ -55,7 +56,7 @@
         "hidden": false,
         "description": "WildWeb is an interactive installation that visualizes the recording of people’s digital and physical footprints in this era of pervasive information technology, and how technology digests the data to generate endless content.\nThis installation was designed and developed by me and Sauda Musharrat.",
         "time": "1 month",
-        "media": "physical settings powered by Arduino and real-time data processing with Max MSP.",
+        "media": "A physical interactive installation reflecting on our digital and physical footprints, and their conversion into endless content on social media.",
         "mentors": ["Katherine Bennett"]
     },
     {
@@ -67,7 +68,7 @@
         "hidden": true,
         "description": "AquaMetropolis: A Submerged Cyberpunk Odyssey is a short fictional film produced with Generative AI by Fuguo Xue that transports viewers into a mesmerizing undersea world. In this visionary future, humanity has adapted to life beneath the waves as sea levels rise. While the city appears harmonious, the film subtly reveals the profound vulnerability and awe that humans experience when faced with the relentless power of the natural world.",
         "time": "3 months",
-        "media": "GenAI for art, animation, and audio.",
+        "media": "A short fictional film produced with Generative AI, imagining a city under the sea.",
         "mentors": ["Nick Katsivelos"]
     },
     {
@@ -79,7 +80,7 @@
         "hidden": false,
         "description": "Cometale is an interactive installation that creates a unique and engaging experience, highlighting the interconnectedness of history and nature by combining ancient and modern elements. By developing this installation, I hope to offer visitors a chance to reflect on the historical events, and how they continue to shape our understanding of the world around us today.\nCometale was featured at the Ars Electronica Festival 2023 Campus Exhibition.",
         "time": "1 year",
-        "media": "GenAI for art and animation, and TouchDesigner for real-time interactions with the projection.",
+        "media": "A physcial interactive installation about a silk scroll recording ancient Chinese astronomical divination.",
         "mentors": ["Ina Conradi", "Louis-Philippe Demers", "Chua Hock Chuan"]
     },
     {
@@ -103,7 +104,7 @@
         "hidden": false,
         "description": "Earthlings is a two-player 2.5D environment game that promotes ecological awareness by encouraging cooperation in the game. By developing this game, we hope to prompt our players to think about the relationship between humans and nature.\nI contributed to this game in terms of game conception, game programming, and art assets creation.\nOur team of 3 (Fuguo Xue, Xinying Guo, and Yaoxuan Wang) presented this game at The International Conference of Undergraduate Research 2022 (ICUR 2022).",
         "time": "1 year",
-        "media": "game experience built with Unity3D, Aseprite, and Mental Canvas.",
+        "media": "A two-player cooperative game that requires collaboration between players to collect magic stones and successfully retreat from a forest on fire.",
         "mentors": ["Wesley Tan Chee Wah", "Wonkeun Chang"]
     }, 
     {
@@ -115,7 +116,7 @@
         "hidden": false,
         "description": "Eclipse Tracer is a 3D game about the Solar Eclipse that happened in April 2024, which is a collaboration of Ziye Zhang, Zhuoyuan Li, Shiqi Wang, and Fuguo Xue.\nThis project was built during a 2-day game jam supported by The National Esports Association, Epic Games, and NASA.",
         "time": "2 days",
-        "media": "3D game built with Unreal Engine for Fortnite.",
+        "media": "A 3D maze game in which the player navigates through a maze consisting of four scenes connected by hidden teleporters in order to reach the best spot to appreciate the eclipse.",
         "mentors": []
     },
     {
@@ -127,7 +128,7 @@
         "hidden": false,
         "description": "Bones is a relaxing 3D PC game. In the low-poly scene filled with beautiful flowers, grass, fungus, and trees, the corgi wants to meet his friends and collect as many bones as possible along the way.\nThis is a collaboration between Man Ding and Fuguo Xue.",
         "time": "1 month",
-        "media": "3D game built with Unity3D.",
+        "media": "A 3D collection game in which a corgi, controlled by the player, navigates the beautiful forest to collect as many bones as possible in limited time.",
         "mentors": []
     },
     {
@@ -136,7 +137,7 @@
         "tools": "Unity3D, TouchOSC",
         "year": "2022",
         "imgURL": "/imgs/synthetica-boletus.gif",
-        "hidden": false,
+        "hidden": true,
         "description": "Synthetica Boletus is an interactive experience of immersion into the world of synthetic boletus in which our existence reflects the mortality of the mysterious creatures.\nThis interactive experience was created by group of 6. I led the 3D scene design in Unity3D.",
         "time": "6 weeks",
         "media": "virutal environment built with Unit3D and physical sensing system built with Arduino and OSC.",
