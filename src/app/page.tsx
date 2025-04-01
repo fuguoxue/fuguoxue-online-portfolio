@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 // import ThreeScene from '@/components/ThreeScene';
 
 export default function Home() {
-  const [selectedTag, setSelectedTag] = useState<string>("All Works"); // Explicitly setting the type to 'string'
+  const [selectedTag, setSelectedTag] = useState<string>("All"); // Explicitly setting the type to 'string'
   const [allTags, setAllTags] = useState<string[]>([]); // Explicitly setting the type to 'string[]' (array of strings)
 
   // Extract unique tags from projectData.json
@@ -18,12 +18,12 @@ export default function Home() {
     projectData.filter((project) => !project.hidden).forEach((project) => {
       project.tags.forEach((tag) => tags.add(tag));
     });
-    setAllTags(["All Works", ...Array.from(tags)]); // Convert the Set to an array
+    setAllTags(["All", ...Array.from(tags)]); // Convert the Set to an array
   }, []);
 
   // Filter the projects based on selected tag
   const filteredProjects =
-    selectedTag === "All Works"
+    selectedTag === "All"
       ? projectData
       : projectData.filter((project) => project.tags.includes(selectedTag));
 
@@ -32,7 +32,7 @@ export default function Home() {
       {/* <ThreeScene /> */}
       <div className="grid grid-cols-1 lg:grid-cols-5 min-h-screen">
         {/* Sidebar */}
-        <aside className="p-8 col-span-1 lg:col-span-1 sm:col-span-1">
+        <aside className="px-8 col-span-1 lg:col-span-1 sm:col-span-1">
           <div className="sticky top-0">
             {/* Bio Section */}
             <P5ShadowController />
@@ -116,7 +116,7 @@ export default function Home() {
           {/* Project Gallery */}
           <motion.div
             layout
-            className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+            className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-8 mr-6"
           >
             <AnimatePresence>
               {filteredProjects
