@@ -69,7 +69,7 @@ section {
 }
 
 aside {
-  @apply p-4 md:sticky top-4 self-start;
+  @apply p-4 top-4 self-start;
 }
 
 span {

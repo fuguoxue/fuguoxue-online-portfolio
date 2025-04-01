@@ -15,9 +15,11 @@ export default function Home() {
   // Extract unique tags from projectData.json
   useEffect(() => {
     const tags = new Set<string>(); // Define the Set type explicitly
-    projectData.filter((project) => !project.hidden).forEach((project) => {
-      project.tags.forEach((tag) => tags.add(tag));
-    });
+    projectData
+      .filter((project) => !project.hidden)
+      .forEach((project) => {
+        project.tags.forEach((tag) => tags.add(tag));
+      });
     setAllTags(["All", ...Array.from(tags)]); // Convert the Set to an array
   }, []);
 
@@ -30,62 +32,69 @@ export default function Home() {
   return (
     <div className="relative">
       {/* <ThreeScene /> */}
-      <div className="grid grid-cols-1 lg:grid-cols-5 min-h-screen">
+      <div className="grid grid-cols-1 lg:grid-cols-5 m-2">
         {/* Sidebar */}
-        <aside className="px-8 col-span-1 lg:col-span-1 sm:col-span-1">
-          <div className="sticky top-0">
+        <aside className="px-6 lg:col-span-1 w-full my-2">
+          <div className="relative md:relative lg:sticky top-0">
             {/* Bio Section */}
             <P5ShadowController />
             <p className="text-tag">
-              Product Designer | Front-End Developer | Interactive Media Artist
+              Interactive Media Artist | Game Designer & Developer
             </p>
             <p className="leading-relaxed mb-4 text-left">
-              Fuguo Xue is a web developer and creative technologist
-              specializing in front-end and multimedia technologies. Her work
-              blends AI, creative coding, and experience design, and was
-              featured at Ars Electronica Festival and more.
+              Fuguo Xue is a creative technologist specializing in multimedia
+              and front-end technologies. Her work blends AI, creative coding,
+              and interaction design, and was featured at Ars Electronica
+              Festival Campus Exhibtion and more.
             </p>
-            <div>
-              <Link
-                href="/bio"
-                className="group inline-flex items-center text-tag transition-all duration-300 transform hover:scale-105 text-lg"
-              >
-                <span className="transition-all group-hover:underline">
-                  Bio
-                </span>
-                <span className="transition-all transform group-hover:scale-105">
-                  &nbsp;&#8594;
-                </span>
-              </Link>
-            </div>
+            <section className="mb-8">
+              <div>
+                <Link
+                  href="/bio"
+                  className="group inline-flex items-center text-tag transition-all duration-300 transform hover:scale-105 text-lg"
+                >
+                  <span className="transition-all group-hover:underline">
+                    Bio
+                  </span>
+                  <span className="transition-all transform group-hover:scale-105">
+                    &nbsp;&#8594;
+                  </span>
+                </Link>
+              </div>
 
-            <div>
-              <Link
-                href="/essays"
-                className="group inline-flex items-center text-tag transition-all duration-300 transform hover:scale-105 text-lg"
-              >
-                <span className="transition-all group-hover:underline">
-                  Essays
-                </span>
-                <span className="transition-all transform group-hover:scale-105">
-                  &nbsp;&#8594;
-                </span>
-              </Link>
-            </div>
+              <div>
+                <Link
+                  href="/essays"
+                  className="group inline-flex items-center text-tag transition-all duration-300 transform hover:scale-105 text-lg"
+                >
+                  <span className="transition-all group-hover:underline">
+                    Essays
+                  </span>
+                  <span className="transition-all transform group-hover:scale-105">
+                    &nbsp;&#8594;
+                  </span>
+                </Link>
+              </div>
 
-            <div>
-              <Link
-                href="/blogs"
-                className="group inline-flex items-center text-tag transition-all duration-300 transform hover:scale-105 text-lg"
-              >
-                <span className="transition-all group-hover:underline">
-                  Blogs
-                </span>
-                <span className="transition-all transform group-hover:scale-105">
-                  &nbsp;&#8594;
-                </span>
-              </Link>
-            </div>
+              <div>
+                <Link
+                  href="/blogs"
+                  className="group inline-flex items-center text-tag transition-all duration-300 transform hover:scale-105 text-lg"
+                >
+                  <span className="transition-all group-hover:underline">
+                    Blogs
+                  </span>
+                  <span className="transition-all transform group-hover:scale-105">
+                    &nbsp;&#8594;
+                  </span>
+                </Link>
+              </div>
+            </section>
+
+            {/* Social Media Links */}
+            <footer className="flex justify-center lg:justify-start">
+              <Footer />
+            </footer>
 
             {/* Tag Filter */}
             <div className="my-10 lg:flex lg:flex-col space-y-2 justify-center">
@@ -103,20 +112,15 @@ export default function Home() {
                 </button>
               ))}
             </div>
-
-            {/* Social Media Links */}
-            <footer className="sm:mt-4 flex justify-center lg:justify-start">
-              <Footer />
-            </footer>
           </div>
         </aside>
 
         {/* Main Content - Projects Section */}
-        <main className="col-span-1 lg:col-span-4 sm:col-span-1">
+        <main className="col-span-1 lg:col-span-4 md:col-span-1 sm:col-span-1 m-2">
           {/* Project Gallery */}
           <motion.div
             layout
-            className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-8 mr-6"
+            className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 my-4"
           >
             <AnimatePresence>
               {filteredProjects
@@ -129,7 +133,7 @@ export default function Home() {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.9 }}
                     transition={{ duration: 0.3 }}
-                    className="relative group"
+                    className="relative group sm:ml-6"
                   >
                     {/* Image Container with fixed dimensions */}
                     <div className="relative w-full h-64 overflow-hidden">
@@ -172,7 +176,9 @@ export default function Home() {
                     {/* Project Info */}
                     <h3>{project.name}</h3>
                     <p>{project.media}</p>
-                    <p className="my-4"><b>Tools:</b> {project.tools}</p>
+                    <p className="my-4">
+                      <b>Tools:</b> {project.tools}
+                    </p>
                   </motion.div>
                 ))}
             </AnimatePresence>
