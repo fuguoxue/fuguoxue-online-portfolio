@@ -1,7 +1,7 @@
 [
     {
         "name": "Hearing the Forest",
-        "tags": ["Game", "Creative Coding"],
+        "tags": ["Interactive Experience"],
         "year": "2024",
         "imgURL": "/imgs/hearing-the-forest-cover.png",
         "hidden": false,
@@ -12,7 +12,7 @@
     },
     {
         "name": "Attractiverse-III",
-        "tags": ["Interactive Installation", "Creative Coding", "Game"],
+        "tags": ["Interactive Experience"],
         "year": "2024",
         "imgURL": "/imgs/attractiverse-iii-cover.png",
         "hidden": false,
@@ -23,7 +23,7 @@
     },
     {
         "name": "Tree of Growth",
-        "tags": ["Creative Coding", "Interactive Installation"],
+        "tags": ["Interactive Experience"],
         "year": "2024",
         "imgURL": "/imgs/Tree-of-Growth.jpg",
         "hidden": false,
@@ -34,7 +34,7 @@
     },
     {
         "name": "The Surface City",
-        "tags": ["Creative Coding", "Storytelling", "Game"],
+        "tags": ["Interactive Experience"],
         "year": "2024",
         "imgURL": "/imgs/The-Surface-City-cover.gif",
         "hidden": false,
@@ -45,7 +45,7 @@
     },
     {
         "name": "WildWeb",
-        "tags": ["Interactive Installation", "Creative Coding"],
+        "tags": ["Interactive Experience"],
         "year": "2023",
         "imgURL": "/imgs/wildweb-cover.jpg",
         "hidden": false,
@@ -56,10 +56,10 @@
     },
     {
         "name": "AquaMetropolis",
-        "tags": ["Animation", "Storytelling", "Artificial Intelligence"],
+        "tags": ["Animation"],
         "year": "2023",
         "imgURL": "/imgs/aquametropolis-cover.gif",
-        "hidden": false,
+        "hidden": true,
         "description": "AquaMetropolis: A Submerged Cyberpunk Odyssey is a short fictional film produced with Generative AI by Fuguo Xue that transports viewers into a mesmerizing undersea world. In this visionary future, humanity has adapted to life beneath the waves as sea levels rise. While the city appears harmonious, the film subtly reveals the profound vulnerability and awe that humans experience when faced with the relentless power of the natural world.",
         "time": "3 months",
         "media": "GenAI for art, animation, and audio.",
@@ -67,7 +67,7 @@
     },
     {
         "name": "Cometale",
-        "tags": ["Interactive Installation", "Museum Experience", "Artificial Intelligence"],
+        "tags": ["Interactive Experience"],
         "year": "2023",
         "imgURL": "/imgs/cometale-cover.gif",
         "hidden": false,
@@ -78,10 +78,10 @@
     },
     {
         "name": "NYC Subway Navigation",
-        "tags": ["UX Design"],
+        "tags": ["Experience Design"],
         "year": "2023",
         "imgURL": "/imgs/nyc-subway-navigation-cover.png",
-        "hidden": false,
+        "hidden": true,
         "description": "NYC Subway Navigation is a UX Design Research Project aiming at improving the subway navigation experience of NYC subway users. Developed by our team of four, the final intervention focuses on improving the in-station signage of NYC subways.\nWe first did a brainstorming session to create a mess map about subway navigation. Then, we conducted secondary research to determine the scope of our intervention and updated our mess map based on knowledge from secondary research. Next, we conducted primary research including transect tours and interviews to gain deeper insights into our stakeholders. Finally, we ideated and prototyped a new NYC subway in-station signage index system, gathered feedback from A/B testing, and did one iteration over our intervention.\nThis project was done by Cassandra Mao, Chenyi Wang, Fuguo Xue, and Hanwen Gu.",
         "time": "7 weeks",
         "media": "UX design in Figma, with A/B testing and an interation.",
@@ -89,7 +89,7 @@
     },
     {
         "name": "Earthlings",
-        "tags": ["Game", "Storytelling"],
+        "tags": ["Game"],
         "year": "2022",
         "imgURL": "/imgs/earthlings-cover.gif",
         "hidden": false,
@@ -100,7 +100,7 @@
     }, 
     {
         "name": "Eclipse Tracer",
-        "tags": ["Game", "Storytelling"],
+        "tags": ["Game"],
         "year": "2024",
         "imgURL": "/imgs/eclipse-chase-cover.png",
         "hidden": false,
@@ -111,7 +111,7 @@
     },
     {
         "name": "Bones",
-        "tags": ["Game", "Storytelling"],
+        "tags": ["Game"],
         "year": "2022",
         "imgURL": "/imgs/bones-cover.gif",
         "hidden": false,
@@ -122,7 +122,7 @@
     },
     {
         "name": "Synthetica Boletus",
-        "tags": ["Interactive Installation"],
+        "tags": ["Interactive Experience"],
         "year": "2022",
         "imgURL": "/imgs/synthetica-boletus.gif",
         "hidden": false,
@@ -133,10 +133,10 @@
     },
     {
         "name": "SwipeX",
-        "tags": ["UX Design"],
+        "tags": ["Experience Design"],
         "year": "2021",
         "imgURL": "/imgs/swipex-cover.png",
-        "hidden": false,
+        "hidden": true,
         "description": "\"SwipeX: News on the Go\" is a mobile web feature that provide effective news reading reading experience in bite-sized summaries. It aims to:\n1. Pique curiosity – it delivers news in summaries to make news reading more productive.\n2. Personalization – It learns readers’ reading habits and topics of interest and pushes news that may be of interest to them.\nIn our team of 8, I co-developed the front-end of SwipeX and co-designed the UI and logo of SwipeX.\nThis project is supported by NTU News Media Lab.",
         "time": "3 months",
         "media": "mobile web feature built with React.js.",
@@ -144,10 +144,10 @@
     },
     {
         "name": "Cat Jazz",
-        "tags": ["Animation", "Storytelling"],
+        "tags": ["Animation"],
         "year": "2020",
         "imgURL": "/imgs/cat-jazz-cover.gif",
-        "hidden": false,
+        "hidden": true,
         "description": "Cat Jazz is an experimental animation that combines jazz music and abstract animation to present the imagery of cats. Different from traditional animation's reliance on concrete characters, this experimental animation uses the automatic audio-visual synchronization mechanism of the human brain to complete the storytelling.",
         "time": "1 month",
         "media": "experimental animation created with Adobe After Effects.",

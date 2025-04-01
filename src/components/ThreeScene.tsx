@@ -7,6 +7,7 @@ import {
   BloomEffect,
   EffectPass,
 } from "postprocessing";
+import lSystemRules from "@/data/lSystem-rules.json";
 
 export default function ThreeScene() {
   // Define Ref type
@@ -26,7 +27,7 @@ export default function ThreeScene() {
     scene.background = new THREE.Color(0xffffff);
     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
     camera.position.z = 80;
-    camera.position.y = 80;
+    camera.position.y = 70;
 
     // Renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -92,17 +93,21 @@ void main() {
     scene.add(ambientLight);
 
     // L-System Parameters
+    const lSystemRuleIndex = Math.floor(Math.random()*lSystemRules.length);
     const treeParams = {
       length: 1,
-      angle: Math.PI / 6,
-      axiom: "X",
+      angle: Math.PI / (3 + 3*Math.random()),
+      axiom: lSystemRules[lSystemRuleIndex].axiom,
       iterations: 5,
+      startingRadius: 13.0,
+      taperRate: 0.95
     };
 
     let lString = treeParams.axiom;
     for (let i = 0; i < treeParams.iterations; i++) {
-      lString = lString.replaceAll("X", "F[+X][-X]FX");
-      lString = lString.replaceAll("F", "FF");
+      for (let j=0; j < lSystemRules[lSystemRuleIndex].rules.length; j++) {
+        lString = lString.replaceAll(lSystemRules[lSystemRuleIndex].rules[j].original, lSystemRules[lSystemRuleIndex].rules[j].replacement);
+      }
     }
 
     let cursor = new THREE.Object3D();
@@ -127,14 +132,20 @@ void main() {
     };
 
     const materialList: THREE.ShaderMaterial[] = [];
-    const drawBranch = (depth: number) => {
-      const radiusTop = Math.max(0.1, 1.0 - 0.1 * depth);
-      const radiusBottom = Math.max(0.1, 1.0 - 0.1 * (depth - 1));
+    const drawBranch = (depth: number, prevRadiusTop: number = 1.0) => {
+      const radiusTop = prevRadiusTop * treeParams.taperRate;
+      const radiusBottom = prevRadiusTop;
+
+      const minRadius = 0.2;
+
+      const finalRadiusTop = Math.max(radiusTop, minRadius);
+      const finalRadiusBottom = Math.max(radiusBottom, minRadius);
+      const branchLength = treeParams.length - depth * 0.1;
 
       const geometry = new THREE.CylinderGeometry(
-        radiusTop,
-        radiusBottom,
-        treeParams.length,
+        finalRadiusTop,
+        finalRadiusBottom,
+        branchLength,
         6
       );
 
@@ -149,14 +160,14 @@ void main() {
       materialList.push(material);
       const branch = new THREE.Mesh(geometry, material);
 
-      branch.position.y = treeParams.length / 2;
+      branch.position.y = branchLength / 2;
 
       const branchGroup = new THREE.Object3D();
       branchGroup.add(branch);
       cursor.add(branchGroup);
 
       const newCursor = new THREE.Object3D();
-      newCursor.position.y = treeParams.length;
+      newCursor.position.y = branchLength;
       branchGroup.add(newCursor);
 
       return newCursor;
@@ -165,16 +176,20 @@ void main() {
     const treeStack: {
       matrix: THREE.Matrix4;
       parent: THREE.Object3D;
+      currentRadius: number;
     }[] = [];
 
     const interpretLSystem = () => {
       let depth = 0;
+      let currentRadius = treeParams.startingRadius;
+      
       for (let i = 0; i < lString.length; i++) {
         const char = lString[i];
 
         switch (char) {
           case "F":
-            cursor = drawBranch(depth);
+            cursor = drawBranch(depth, currentRadius);
+            currentRadius *= treeParams.taperRate;
             break;
 
           case "X":
@@ -187,7 +202,7 @@ void main() {
               color: 0x333333,
             });
             const leaf = new THREE.Mesh(leafGeometry, leafMaterial);
-            leaf.position.y = treeParams.length + Math.random() * 1.5;
+            leaf.position.y = treeParams.length - depth * 0.1 + Math.random() * 5;
             leaf.position.x = (Math.random() - 0.5) * 1.0;
             leaf.position.z = (Math.random() - 0.5) * 1.0;
 
@@ -205,8 +220,9 @@ void main() {
           case "[":
             cursor.updateMatrixWorld();
             treeStack.push({
-              matrix: cursor.matrixWorld.clone(), // 保存完整的矩阵
-              parent: cursor.parent!, // 保存父级
+              matrix: cursor.matrixWorld.clone(),
+              parent: cursor.parent!,
+              currentRadius: currentRadius,
             });
             depth++;
             break;
@@ -224,6 +240,8 @@ void main() {
                 .premultiply(parentInverseMatrix);
 
               cursor.applyMatrix4(localMatrix);
+
+              currentRadius = restored.currentRadius;
             }
             depth--;
             break;

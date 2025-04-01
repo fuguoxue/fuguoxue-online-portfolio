@@ -15,7 +15,7 @@ export default function Home() {
   // Extract unique tags from projectData.json
   useEffect(() => {
     const tags = new Set<string>(); // Define the Set type explicitly
-    projectData.forEach((project) => {
+    projectData.filter((project) => !project.hidden).forEach((project) => {
       project.tags.forEach((tag) => tags.add(tag));
     });
     setAllTags(["All Works", ...Array.from(tags)]); // Convert the Set to an array

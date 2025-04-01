@@ -1,0 +1,28 @@
+[
+    {
+        "axiom": "X",
+        "rules": [
+            {
+                "original": "X",
+                "replacement": "F[+X][-X]FX"
+            },
+            {
+                "original": "F",
+                "replacement": "FF"
+            }
+        ]
+    },
+    {
+        "axiom": "X",
+        "rules": [
+            {
+                "original": "X",
+                "replacement": "F+[[X]-X]-F[-FX]+X"
+            },
+            {
+                "original": "F",
+                "replacement": "FF"
+            }
+        ]
+    }
+]
