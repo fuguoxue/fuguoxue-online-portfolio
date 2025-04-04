@@ -16,9 +16,10 @@ import "@/styles/slideshow.css";
 interface SlideshowProps {
   slides: { image: string; description: string }[];
   autoplay?: boolean;
+  bgColor?: string;
 }
 
-export default function Slideshow({ slides, autoplay = true }: SlideshowProps) {
+export default function Slideshow({ slides, autoplay = true, bgColor = "#fff" }: SlideshowProps) {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
 
@@ -35,6 +36,7 @@ export default function Slideshow({ slides, autoplay = true }: SlideshowProps) {
         loop={true}
         autoplay={autoplay ? { delay: 3000, disableOnInteraction: autoplay } : undefined}
         className="main-swiper mb-4"
+        style={{background: bgColor}}
         onInit={(swiper) => setSwiperInstance(swiper)}
       >
         {slides.map((slide, index) => (
@@ -45,7 +47,7 @@ export default function Slideshow({ slides, autoplay = true }: SlideshowProps) {
                 alt={`Slide ${index + 1}`}
                 width={400}
                 height={400}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover mt-4"
                 onLoad={() => {
                   if (swiperInstance) swiperInstance.update(); // Recalculate Swiper dimensions
                 }}
