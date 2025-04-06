@@ -1,5 +1,4 @@
-'use client'; 
-import { useEffect, useState } from "react";
+"use client";
 import {
   ProjectInfoSection,
   ProjectSwitch,
@@ -10,6 +9,7 @@ import ImageWithCaption from "@/components/ImageWithCaption";
 import Image from "next/image";
 import { FaItchIo } from "react-icons/fa";
 import Link from "next/link";
+import Slideshow from "@/components/Slideshow";
 // Array of image paths
 const playtestingPhotos = [
   "/imgs/hearing-the-forest/Weixin Image_20241215143419.jpg",
@@ -19,11 +19,84 @@ const playtestingPhotos = [
 const projectName = "Hearing the Forest";
 
 export default function Main() {
-  const [isClient, setIsClient] = useState(false);
+  // const [isClient, setIsClient] = useState(false);
 
-  useEffect(() => {
-    setIsClient(true); // Ensures iframe is rendered only on the client
-  }, []);
+  // useEffect(() => {
+  //   setIsClient(true); // Ensures iframe is rendered only on the client
+  // }, []);
+
+  const slidesImgs = [
+    {
+      image: "/imgs/hearing-the-forest/hearing-the-forest-cover.png",
+      description: "",
+    },
+    {
+      image:
+        "/imgs/hearing-the-forest/screenshots/Screenshot 2025-04-01 171731.jpg",
+      description: "",
+    },
+    {
+      image:
+        "/imgs/hearing-the-forest/screenshots/Screenshot 2025-04-01 171804.jpg",
+      description: "",
+    },
+    {
+      image:
+        "/imgs/hearing-the-forest/screenshots/Screenshot 2025-04-05 164810.jpg",
+      description: "",
+    },
+    {
+      image:
+        "/imgs/hearing-the-forest/screenshots/Screenshot 2025-04-05 164916.jpg",
+      description: "",
+    },
+    {
+      image:
+        "/imgs/hearing-the-forest/screenshots/Screenshot 2025-04-05 164932.jpg",
+      description: "",
+    },
+    {
+      image:
+        "/imgs/hearing-the-forest/screenshots/Screenshot 2025-04-05 165218.jpg",
+      description: "",
+    },
+    {
+      image:
+        "/imgs/hearing-the-forest/screenshots/Screenshot 2025-04-05 165259.jpg",
+      description: "",
+    },
+    {
+      image:
+        "/imgs/hearing-the-forest/screenshots/Screenshot 2025-04-05 165318.jpg",
+      description: "",
+    },
+    {
+      image:
+        "/imgs/hearing-the-forest/screenshots/Screenshot 2025-04-05 165352.jpg",
+      description: "",
+    },
+    {
+      image:
+        "/imgs/hearing-the-forest/screenshots/Screenshot 2025-04-05 165432.jpg",
+      description: "",
+    },
+    {
+      image:
+        "/imgs/hearing-the-forest/screenshots/Screenshot 2025-04-05 165513.jpg",
+      description: "",
+    },
+    {
+      image:
+        "/imgs/hearing-the-forest/screenshots/Screenshot 2025-04-06 131447.jpg",
+      description: "",
+    },
+    {
+      image:
+        "/imgs/hearing-the-forest/screenshots/Screenshot 2025-04-06 131852.jpg",
+      description: "",
+    },
+  ];
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 min-h-screen m-4">
       <div className="col-span-1 md:col-span-4 lg:col-span-5">
@@ -41,7 +114,19 @@ export default function Main() {
         </Link>
       </aside>
       <main className="col-span-1 md:col-span-3 p-4 mb-8">
-        <h3>Project Showcase</h3>
+        <div className="relative w-full pb-[56.25%] mb-4">
+          <iframe
+            width="full"
+            height="auto"
+            src="https://www.youtube.com/embed/13Qh1f7Ym9o?si=V9Q3S468aM2Y9q6S"
+            title="Tree of Growth video on YouTube"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="absolute top-0 left-0 w-full h-full"
+          ></iframe>
+        </div>
+        {/* <h3>Project Demo</h3>
         <div
           style={{
             display: "flex",
@@ -50,90 +135,116 @@ export default function Main() {
             height: "70vh",
             backgroundColor: "#000",
           }}
-           className="w-full aspect-[3/2]"
+          className="w-full aspect-[3/2]"
         >
-          {/* Conditionally render the iframe on the client */}
           {isClient && (
-            <iframe src="https://itch.io/embed-upload/12446200?color=333333" allowFullScreen
-            className="w-full h-full border-none"><a href="https://oursblancitalien.itch.io/hearing-the-forest">Play Hearing the Forest on itch.io</a></iframe>
+            <iframe
+              src="https://itch.io/embed-upload/12446200?color=333333"
+              allowFullScreen
+              className="w-full h-full border-none"
+            >
+              <a href="https://oursblancitalien.itch.io/hearing-the-forest">
+                Play Hearing the Forest on itch.io
+              </a>
+            </iframe>
           )}
         </div>
         <b>How to play:</b>
         <ol className="list-decimal ml-4">
           <li>Find an NPC in game.</li>
           <li>Press &quot;E&quot; to interact with the NPC.</li>
-          <li>Left-click on a seed in seed repository obtained from the NPC.</li>
+          <li>
+            Left-click on a seed in seed repository obtained from the NPC.
+          </li>
           <li>Face any direction and press &quot;T&quot; to plant a tree.</li>
-        </ol>
+        </ol> */}
+        <Slideshow slides={slidesImgs} autoplay={true} />
         <section>
-          <h3>Inspiration & Ideation</h3>
+          <h3>Story, Inspiration & Ideation</h3>
           <p>
-            The inspiration comes from the Lantern Festival in China. Marking
-            the end of the Spring Festival, the Lantern Festival is just as
-            bustling as the Spring Festival. If visit a temple fair on that day,
-            one can find many interesting events including games and
-            performances. Among them, I love lantern riddles the most because
-            they always have unexpected ingenious answers. Another of my
-            impressions of the festival is the round and bright Moon that night.
-            Different from the bustling crowds, the Moon is always peacefully up
-            in the sky and gently spreads its light across everything on the
-            ground. What would the Lantern Festival look like without the
-            crowds? By developing this digital experience, I want to design a
-            different, tranquil Lantern Festival vibe by keeping two of its most
-            iconic elements: the Moon and lanterns. With this idea of
-            redesigning the Lantern Festival vibe, I started my scene design. I
-            was inspired by a Chinese myth about the Moon, which mentioned the
-            existence of the Moon Palace, the Jade Rabbit, and a giant Katsura
-            tree on the Moon. By synthesizing these mythical elements, I
-            designed a natural, peaceful scene with an eternal and dreaming
-            feeling. To immerse players into the scene, I designed the
-            experience to be a first-person one. Some 3D audio fields are also
-            added to the scene to enhance the interactivity and immersive
-            feeling.
+            Hearing the Forest is a digital immersive experience inspired by
+            Chinese myths, particularly the story of the Moon, the Jade Rabbit,
+            and the trees that grow there. In this experience, players journey
+            into a silent forest on the edge of the Moon, guided by spirits and
+            the mythical Jade Rabbit. As players interact with these spirits,
+            they learn stories of the forest and receive unique seeds, each
+            capable of growing into a tree with its own shape and color. As the
+            trees grow, music notes emerge, syncing with their growth to create
+            a serene, harmonious environment.
+          </p>
+          <p>
+            The project is inspired by the Lantern Festival, a celebration
+            marking the end of the Chinese Spring Festival. While the Lantern
+            Festival is full of energy and light, my vision is to bring a quiet,
+            dream-like introspective version of the festival to life. Here, the
+            peaceful Moon casts its soft glow over the world, providing a
+            tranquil atmosphere where players can connect with the ancient myths
+            of China. By planting trees in this serene forest, players breathe
+            new life into the world, much like the way the Moon&apos;s light
+            brings calm to the night sky.
           </p>
         </section>
-        <h3>Production</h3>
-        <h4>Build the Scene</h4>
-        <p>
-          I used Unity 3D to build the scene. The terrain mesh is generated with
-          a noise function from a predefined seed, so that the peaks and valleys
-          look natural. The same function can also be applied for generating the
-          terrain material, whose color changes with altitude. The night scene
-          is lit up by the emissive materials of the stairs, lanterns, and the
-          Moon. To make the scene look more natural, I added fog to the scene
-          and post-processing modules for the camera component. Another
-          post-processing was added to the water area to give a blue tint when
-          the first person player is in the water.
-        </p>
-        <h4>Tree Generation: Connection to Assistants API</h4>
-        <p>
-          I used L-systems to generate the trees. Since I want every tree to be
-          unique, I thought of customizing an AI application to generate
-          different L-system rules upon requests.
-        </p>
-        <ImageWithCaption
-          src="/imgs/hearing-the-forest/Flowchart - Assistant AI Flowchart.jpg"
-          alt="Seed generation flow powered by Assistant API."
-          caption="Seed generation flow powered by Assistant API."
-          widthPercentage={80}
-        />
-        <h4>Real-time Tree Audio: Communication with Max MSP</h4>
-        <p>
-          In local mode, each tree planting experience comes with a unique chime
-          audio. This is realized by a Max patch (locally available together
-          with the Unity game file) and OSC communication between Unity and Max
-          MSP. The L-system rule is sent to the Max patch, and each character in
-          the rule string is mapped to a musical rules like ascending a key,
-          adding a new channel, etc. This way, the audio is generated real-time
-          together with the tree growth.
-        </p>
-        <h4>Playtesting Documnetation</h4>
-        <ImageWithCaption
-          src="/imgs/hearing-the-forest/Hearing the Forest Poster.png"
-          alt="Playtesting session poster."
-          caption="Poster for playtesting session."
-        />
         <section>
+          <h3>Production</h3>
+          <h4>Procedural Generation for Terrain</h4>
+          <p>
+            To create a natural landscape while controlling workload, I used
+            procedural generation for terrain generation. The terrain mesh was
+            generated with a noise function from a predefined seed, so that the
+            peaks and valleys look natural. The same function was also applied
+            in generating the terrain material, whose color changes with
+            altitude.
+          </p>
+          <h4>Tree Generation: Connection to Assistants API</h4>
+          <p>
+            Trees are one of my favorite imageries because it represents
+            vitality and eternity. The branching patterns of trees are
+            beautiful, and what&apos;s magical to me is that they can be
+            simulated by algorithm. In the scene, I applied the L-systems
+            algorithm for tree generation. I also trained an AI agent to
+            generate L-system rules and send it to my scene via API, so that
+            every seed contains a unique L-system rule capable of generating a
+            unique tree pattern.
+          </p>
+          <p>
+            There are two modes of seed generation: when the Assistant AI API is
+            connected, seeds are generated real-time by Assistant AI; otherwise,
+            seeds are randomly selected from a preset selection of seeds.
+          </p>
+          <ImageWithCaption
+            src="/imgs/hearing-the-forest/Flowchart - Assistant AI Flowchart.jpg"
+            alt="Seed generation flow powered by Assistant API."
+            caption="Seed generation flow powered by Assistant API."
+            widthPercentage={80}
+          />
+          <h4>Lightings and Post-Processing</h4>
+          <p>
+            To create a dream-like tranquil atmosphere, the scene is lit by
+            lanterns with point light and other objects with emmisive materials.
+            Post-processing modules like bloom, depth of field, vignette, and
+            motion blurr also help enhancing the immersive gaming experience.
+            Additional blue color fiter was included in underwater
+            post-processing to simulate underwater perspective.
+          </p>
+          <h4>3D Audio and Real-time Audio</h4>
+          <p>
+            During the experience, each growing tree is accompanied by a unique
+            chime audio. This is realized by the communication between a Max MSP patch and 
+            Unity via OSC. The L-system rule is sent to the Max patch,
+            each character in the rule mapping to a musical rules like
+            ascending a key, adding a new channel, etc. This way, an audio is
+            generated real-time as a tree grows.
+          </p>
+          <p>There are also 3D audios in the scene to enhance the sense of space and immersion, such as the water audio moving with the glowing Fish spirit.</p>
+        </section>
+
+        <section>
+          <h3>Playtesting Documentation</h3>
+          <ImageWithCaption
+            src="/imgs/hearing-the-forest/Hearing the Forest Poster.png"
+            alt="Playtesting session poster."
+            caption="Poster for playtesting session."
+          />
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {playtestingPhotos.map((imgSrc, index) => (
               <div key={index} className="w-full h-auto">
