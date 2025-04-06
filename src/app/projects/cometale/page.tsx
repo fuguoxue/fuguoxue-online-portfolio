@@ -112,6 +112,10 @@ export default function Main() {
             className="absolute top-0 left-0 w-full h-full"
           ></iframe>
         </div>
+        <div className="grid grid-cols-2 gap-4">
+          <ImageWithCaption src="/imgs/cometale/Cometale Demo.jpg" alt="" caption="Photo of Cometale installation demo."/>
+          <ImageWithCaption src="/imgs/cometale-cover.gif" alt="" caption="Effect of Cometale projection."/>
+        </div>
         <section>
           <h3>Inspiration</h3>
           <h4>&quot;The Book of Silk&quot;</h4>
