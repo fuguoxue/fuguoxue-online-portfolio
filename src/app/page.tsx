@@ -43,9 +43,10 @@ export default function Home() {
             </p>
             <p className="leading-relaxed mb-4 text-left">
               Fuguo Xue is a creative technologist specializing in multimedia
-              and front-end technologies. Her work blends AI, creative coding,
-              and interaction design, and was featured at Ars Electronica
-              Festival Campus Exhibtion and more.
+              and front-end technologies. She is interested in algorithmic art,
+              video games, and GenAI integration for creative purposes. Her work
+              was featured at Ars Electronica Festival Campus Exhibtion 2023 and
+              more.
             </p>
             <section className="mb-8">
               <div>
@@ -175,7 +176,9 @@ export default function Home() {
 
                     {/* Project Info */}
                     <h3>{project.name}</h3>
-                    <p className="text-secondary"><i>{project.tags}</i></p>
+                    <p className="text-secondary">
+                      <i>{project.tags}</i>
+                    </p>
                     <p>{project.media}</p>
                     <p className="my-4">
                       <b>Tools:</b> {project.tools}

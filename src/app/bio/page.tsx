@@ -17,39 +17,32 @@ export default function Main() {
         <section>
           <h2>Bio</h2>
           <p>
-            Fuguo Xue is a creative technologist based in New York, currently
-            pursuing a master&apos;s degree in Integrated Design & Media at New
-            York University. Before that, she graduated from Nanyang
-            Technological University Singapore in June 2023 with a Bachelor of
-            Engineering Degree in Information Engineering & Media (Highest
-            Distinction).
+            Fuguo Xue is a creative technologist, currently pursuing a
+            master&apos;s degree in Integrated Design & Media at New York
+            University. Before that, she graduated from Nanyang Technological
+            University Singapore in June 2023 with a Bachelor of Engineering
+            Degree in Information Engineering & Media (Highest Distinction).
           </p>
           <p>
-            Fuguo has explored various art and design forms, including
-            experimental animation, interactive experience design, PC games,
-            interactive storytelling, and UI/UX design. Notably, her interactive
-            installation{" "}
-            <Link
-              href="/projects/cometale"
-              className="text-tag hover:underline"
-            >
-              Cometale
-            </Link>{" "}
-            was featured at Ars Electronica Festival 2023 in Linz, Austria.
+            Fuguo&apos;s work explores the intersection of technology, nature,
+            and human society. Passionate about simulating natural elements and
+            human culture through code and algorithms, her work spans
+            interactive installations, video games, and web-based interactions.
           </p>
           <p>
-            Specializing in interactive design and emerging media, Fuguo has
-            honed her expertise in{" "}
+            Specializing in creative technology, Fuguo has honed her expertise
+            in{" "}
             <b>
               Max MSP, TouchDesigner, Unity 3D, Adobe Creative Suite, p5.js,
               Python, HTML5, JavaScript, CSS, PHP, and MySQL
             </b>
-            , enabling her to excel in various domains, including{" "}
-            <b>
-              interactive installations, game design & development, web
-              development, and user experience design
-            </b>
-            .
+            . These skills enable her to craft playful, thought-provoking
+            experiences that reimagine relationships between humans, machines,
+            and the natural world.
+          </p>
+          <p>
+            Currently, Fuguo is exploring new ways to leverage AI and open-source
+            tools for interactive experiences.
           </p>
         </section>
 
@@ -58,6 +51,28 @@ export default function Main() {
         {/* Work Experiences */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <h3 className="col-span-1 md:col-span-3 mt-6">Work Experiences</h3>
+          <div className="col-span-1">
+            <h4>Front-End Developer</h4>
+            <p className="text-secondary text-opacity-70">
+              Jul 2024 — Sept 2024
+            </p>
+            <p className="text-secondary text-opacity-70">
+              <b>Philly Truce</b>, Philadelphia (Remote)
+            </p>
+          </div>
+          <div className="col-span-1 md:col-span-2">
+            <ul className="list-disc ml-4">
+              <li>
+                Developed a responsive mobile app using Next.js, improving user
+                experience to support community conflict resolution initiatives.
+              </li>
+              <li>
+                Collaborated with back-end teams to implement 2FA user
+                authentication using NextAuth.js, enhancing app security.
+              </li>
+            </ul>
+          </div>
+          <SeparationLine thickness="1px" />
           <div className="col-span-1">
             <h4>Museum Accessibility Designer</h4>
             <p className="text-secondary text-opacity-70">
@@ -171,7 +186,7 @@ export default function Main() {
         {/* Exhibitions */}
         <section className="grid col-span-1 md:grid-cols-3 md:gap-4">
           <h3 className="col-span-1 md:col-span-3 my-6">Exhibitions</h3>
-          <div className="col-span-1">
+          {/* <div className="col-span-1">
             <h4 className="italic">
               <Link
                 href="/projects/the-surface-city"
@@ -191,7 +206,7 @@ export default function Main() {
               An Evening of Immersive Entertainment
             </Link>
             <p className="text-secondary">New York, United States</p>
-          </div>
+          </div> */}
 
           <div className="col-span-1">
             <h4 className="italic">
