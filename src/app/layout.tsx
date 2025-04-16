@@ -26,13 +26,14 @@ const inconsolata = Inconsolata({
 });
 
 export const metadata: Metadata = {
+  authors: [{ name: "Fuguo Xue", url: "https://www.fuguosmediaspace.me/" }],
   title: "Fuguo's Media Space",
-  description: "An interactive portfolio by Fuguo Xue showcasing digital art, immersive experiences, and generative design.",
+  description: "Fuguo's online portfolio showcasing projects at the intersection of nature, technology, and human experience — from generative art to immersive installations and experimental games.",
   openGraph: {
     type: "website",
     url: "https://www.fuguosmediaspace.me/",
     title: "Fuguo's Media Space",
-    description: "An interactive portfolio by Fuguo Xue showcasing digital art, immersive experiences, and generative design.",
+    description: "Fuguo's online portfolio showcasing projects at the intersection of nature, technology, and human experience — from generative art to immersive installations and experimental games.",
     images: [
       {
         url: "https://www.fuguosmediaspace.me/imgs/hearing-the-forest/hearing-the-forest-cover.png",
