@@ -39,7 +39,7 @@ export default function Home() {
             {/* Bio Section */}
             <P5ShadowController />
             <p className="text-tag">
-              Interactive Media Artist | Game Designer & Developer
+              Creative Technologist | Game Designer & Developer
             </p>
             <p className="leading-relaxed mb-4 text-left">
               Fuguo Xue is a creative technologist specializing in multimedia

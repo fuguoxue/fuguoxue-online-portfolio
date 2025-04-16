@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inconsolata } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import localFont from "next/font/local";
 import "./globals.css";
@@ -27,6 +27,10 @@ const inconsolata = Inconsolata({
 
 export const metadata: Metadata = {
   title: "Fuguo's Media Space",
+  description: "Fuguo's online portfolio showcasing projects at the intersection of nature, technology, and human experience — from generative art to immersive installations and experimental games.",
+  openGraph: {
+    images: ["/imgs/hearing-the-forest/hearing-the-forest-cover.png"],
+  },
 };
 
 export default function RootLayout({
