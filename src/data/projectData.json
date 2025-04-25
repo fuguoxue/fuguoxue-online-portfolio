@@ -34,18 +34,18 @@
         "time": "1 month",
         "media": "A physical interactive tree-planting experience. Grow a digital tree with a physical block. ",
         "mentors": ["Joshua Goldberg", "Rob Ramirez"]
-    },
+    },    
     {
-        "name": "The Surface City",
-        "tags": ["Interactive Experience"],
-        "tools": "p5.js",
-        "year": "2024",
-        "imgURL": "/imgs/The-Surface-City-cover.gif",
-        "hidden": false,
-        "description": "Urban planning throughout history is often closely related to its geographical location and culture. In a world where information technology is increasingly developed, people have less and less privacy. What would a city without privacy be like? The Surface City poetically explores this question.\nThe project consists of the story of The Surface City, and a web-based interactive experience that allows player to generate 3D cityscapes of several Surface City districts. \nThe Surface City is a collaboration between Fuguo and Chenyi. It is part of the Visible Cities: Workshop Exhibition organized by CritLab Review.",
-        "time": "2 weeks",
-        "media": "An experimental fiction about a society without privacy, accompanied by interactive conceptual visuals imagining the society's urban planning realized by programming.",
-        "mentors": ["Thiago Hersan", "Alexandra Marraccini"]
+        "name": "Bazaar.log",
+        "tags": ["Game"],
+        "tools": "Next.js, Tailwind CSS",
+        "year": "2025",
+        "imgURL": "/imgs/blogs/idm-thesis/wk6/preInternet.jpg",
+        "hidden": true,
+        "description": "Bazaar.log is a browser-based, non-linear narrative game that explores the evolution of the open-source ecosystem alongside the growth of the Internet. The game invites players to 1) Discover how the open-source ecosystem has developed from its early days to the present; 2) Examine the opportunities and challenges it faces today, especially in light of the widespread adoption of Generative AI. 3) Speculate on possible futures for open-source communities in the post-AI era. \nThe experience begins in 1970, as ARPANET becomes available to academic institutions, marking the dawn of virtual connectivity. Players take on the role of a researcher working in a university computer lab. Using five core functions—news, notebook, local area network (LAN), calendar, and dashboard—players navigate key moments in the history of the Internet and open-source development. Along the way, they make decisions that shape their journey, leading to multiple possible endings that encourage reflection on how different choices might impact the open-source future.\nThe inspiration for Bazaar.log comes from my research on Open-Source Ecosystems and Internet Art in the Post-AI Age. Open-source culture and Internet art have grown rapidly alongside Internet technologies. However, with the rise of Generative AI in the 2020s, open-source communities face new challenges, such as ethical concerns and sustainability, while Internet art seems more adaptable—often embracing and experimenting with AI’s possibilities. This contrast inspired me to use the format of an interactive, browser-based game to both document and imagine the evolving landscape of open-source ecosystems, bridging research with speculative design.",
+        "time": "1 year",
+        "media": "A browser-based game in Internet aesthetics about the history of open source, with non-linear storytelling driven by player decisions.",
+        "mentors": ["Pip Mothersill, Mick McConnell"]
     },
     {
         "name": "WildWeb",
@@ -60,18 +60,6 @@
         "mentors": ["Katherine Bennett"]
     },
     {
-        "name": "AquaMetropolis",
-        "tags": ["Animation"],
-        "tools": "Generative AI",
-        "year": "2023",
-        "imgURL": "/imgs/aquametropolis-cover.gif",
-        "hidden": true,
-        "description": "AquaMetropolis: A Submerged Cyberpunk Odyssey is a short fictional film produced with Generative AI by Fuguo Xue that transports viewers into a mesmerizing undersea world. In this visionary future, humanity has adapted to life beneath the waves as sea levels rise. While the city appears harmonious, the film subtly reveals the profound vulnerability and awe that humans experience when faced with the relentless power of the natural world.",
-        "time": "3 months",
-        "media": "A short fictional film produced with Generative AI, imagining a city under the sea.",
-        "mentors": ["Nick Katsivelos"]
-    },
-    {
         "name": "Cometale",
         "tags": ["Interactive Experience"],
         "tools": "TouchDesigner, Kinect",
@@ -82,6 +70,30 @@
         "time": "1 year",
         "media": "A physcial interactive installation about a silk scroll recording ancient Chinese astronomical divination.",
         "mentors": ["Ina Conradi", "Louis-Philippe Demers", "Chua Hock Chuan"]
+    },
+    {
+        "name": "The Surface City",
+        "tags": ["Interactive Experience"],
+        "tools": "p5.js",
+        "year": "2024",
+        "imgURL": "/imgs/The-Surface-City-cover.gif",
+        "hidden": false,
+        "description": "Urban planning throughout history is often closely related to its geographical location and culture. In a world where information technology is increasingly developed, people have less and less privacy. What would a city without privacy be like? The Surface City poetically explores this question.\nThe project consists of the story of The Surface City, and a web-based interactive experience that allows player to generate 3D cityscapes of several Surface City districts. \nThe Surface City is a collaboration between Fuguo and Chenyi. It is part of the Visible Cities: Workshop Exhibition organized by CritLab Review.",
+        "time": "2 weeks",
+        "media": "An experimental fiction about a society without privacy, accompanied by interactive conceptual visuals imagining the society's urban planning realized by programming.",
+        "mentors": ["Thiago Hersan", "Alexandra Marraccini"]
+    },
+    {
+        "name": "AquaMetropolis",
+        "tags": ["Animation"],
+        "tools": "Generative AI",
+        "year": "2023",
+        "imgURL": "/imgs/aquametropolis-cover.gif",
+        "hidden": true,
+        "description": "AquaMetropolis: A Submerged Cyberpunk Odyssey is a short fictional film produced with Generative AI by Fuguo Xue that transports viewers into a mesmerizing undersea world. In this visionary future, humanity has adapted to life beneath the waves as sea levels rise. While the city appears harmonious, the film subtly reveals the profound vulnerability and awe that humans experience when faced with the relentless power of the natural world.",
+        "time": "3 months",
+        "media": "A short fictional film produced with Generative AI, imagining a city under the sea.",
+        "mentors": ["Nick Katsivelos"]
     },
     {
         "name": "NYC Subway Navigation",
