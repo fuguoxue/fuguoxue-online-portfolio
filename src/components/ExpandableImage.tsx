@@ -48,7 +48,7 @@ export default function ExpandableImage({
           {/* Close button */}
           <button
             onClick={closeModal}
-            className="absolute top-4 right-4 text-white bg-transparent border-none text-6xl cursor-pointer"
+            className="absolute top-4 right-4 text-white bg-transparent border-none text-6xl cursor-pointer z-50"
             aria-label="Close"
           >
             &times;

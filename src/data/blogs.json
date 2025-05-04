@@ -1,5 +1,13 @@
 [
     {
+        "title": "Week 15: Adding Guidance to CLI-style Interface",
+        "id": "wk15",
+        "date": "May 4, 2025",
+        "tag": "idm-thesis",
+        "posted": false,
+        "description": "For the past two weeks, I improved my CLI-style interface player experience by developing in-game tutorials and creating a retro-style player manual.",
+        "featureImgURL": "/imgs/blogs/idm-thesis/wk8/Bazaar.log Brochure.jpg"
+    },{
         "title": "Week 8-10: Adding Guidance to CLI-style Interface",
         "id": "wk8",
         "date": "April 3, 2025",

@@ -27,11 +27,11 @@ export function ProjectInfoSection({ projectName }: ProjectInfoSectionProps) {
           </span>
         ))}
       </p>
-      <p className="mt-4 mb-2 supplementary text-sm text-tag">
+      <p className="mt-4 mb-2 supplementary text-sm text-tag text-left">
         <b>TIME FRAME: </b>
         {project.time}
       </p>
-      <p className="mb-2 supplementary text-sm text-tag">
+      <p className="mb-2 supplementary text-sm text-tag text-left">
         <b>MEDIA: </b>
         {project.media}
       </p>

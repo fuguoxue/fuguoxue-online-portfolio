@@ -1,7 +1,7 @@
 [
     {
         "name": "Hearing the Forest",
-        "tags": ["Interactive Experience"],
+        "tags": ["Game"],
         "tools": "Unity3D, RESTful API, Max MSP",
         "year": "2024",
         "imgURL": "/imgs/hearing-the-forest/hearing-the-forest-cover.png",
@@ -24,6 +24,18 @@
         "mentors": ["Joshua Goldberg", "Rob Ramirez"]
     },
     {
+        "name": "Bazaar.log",
+        "tags": ["Game"],
+        "tools": "Next.js, Tailwind CSS",
+        "year": "2025",
+        "imgURL": "/imgs/bazaar-log/bazaar-log-cover.gif",
+        "hidden": false,
+        "description": "Bazaar.log is a browser-based, non-linear narrative game that explores the evolution of the open-source ecosystem alongside the growth of the Internet. The game invites players to 1) Discover how the open-source ecosystem has developed from its early days to the present; 2) Examine the opportunities and challenges it faces today, especially in light of the widespread adoption of Generative AI. 3) Speculate on possible futures for open-source communities in the post-AI era. \nThe experience begins in 1970, as ARPANET becomes available to academic institutions, marking the dawn of virtual connectivity. Players take on the role of a researcher working in a university computer lab. Using five core functions—news, notebook, local area network (LAN), calendar, and dashboard—players navigate key moments in the history of the Internet and open-source development. Along the way, they make decisions that shape their journey, leading to multiple possible endings that encourage reflection on how different choices might impact the open-source future.",
+        "time": "1 year",
+        "media": "A history-based browser game about open source ecosystem, with evolving UIs of retrospective Internet aesthetics and non-linear storytelling driven by player decisions.",
+        "mentors": ["Pip Mothersill, Mick McConnell"]
+    },
+    {
         "name": "Tree of Growth",
         "tags": ["Interactive Experience"],
         "tools": "Max MSP",
@@ -34,18 +46,6 @@
         "time": "1 month",
         "media": "A physical interactive tree-planting experience. Grow a digital tree with a physical block. ",
         "mentors": ["Joshua Goldberg", "Rob Ramirez"]
-    },    
-    {
-        "name": "Bazaar.log",
-        "tags": ["Game"],
-        "tools": "Next.js, Tailwind CSS",
-        "year": "2025",
-        "imgURL": "/imgs/blogs/idm-thesis/wk6/preInternet.jpg",
-        "hidden": true,
-        "description": "Bazaar.log is a browser-based, non-linear narrative game that explores the evolution of the open-source ecosystem alongside the growth of the Internet. The game invites players to 1) Discover how the open-source ecosystem has developed from its early days to the present; 2) Examine the opportunities and challenges it faces today, especially in light of the widespread adoption of Generative AI. 3) Speculate on possible futures for open-source communities in the post-AI era. \nThe experience begins in 1970, as ARPANET becomes available to academic institutions, marking the dawn of virtual connectivity. Players take on the role of a researcher working in a university computer lab. Using five core functions—news, notebook, local area network (LAN), calendar, and dashboard—players navigate key moments in the history of the Internet and open-source development. Along the way, they make decisions that shape their journey, leading to multiple possible endings that encourage reflection on how different choices might impact the open-source future.\nThe inspiration for Bazaar.log comes from my research on Open-Source Ecosystems and Internet Art in the Post-AI Age. Open-source culture and Internet art have grown rapidly alongside Internet technologies. However, with the rise of Generative AI in the 2020s, open-source communities face new challenges, such as ethical concerns and sustainability, while Internet art seems more adaptable—often embracing and experimenting with AI’s possibilities. This contrast inspired me to use the format of an interactive, browser-based game to both document and imagine the evolving landscape of open-source ecosystems, bridging research with speculative design.",
-        "time": "1 year",
-        "media": "A browser-based game in Internet aesthetics about the history of open source, with non-linear storytelling driven by player decisions.",
-        "mentors": ["Pip Mothersill, Mick McConnell"]
     },
     {
         "name": "WildWeb",
