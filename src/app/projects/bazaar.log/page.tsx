@@ -99,7 +99,7 @@ export default function Main() {
         {/* Context */}
         <section>
           <h3>
-            Context: Open-Source Ecosystems and Internet Art in the Post-AI Age
+            Context: Open Source Ecosystems and Internet Art in the Post-AI Age
           </h3>
           <p>
             Open source has long fueled software innovation and digital
@@ -138,11 +138,11 @@ export default function Main() {
             academic institutions, marking the dawn of virtual connectivity.
             Players take on the role of a researcher working in a university
             computer lab. Using five core functions—news, notebook, local area
-            network (LAN), calendar, and dashboard—players navigate key moments
-            in the history of the Internet and open-source development. Along
+            network (LAN), calendar, and workstation—players navigate key moments
+            in the history of the Internet and open source development. Along
             the way, they make decisions that shape their journey, leading to
             multiple possible endings that encourage reflection on how different
-            choices might impact the open-source future.
+            choices might impact the open source future.
           </p>
           <p>
             The name &quot;Bazaar.log&quot; consists of two parts. “Bazaar” is
