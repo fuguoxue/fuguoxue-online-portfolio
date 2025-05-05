@@ -102,21 +102,23 @@ export default function Main() {
             Context: Open-Source Ecosystems and Internet Art in the Post-AI Age
           </h3>
           <p>
-            Open-source culture and Internet art have grown rapidly alongside
-            Internet technologies. However, with the rise of Generative AI in
-            the 2020s, open-source communities face new challenges, such as
-            ethical concerns and sustainability, while Internet art seems more
-            adaptable — often embracing and experimenting with AI’s
-            possibilities. This contrast inspired me to use the form of an
-            interactive, browser-based game to both document and imagine the
-            evolving landscape of open-source ecosystems, bridging research with
-            speculative design.
+            Open source has long fueled software innovation and digital
+            creativity through collaborative knowledge sharing. From early code
+            exchanges in BYTE magazine to expansive online communities, it
+            empowered not only developers but also new media artists who use
+            Internet technologies—many of them open source—as expressive tools.
+            However, in the post-AI age, open source communities face a
+            sustainability crisis. As users shift toward generative AI and
+            corporations profit from community-trained models without
+            reciprocity, participation declines and the values of openness are
+            increasingly challenged.
           </p>
           <h4>Why should we care about open source?</h4>
           <p>
             The open source ecosystem supports many aspects of our modern
-            society. It positively impacts organizations and individuals, and
-            developers and users worldwide.
+            society. It positively impacts a wide range of entities, from
+            government sectors and IT corporations to individuals as product
+            developers and user.
           </p>
         </section>
         {/* Outcome Overview */}
@@ -299,7 +301,10 @@ export default function Main() {
               order to retain their curiosity and learning motivation.
             </li>
             <li>
-              Bazaar.log has the potential to adopt an open source method for game development. This way, it will become a collection of memories and thoughts from the public about open source, and meaningfully contribute to a sustainable open source future.
+              Bazaar.log has the potential to adopt an open source method for
+              game development. This way, it will become a collection of
+              memories and thoughts from the public about open source, and
+              meaningfully contribute to a sustainable open source future.
             </li>
           </ul>
         </section>
