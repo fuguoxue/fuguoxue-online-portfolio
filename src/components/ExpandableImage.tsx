@@ -6,10 +6,12 @@ export default function ExpandableImage({
   src,
   alt,
   description,
+  className,
 }: {
   src: string;
   alt: string;
   description: string;
+  className?: string;
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -26,7 +28,7 @@ export default function ExpandableImage({
   return (
     <div>
       {/* Thumbnail image with hover effect */}
-      <div className="relative cursor-pointer mt-8 group" onClick={openModal}>
+      <div className={`relative cursor-pointer mt-8 group ${className}`} onClick={openModal}>
         <Image
           src={src}
           alt={alt}

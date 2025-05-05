@@ -4,15 +4,17 @@ interface ImageWithCaptionProps {
   src: string;
   alt: string;
   caption: string;
-  widthPercentage?: number; // Allow setting width as a percentage of the parent width
-  minWidth?: number; // Minimum width for the image container
+  widthPercentage?: number;
+  minWidth?: number;
+  className?: string;
 }
 
 export default function ImageWithCaption({
   src,
   alt,
   caption,
-  widthPercentage = 100, // Default to 100% if not provided
+  widthPercentage = 100,
+  className,
 }: ImageWithCaptionProps) {
   return (
     <figure className="flex flex-col items-center w-full my-4">
@@ -32,7 +34,7 @@ export default function ImageWithCaption({
           height={
             75
           } /* Adjust the ratio accordingly or leave auto for responsive height */
-          className="w-full h-auto object-contain aspect-auto"
+          className={`w-full h-auto object-contain aspect-auto ${className}`}
         />
       </div>
       {caption && (

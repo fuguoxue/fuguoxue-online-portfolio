@@ -30,23 +30,27 @@ const finalScreenshot = [
   },
   {
     src: "/imgs/bazaar-log/finalScreenshots/4 - web2000.png",
-    description: "Game stage 4: interface featuring a Windows-XP-style look in the 2000s.",
+    description:
+      "Game stage 4: interface featuring a Windows-XP-style look in the 2000s.",
+  },
+  {
+    src: "/imgs/bazaar-log/finalScreenshots/7 - web2010.png",
+    description:
+      "Game stage 5: interface featuring a Windows-7-style look in the 2010s.",
+  },
+  {
+    src: "/imgs/bazaar-log/finalScreenshots/8 - web2020.png",
+    description:
+      "Game stage 6: interface featuring a Windows-10-style look in the 2020s.",
   },
   {
     src: "/imgs/bazaar-log/finalScreenshots/5 - decision.png",
-    description: "An in-game decision. There are several decision nodes throughout the game, where players need to make a decision in response to the open source news / events of that era. Each decision will lead players to either an instant game over or an approval of moving forward.",
+    description:
+      "An in-game decision. There are several decision nodes throughout the game, where players need to make a decision in response to the open source news / events of that era. Each decision will lead players to either an instant game over or an approval of moving forward.",
   },
   {
     src: "/imgs/bazaar-log/finalScreenshots/6 - decisionResult.png",
     description: "Result of an in-game decision.",
-  },
-  {
-    src: "/imgs/bazaar-log/finalScreenshots/7 - web2010.png",
-    description: "Game stage 5: interface featuring a Windows-7-style look in the 2010s.",
-  },
-  {
-    src: "/imgs/bazaar-log/finalScreenshots/8 - web2020.png",
-    description: "Game stage 6: interface featuring a Windows-10-style look in the 2020s.",
   },
 ];
 
@@ -109,7 +113,11 @@ export default function Main() {
             speculative design.
           </p>
           <h4>Why should we care about open source?</h4>
-          <p>The open source ecosystem supports many aspects of our modern society. It positively impacts organizations and individuals, and developers and users worldwide.</p>
+          <p>
+            The open source ecosystem supports many aspects of our modern
+            society. It positively impacts organizations and individuals, and
+            developers and users worldwide.
+          </p>
         </section>
         {/* Outcome Overview */}
         <section>
@@ -123,7 +131,17 @@ export default function Main() {
             reflection on the sustainability and future development of open
             source ecosystems in the post-AI era.
           </p>
-          <p>The experience begins in 1970, as ARPANET becomes available to academic institutions, marking the dawn of virtual connectivity. Players take on the role of a researcher working in a university computer lab. Using five core functions—news, notebook, local area network (LAN), calendar, and dashboard—players navigate key moments in the history of the Internet and open-source development. Along the way, they make decisions that shape their journey, leading to multiple possible endings that encourage reflection on how different choices might impact the open-source future.</p>
+          <p>
+            The experience begins in 1970, as ARPANET becomes available to
+            academic institutions, marking the dawn of virtual connectivity.
+            Players take on the role of a researcher working in a university
+            computer lab. Using five core functions—news, notebook, local area
+            network (LAN), calendar, and dashboard—players navigate key moments
+            in the history of the Internet and open-source development. Along
+            the way, they make decisions that shape their journey, leading to
+            multiple possible endings that encourage reflection on how different
+            choices might impact the open-source future.
+          </p>
           <p>
             The name &quot;Bazaar.log&quot; consists of two parts. “Bazaar” is
             meant to to be a tribute to the book The Cathedral and The Bazaar by
@@ -133,11 +151,12 @@ export default function Main() {
             within a system or applications, so it functions as an interesting
             indication of the history-based game narrative.
           </p>
-          <div className="w-1/2 h-auto drop-shadow-md m-auto">
-            <ImageWithCaption
+          <div className="w-1/2 h-auto m-auto">
+            <ExpandableImage
               src="/imgs/bazaar-log/Bazaar.log Poster.jpg"
               alt="Bazaar.log introduction diagram containing game timeline, UI design, player emotional arc, game functions, and methodology of using browser as gaming platform."
-              caption="Diagram of Bazaar.log Game."
+              description="Diagram of Bazaar.log Game."
+              className="drop-shadow-md"
             />
           </div>
           <h5>Screenshots from Bazaar.log</h5>
@@ -159,48 +178,131 @@ export default function Main() {
             widthPercentage={50}
             caption="Bazaar.log brochure and cards."
           />
-          <div className="drop-shadow-md">
-            <ExpandableImage
-              src="/imgs/bazaar-log/derivatives/Brochure.jpg"
-              alt=""
-              description="Bazaar.log brochure designed for helping players navigate the first CLI-style game interface."
+          <ExpandableImage
+            src="/imgs/bazaar-log/derivatives/Brochure.jpg"
+            alt=""
+            description="Bazaar.log brochure designed for helping players navigate the first CLI-style game interface."
+            className="drop-shadow-md"
+          />
+          <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+            <ImageWithCaption
+              src="/imgs/bazaar-log/derivatives/card-1-front-100.jpg"
+              alt="Card of Y2K problem, front side."
+              caption="Card 1 (front): Y2K Problem"
+              className="w-full h-auto drop-shadow-md"
+            />
+            <ImageWithCaption
+              src="/imgs/bazaar-log/derivatives/card-1-back-100.jpg"
+              alt="Card of Y2K problem, back side."
+              caption="Card 1 (back): Y2K Problem"
+              className="w-full h-auto drop-shadow-md"
+            />
+            <ImageWithCaption
+              src="/imgs/bazaar-log/derivatives/card-2-front-100.jpg"
+              alt="Card of ASCII Art, front side."
+              caption="Card 2 (front): Y2K Problem"
+              className="w-full h-auto drop-shadow-md"
+            />
+            <ImageWithCaption
+              src="/imgs/bazaar-log/derivatives/card-2-back-100.jpg"
+              alt="Card of ASCII Art, back side."
+              caption="Card 2 (back): Y2K Problem"
+              className="w-full h-auto drop-shadow-md"
             />
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-4 gap-4 mb-4">
-            <div className="w-full h-auto drop-shadow-md">
-              <ImageWithCaption
-                src="/imgs/bazaar-log/derivatives/card-1-front-100.jpg"
-                alt="Card of Y2K problem, front side."
-                caption="Card 1 (front): Y2K Problem"
-              />
-            </div>
-            <div className="w-full h-auto drop-shadow-md">
-              <ImageWithCaption
-                src="/imgs/bazaar-log/derivatives/card-1-back-100.jpg"
-                alt="Card of Y2K problem, back side."
-                caption="Card 1 (back): Y2K Problem"
-              />
-            </div>
-            <div className="w-full h-auto drop-shadow-md">
-              <ImageWithCaption
-                src="/imgs/bazaar-log/derivatives/card-2-front-100.jpg"
-                alt="Card of ASCII Art, front side."
-                caption="Card 2 (front): Y2K Problem"
-              />
-            </div>
-            <div className="w-full h-auto drop-shadow-md">
-              <ImageWithCaption
-                src="/imgs/bazaar-log/derivatives/card-2-back-100.jpg"
-                alt="Card of ASCII Art, back side."
-                caption="Card 2 (back): Y2K Problem"
-              />
-            </div>
-          </div>
         </section>
-        {/* TODO: Process */}
-        {/* <section>
+        {/* Process */}
+        <section>
           <h3>Process</h3>
-        </section> */}
+          <ExpandableImage
+            src="/imgs/bazaar-log/Process.jpg"
+            alt="Bazaar.log game development process diagram in the double diamond model."
+            description="Diagram of Bazaar.log game development process."
+            className="drop-shadow-md"
+          />
+        </section>
+        {/* Challenges and Solutions */}
+        <section>
+          <h3>Challenges and Solutions</h3>
+          <p>
+            Bazaar.log has gone through several rounds of player feedback and
+            iterations, each posed new challenges followed by solutions.
+          </p>
+          <h4>Challenge 1: information capacity</h4>
+          <p>
+            Incremental games have limited information capacity in my
+            game&apos;s context, as the open source ecosystem is too complex to
+            be boilded down to a few metrics.
+          </p>
+          <p>
+            <b>Solution:</b>
+            <ul className="list-disc ml-4">
+              <li>
+                Pivoted from incremental game to narrative game in order to
+                deliver more contextual information.
+              </li>
+            </ul>
+          </p>
+          <h4>Challenge 2: effective storytelling</h4>
+          <p>
+            How to make the game look less like a boring history book and pique
+            curiosity of players?
+          </p>
+          <p>
+            <b>Solutions:</b>
+            <ul className="list-disc ml-4">
+              <li>
+                Created non-linear storytelling mechanism, let player decisions
+                matter for the game progress.
+              </li>
+              <li>
+                Leveraged browser functions to enhance the fun of the game
+                (pop-up windows, hyperlinks, etc.).
+              </li>
+            </ul>
+          </p>
+          <h4>Challenge 3: lack of guidance</h4>
+          <p>
+            Players can get lost in some interfaces like the Pre-Internet CLI
+            screen.
+          </p>
+          <p>
+            <b>Solutions:</b>
+            <ul className="list-disc ml-4">
+              <li>Developed optional in-game tutorials.</li>
+              <li>
+                Created physical user guide brochure in retrospective style.
+              </li>
+            </ul>
+          </p>
+        </section>
+        {/* Conclusion */}
+        <section>
+          <h3>Conclusion</h3>
+          <p>Upon my research and work, below are my takeaways.</p>
+          <ul className="list-disc ml-4">
+            <li>
+              There are still needs for open source resources, but contributors
+              are reluctant to contribute due to the existence of GenAI tools.
+            </li>
+            <li>
+              GenAI changed the connections between artists and open source
+              communities, but open source communities are still competitive due
+              to their provision of accessible tools, communal learning
+              environment, and networking opportunities.
+            </li>
+            <li>Open source sustainability matters for modern society.</li>
+            <li>
+              Players have a vague idea about the &quot;open source&quot;
+              concept, and they are interested in learning more about its
+              history. However, the game genre and interaction design matters in
+              order to retain their curiosity and learning motivation.
+            </li>
+            <li>
+              Bazaar.log has the potential to adopt an open source method for game development. This way, it will become a collection of memories and thoughts from the public about open source, and meaningfully contribute to a sustainable open source future.
+            </li>
+          </ul>
+        </section>
       </main>
       <div className="col-span-1 sm:hidden md:block lg:hidden"></div>
       <aside className="col-span-1 md:col-span-3 lg:col-span-1">
