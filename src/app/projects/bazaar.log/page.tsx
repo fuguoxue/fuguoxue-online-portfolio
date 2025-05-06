@@ -99,7 +99,7 @@ export default function Main() {
         {/* Context */}
         <section>
           <h3>
-            Context: Open Source Ecosystems and Internet Art in the Post-AI Age
+            Background: Open Source Ecosystems and Internet Art in the Post-AI Age
           </h3>
           <p>
             Open source has long fueled software innovation and digital
@@ -120,29 +120,115 @@ export default function Main() {
             government sectors and IT corporations to individuals as product
             developers and user.
           </p>
-        </section>
-        {/* Outcome Overview */}
-        <section>
-          <h3>Outcome Overview</h3>
-          <h4>Bazaar.log: A History-Based Game in Browser</h4>
+          <h4>Problem Statement</h4>
+          <p>My research investigates how the popularity of GenAI applications influences the dynamics of the open source ecosystem and what these changes mean for new media artists as active participants of open source communities. Specifically, it explores the following questions: 1) How does the popularity of GenAI applications affect the relationship between the open source community and new media artists as users and contributors? 2) What opportunities and/or challenges do GenAI applications bring to the open source communities and new media artists?</p>
+          <h4>Project Goal</h4>
           <p>
             To explore and communicate the evolving dynamics of the open source
-            ecosystem, I developed Bazaar.log, a speculative simulation in the
+            ecosystem, I proposed Bazaar.log, a speculative simulation in the
             form of a browser-based game. This game functions as both a research
             prototype and a critical design intervention, aiming to provoke
             reflection on the sustainability and future development of open
             source ecosystems in the post-AI era.
           </p>
+        </section>
+        {/* Process */}
+        <section>
+          <h3>Process</h3>
+          <ExpandableImage
+            src="/imgs/bazaar-log/Process.jpg"
+            alt="Bazaar.log game development process diagram in the double diamond model."
+            description="Diagram of Bazaar.log game development process."
+            className="drop-shadow-md"
+          />
+          <h4>Research Result</h4>
+          <div className="w-1/2 h-auto m-auto">
+            <ExpandableImage
+              src="/imgs/bazaar-log/Pre-thesis Data Analysis - Open-Source Ecosystem.jpg"
+              alt="Diagram of open source ecosystem."
+              description="Diagram of open source ecosystem."
+              className="drop-shadow-md"
+            />
+          </div>
+
+          <div className="w-1/2 h-auto m-auto">
+            <ExpandableImage
+              src="/imgs/bazaar-log/Pre-thesis Data Analysis - key Insights 4 and 5.jpg"
+              alt="Comparison of the connections between artists and open source ecosystem before and after the existence of GenAI."
+              description="Comparison of the connections between artists and open source ecosystem before and after the existence of GenAI."
+              className="drop-shadow-md"
+            />
+          </div>
+        </section>
+        {/* Challenges and Solutions */}
+        <section>
+          <h3>Challenges and Solutions</h3>
+          <p>
+            Bazaar.log has gone through several rounds of player feedback and
+            iterations, each posed new challenges followed by solutions.
+          </p>
+          <h4>Challenge 1: information capacity</h4>
+          <p>
+            Incremental games have limited information capacity in my
+            game&apos;s context, as the open source ecosystem is too complex to
+            be boilded down to a few metrics.
+          </p>
+          <p>
+            <b>Solution:</b>
+            <ul className="list-disc ml-4">
+              <li>
+                Pivoted from incremental game to narrative game in order to
+                deliver more contextual information.
+              </li>
+            </ul>
+          </p>
+          <h4>Challenge 2: effective storytelling</h4>
+          <p>
+            How to make the game look less like a boring history book and pique
+            curiosity of players?
+          </p>
+          <p>
+            <b>Solutions:</b>
+            <ul className="list-disc ml-4">
+              <li>
+                Created non-linear storytelling mechanism, let player decisions
+                matter for the game progress.
+              </li>
+              <li>
+                Leveraged browser functions to enhance the fun of the game
+                (pop-up windows, hyperlinks, etc.).
+              </li>
+            </ul>
+          </p>
+          <h4>Challenge 3: lack of guidance</h4>
+          <p>
+            Players can get lost in some interfaces like the Pre-Internet CLI
+            screen.
+          </p>
+          <p>
+            <b>Solutions:</b>
+            <ul className="list-disc ml-4">
+              <li>Developed optional in-game tutorials.</li>
+              <li>
+                Created physical user guide brochure in retrospective style.
+              </li>
+            </ul>
+          </p>
+        </section>
+        {/* Outcome Overview */}
+        <section>
+          <h3>Outcome</h3>
+          <h4>Bazaar.log: A History-Based Game in Browser</h4>
           <p>
             The experience begins in 1970, as ARPANET becomes available to
             academic institutions, marking the dawn of virtual connectivity.
             Players take on the role of a researcher working in a university
             computer lab. Using five core functions—news, notebook, local area
-            network (LAN), calendar, and workstation—players navigate key moments
-            in the history of the Internet and open source development. Along
-            the way, they make decisions that shape their journey, leading to
-            multiple possible endings that encourage reflection on how different
-            choices might impact the open source future.
+            network (LAN), calendar, and workstation—players navigate key
+            moments in the history of the Internet and open source development.
+            Along the way, they make decisions that shape their journey, leading
+            to multiple possible endings that encourage reflection on how
+            different choices might impact the open source future.
           </p>
           <p>
             The name &quot;Bazaar.log&quot; consists of two parts. “Bazaar” is
@@ -213,71 +299,7 @@ export default function Main() {
             />
           </div>
         </section>
-        {/* Process */}
-        <section>
-          <h3>Process</h3>
-          <ExpandableImage
-            src="/imgs/bazaar-log/Process.jpg"
-            alt="Bazaar.log game development process diagram in the double diamond model."
-            description="Diagram of Bazaar.log game development process."
-            className="drop-shadow-md"
-          />
-        </section>
-        {/* Challenges and Solutions */}
-        <section>
-          <h3>Challenges and Solutions</h3>
-          <p>
-            Bazaar.log has gone through several rounds of player feedback and
-            iterations, each posed new challenges followed by solutions.
-          </p>
-          <h4>Challenge 1: information capacity</h4>
-          <p>
-            Incremental games have limited information capacity in my
-            game&apos;s context, as the open source ecosystem is too complex to
-            be boilded down to a few metrics.
-          </p>
-          <p>
-            <b>Solution:</b>
-            <ul className="list-disc ml-4">
-              <li>
-                Pivoted from incremental game to narrative game in order to
-                deliver more contextual information.
-              </li>
-            </ul>
-          </p>
-          <h4>Challenge 2: effective storytelling</h4>
-          <p>
-            How to make the game look less like a boring history book and pique
-            curiosity of players?
-          </p>
-          <p>
-            <b>Solutions:</b>
-            <ul className="list-disc ml-4">
-              <li>
-                Created non-linear storytelling mechanism, let player decisions
-                matter for the game progress.
-              </li>
-              <li>
-                Leveraged browser functions to enhance the fun of the game
-                (pop-up windows, hyperlinks, etc.).
-              </li>
-            </ul>
-          </p>
-          <h4>Challenge 3: lack of guidance</h4>
-          <p>
-            Players can get lost in some interfaces like the Pre-Internet CLI
-            screen.
-          </p>
-          <p>
-            <b>Solutions:</b>
-            <ul className="list-disc ml-4">
-              <li>Developed optional in-game tutorials.</li>
-              <li>
-                Created physical user guide brochure in retrospective style.
-              </li>
-            </ul>
-          </p>
-        </section>
+
         {/* Conclusion */}
         <section>
           <h3>Conclusion</h3>
