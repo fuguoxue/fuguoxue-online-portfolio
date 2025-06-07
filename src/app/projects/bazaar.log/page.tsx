@@ -9,6 +9,7 @@ import BackToTop from "@/components/BackToTop";
 import Link from "next/link";
 import { FaGamepad } from "react-icons/fa";
 import { FaBlog } from "react-icons/fa6";
+import { RiArticleFill } from "react-icons/ri";
 import ImageWithCaption from "@/components/ImageWithCaption";
 
 const projectName = "Bazaar.log";
@@ -78,6 +79,15 @@ export default function Main() {
           <FaBlog className="external-link-icon" />
           Read Bazaar.log Blog
         </Link>
+        <Link
+          href="https://www.proquest.com/docview/3215951167"
+          className="external-link supplementary"
+          target="_blank"
+        >
+          <RiArticleFill className="external-link-icon" />
+          Read my Research Paper
+        </Link>
+        
       </aside>
       <main className="col-span-1 md:col-span-3 p-4 mb-8">
         {/* Video */}
