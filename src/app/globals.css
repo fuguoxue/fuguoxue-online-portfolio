@@ -3,30 +3,32 @@
 @tailwind utilities;
 
 :root {
-  --background: #fff;
-  --primary: #141414;
-  --secondary: #3A3D98;
-  --tag: #008080;
-  --selected: #FF6F61;
-  --caption: #5A6B95;
-  --date: #7a7a7a;
+  --background: 255, 255, 255;       /* #fff */
+  --primary: 20, 20, 20;             /* #141414 */
+  --secondary: 58, 61, 152;          /* #3A3D98 */
+  --tag: 0, 128, 128;                /* #008080 */
+  --selected: 255, 111, 97;          /* #FF6F61 */
+  --caption: 90, 107, 149;           /* #5A6B95 */
+  --date: 122, 122, 122;             /* #7a7a7a */
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #434343;
-    --primary: #f0f0f0;
-    --secondary: #7C7FD4;
-    --tag: #20B2AA;
-    --selected: #FF857A;
-    --caption: #AAB4E6;
-    --date: #A0A0A0;
+    --background: 67, 67, 67;        /* #434343 */
+    --primary: 240, 240, 240;        /* #f0f0f0 */
+    --secondary: 124, 127, 212;      /* #7C7FD4 */
+    --tag: 32, 178, 170;             /* #20B2AA */
+    --selected: 255, 133, 122;       /* #FF857A */
+    --caption: 170, 180, 230;        /* #AAB4E6 */
+    --date: 160, 160, 160;           /* #A0A0A0 */
   }
 }
 
+
 body {
-  color: var(--primary);
-  background: var(--background);
+  color: rgb(var(--primary));
+  background: rgb(var(--background));
   font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -97,7 +99,7 @@ button {
 /* Tag */
 
 .tagline {
-  color: var(--tag);
+  color: rgb(var(--tag));
   @apply text-sm;
 }
 
@@ -106,7 +108,7 @@ button {
 }
 
 .tagline span span {
-  color: var(--primary);
+  color: rgb(var(--primary));
   @apply inline-block mx-1;
 }
 
@@ -133,16 +135,16 @@ button {
 }
 
 .external-link {
-  color: var(--caption);
+  color: rgb(var(--caption));
   @apply text-sm transition flex mb-2 align-middle;
 }
 
 .external-link:hover {
-  color: var(--tag);
+  color: rgb(var(--tag));
 }
 
 .external-link-for-blog {
-  color: var(--tag);
+  color: rgb(var(--tag));
   @apply hover:underline mb-4;
 }
 
@@ -151,11 +153,12 @@ button {
 }
 
 .quote {  
-  color: var(--primary);
-  @apply border-l-4 border-solid border-caption pl-4 italic my-4
+  color: rgb(var(--primary));
+  border-color: rgb(var(--caption));
+  @apply border-l-4 border-solid pl-4 italic my-4
 }
 
 .caption {
-  color: var(--caption);
+  color: rgb(var(--caption));
   @apply text-center text-sm;
 }
