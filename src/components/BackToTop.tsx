@@ -32,7 +32,7 @@ export default function BackToTop() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-14 right-4 bg-primary/80 text-background backdrop-blur-md p-2 m-2 hover:text-secondary hover:scale-105 duration-300 transition text-lg"
+          className="fixed bottom-14 right-4 bg-primary/80 text-primary backdrop-blur-md p-2 m-2 hover:text-secondary hover:scale-105 duration-300 transition text-lg"
         >
           <div><span className='inline-flex'>Back to Top<FaArrowUp className="w-6 h-6 ml-2" /></span></div>
         </button>
