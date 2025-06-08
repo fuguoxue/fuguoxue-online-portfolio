@@ -47,7 +47,7 @@ export default function Slideshow({ slides, autoplay = true, bgColor = "#fff" }:
                 alt={`Slide ${index + 1}`}
                 width={400}
                 height={400}
-                className="w-full h-auto object-cover mt-4"
+                className="w-full h-auto object-cover"
                 onLoad={() => {
                   if (swiperInstance) swiperInstance.update(); // Recalculate Swiper dimensions
                 }}
