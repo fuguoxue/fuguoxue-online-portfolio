@@ -6,16 +6,19 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
-        background: "#fff",
-        primary: "#333333",
-        secondary: "#3A3D98",
-        tag: "#008080",
-        selected:"#FF6F61",
-        caption:"#5A6B95",
-        date:"#7a7a7a",
+        background: "rgb(var(--background) / <alpha-value>)",
+        primary: "rgb(var(--primary) / <alpha-value>)",
+        secondary: "rgb(var(--secondary) / <alpha-value>)",
+        tag: "rgb(var(--tag) / <alpha-value>)",
+        selected: "rgb(var(--selected) / <alpha-value>)",
+        caption: "rgb(var(--caption) / <alpha-value>)",
+        date: "rgb(var(--date) / <alpha-value>)",
+        transparent: "transparent",
+        current: "currentColor",
       },
       listStyleType: {
         circle: 'circle',

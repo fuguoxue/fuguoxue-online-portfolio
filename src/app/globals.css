@@ -4,18 +4,28 @@
 
 :root {
   --background: #fff;
-  --foreground: #141414;
+  --primary: #141414;
+  --secondary: #3A3D98;
+  --tag: #008080;
+  --selected: #FF6F61;
+  --caption: #5A6B95;
+  --date: #7a7a7a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #434343;
+    --primary: #f0f0f0;
+    --secondary: #7C7FD4;
+    --tag: #20B2AA;
+    --selected: #FF857A;
+    --caption: #AAB4E6;
+    --date: #A0A0A0;
   }
 }
 
 body {
-  color: var(--foreground);
+  color: var(--primary);
   background: var(--background);
   font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -87,7 +97,8 @@ button {
 /* Tag */
 
 .tagline {
-  @apply text-tag text-sm;
+  color: var(--tag);
+  @apply text-sm;
 }
 
 .tagline span {
@@ -95,7 +106,8 @@ button {
 }
 
 .tagline span span {
-  @apply text-primary inline-block mx-1;
+  color: var(--primary);
+  @apply inline-block mx-1;
 }
 
 .supplementary {
@@ -121,11 +133,17 @@ button {
 }
 
 .external-link {
-  @apply text-sm text-caption hover:text-tag transition flex mb-2 align-middle;
+  color: var(--caption);
+  @apply text-sm transition flex mb-2 align-middle;
+}
+
+.external-link:hover {
+  color: var(--tag);
 }
 
 .external-link-for-blog {
-  @apply text-tag hover:underline mb-4;
+  color: var(--tag);
+  @apply hover:underline mb-4;
 }
 
 .external-link-icon {
@@ -133,9 +151,11 @@ button {
 }
 
 .quote {  
-  @apply border-l-4 border-solid border-caption text-primary pl-4 italic my-4
+  color: var(--primary);
+  @apply border-l-4 border-solid border-caption pl-4 italic my-4
 }
 
 .caption {
-  @apply text-center text-sm text-caption
+  color: var(--caption);
+  @apply text-center text-sm;
 }
