@@ -17,19 +17,19 @@ export default function Main() {
         <section>
           <h2>Bio</h2>
           <p>
-            Fuguo Xue is a creative technologist, currently pursuing a
-            master&apos;s degree in Integrated Design & Media at New York
-            University. Before that, she graduated from Nanyang Technological
-            University Singapore in June 2023 with a Bachelor of Engineering
-            Degree in Information Engineering & Media (Highest Distinction).
+            Fuguo Xue is a creative technologist, currently working as Research
+            Associate at Information Engineering & Media program, Nanyang
+            Technological University.
           </p>
           <p>
-            Fuguo&apos;s work explores the intersection of technology, nature,
-            and human society. Passionate about simulating natural elements and
-            human culture through code and algorithms, her work spans
-            interactive installations, video games, and web-based interactions.
+            Fuguo's work spans interactive installations, video games, and
+            online interactions, exploring the intersection of technology,
+            nature, and culture. Passionate about artificial life and digital
+            simulations of nature and human society, she strives to create
+            immersive interactive experiences that encourage reflection on the
+            connection between us and the world.
           </p>
-          <p>
+          {/* <p>
             Specializing in creative technology, Fuguo has honed her expertise
             in{" "}
             <b>
@@ -39,25 +39,56 @@ export default function Main() {
             . These skills enable her to craft playful, thought-provoking
             experiences that reimagine relationships between humans, machines,
             and the natural world.
-          </p>
-          <p>
-            Currently, Fuguo is exploring new ways to leverage AI and open-source
-            tools for interactive experiences.
-          </p>
+          </p> */}
+          {/* <p>
+            Currently, Fuguo is exploring new ways to leverage AI and
+            open-source tools for interactive experiences.
+          </p> */}
         </section>
 
         <SeparationLine thickness="2px" />
 
-        {/* Work Experiences */}
+        {/* Education */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <h3 className="col-span-1 md:col-span-3 mt-6">Work Experiences</h3>
+          <h3 className="col-span-1 md:col-span-3 my-6 font-bold">Education</h3>
+          <div className="col-span-1">
+            <h4>Nanyang Technological University</h4>
+            <p>Singapore</p>
+            <p className="my-0">2019 — 2023</p>
+          </div>
+          <div className="col-span-1 md:col-span-2">
+            <p>Bachelor of Engineering, Information Engineering and Media</p>
+            <ul className="list-disc ml-4">
+              <li>Ministry of Education Scholarship (2018)</li>
+              <li>NTU Science and Engineering Scholarship (2018)</li>
+            </ul>
+          </div>
+          <SeparationLine thickness="1px" />
+          <div className="col-span-1">
+            <h4>New York University</h4>
+            <p>New York, United States</p>
+            <p className="my-0">2023 — 2025</p>
+          </div>
+          <div className="col-span-1 md:col-span-2">
+            <p>Master of Science, Integrated Design and Media</p>
+            <ul className="list-disc ml-4">
+              <li>
+                NYU Tandon School of Engineering Merit-based Scholarship (2023)
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <SeparationLine thickness="2px" />
+
+        {/* Experiences */}
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <h3 className="col-span-1 md:col-span-3 mt-6 font-bold">Experiences</h3>
           <div className="col-span-1">
             <h4>Front-End Developer</h4>
-            <p className="text-secondary text-opacity-70">
-              Jul 2024 — Sept 2024
-            </p>
-            <p className="text-secondary text-opacity-70">
-              <b>Philly Truce</b>, Philadelphia (Remote)
+            <p className="text-opacity-70">Jul 2024 — Sept 2024</p>
+            <p className="text-opacity-70">
+              Philly Truce, Philadelphia (Remote)
             </p>
           </div>
           <div className="col-span-1 md:col-span-2">
@@ -75,11 +106,9 @@ export default function Main() {
           <SeparationLine thickness="1px" />
           <div className="col-span-1">
             <h4>Museum Accessibility Designer</h4>
-            <p className="text-secondary text-opacity-70">
-              Feb 2024 — May 2024
-            </p>
-            <p className="text-secondary text-opacity-70">
-              <b>HeartShare Human Services of New York</b>, New York
+            <p className="text-opacity-70">Feb 2024 — May 2024</p>
+            <p className="text-opacity-70">
+              HeartShare Human Services of New York, New York
             </p>
           </div>
           <div className="col-span-1 md:col-span-2">
@@ -102,11 +131,9 @@ export default function Main() {
           <SeparationLine thickness="1px" />
           <div className="col-span-1">
             <h4>Stage Manager & Web Editor</h4>
-            <p className="text-secondary text-opacity-70">
-              Jan 2024 — May 2024
-            </p>
-            <p className="text-secondary text-opacity-70">
-              <b>Harvestworks Digital Media Art</b>, New York
+            <p className="text-opacity-70">Jan 2024 — May 2024</p>
+            <p className="text-opacity-70">
+              Harvestworks Digital Media Art, New York
             </p>
           </div>
           <div className="col-span-1 md:col-span-2">
@@ -128,11 +155,9 @@ export default function Main() {
           <SeparationLine thickness="1px" />
           <div className="col-span-1">
             <h4>Software Marketing Intern</h4>
-            <p className="text-secondary text-opacity-70">
-              Jul 2021 — Dec 2021
-            </p>
-            <p className="text-secondary text-opacity-70">
-              <b>Philips Electronics APAC Center</b>, Singapore
+            <p className="text-opacity-70">Jul 2021 — Dec 2021</p>
+            <p className="text-opacity-70">
+              Philips Electronics APAC Center, Singapore
             </p>
           </div>
           <div className="col-span-1 md:col-span-2">
@@ -156,11 +181,9 @@ export default function Main() {
           <SeparationLine thickness="1px" />
           <div className="col-span-1">
             <h4>News Product Designer</h4>
-            <p className="text-secondary text-opacity-70">
-              Jan 2021 — Apr 2021
-            </p>
-            <p className="text-secondary text-opacity-70">
-              <b>TODAY Online</b>, Singapore
+            <p className="text-opacity-70">Jan 2021 — Apr 2021</p>
+            <p className="text-opacity-70">
+              TODAY Online, Singapore
             </p>
           </div>
           <div className="col-span-1 md:col-span-2">
@@ -185,7 +208,7 @@ export default function Main() {
 
         {/* Exhibitions */}
         <section className="grid col-span-1 md:grid-cols-3 md:gap-4">
-          <h3 className="col-span-1 md:col-span-3 my-6">Exhibitions</h3>
+          <h3 className="col-span-1 md:col-span-3 my-6 font-bold">Exhibitions</h3>
           {/* <div className="col-span-1">
             <h4 className="italic">
               <Link
@@ -195,7 +218,7 @@ export default function Main() {
                 <b>Tree of Growth</b>
               </Link>
             </h4>
-            <p className="text-secondary my-0">May 2024</p>
+            <p className="my-0">May 2024</p>
           </div>
           <div className="col-span-1 md:col-span-2">
             <Link
@@ -205,7 +228,7 @@ export default function Main() {
             >
               An Evening of Immersive Entertainment
             </Link>
-            <p className="text-secondary">New York, United States</p>
+            <p>New York, United States</p>
           </div> */}
 
           <div className="col-span-1">
@@ -214,10 +237,10 @@ export default function Main() {
                 href="/projects/attractiverse-iii"
                 className="text-tag hover:underline"
               >
-                <b>Attractiverse-III</b>
+                Attractiverse-III
               </Link>
             </h4>
-            <p className="text-secondary my-0">Apr 2024</p>
+            <p className="my-0">Apr 2024</p>
           </div>
           <div className="col-span-1 md:col-span-2">
             <Link
@@ -227,7 +250,7 @@ export default function Main() {
             >
               MY _____ IS AN ECOSYSTEM
             </Link>
-            <p className="text-secondary">New York, United States</p>
+            <p>New York, United States</p>
           </div>
 
           <div className="col-span-1">
@@ -236,10 +259,10 @@ export default function Main() {
                 href="/projects/the-surface-city"
                 className="text-tag hover:underline"
               >
-                <b>The Surface City</b>
+                The Surface City
               </Link>
             </h4>
-            <p className="text-secondary  my-0">Apr 2023</p>
+            <p className=" my-0">Apr 2023</p>
           </div>
           <div className="col-span-1 md:col-span-2">
             <Link
@@ -249,7 +272,7 @@ export default function Main() {
             >
               Visible Cities: Workshop Exhibition (Online Exhibition)
             </Link>
-            <p className="text-secondary">New York, United States</p>
+            <p>New York, United States</p>
           </div>
 
           <div className="col-span-1">
@@ -258,10 +281,10 @@ export default function Main() {
                 href="/projects/cometale"
                 className="text-tag hover:underline"
               >
-                <b>Cometale</b>
+                Cometale
               </Link>
             </h4>
-            <p className="text-secondary my-0">Sep 2023</p>
+            <p className="my-0">Sep 2023</p>
           </div>
           <div className="col-span-1 md:col-span-2">
             <Link
@@ -271,7 +294,7 @@ export default function Main() {
             >
               Ars Electronica Festival 2023 Campus Exhibition
             </Link>
-            <p className="text-secondary">Linz, Austria</p>
+            <p>Linz, Austria</p>
           </div>
 
           <div className="col-span-1">
@@ -280,27 +303,27 @@ export default function Main() {
                 href="/projects/earthlings"
                 className="text-tag hover:underline"
               >
-                <b>Earthlings</b>
+                Earthlings
               </Link>
             </h4>
-            <p className="text-secondary my-0">Sep 2022</p>
+            <p className="my-0">Sep 2022</p>
           </div>
           <div className="col-span-1 md:col-span-2">
             <p>The International Conference of Undergraduate Research 2022</p>
-            <p className="text-secondary">Singapore</p>
+            <p>Singapore</p>
           </div>
         </section>
 
-        <SeparationLine thickness="2px" />
+        {/* <SeparationLine thickness="2px" /> */}
 
         {/* Honors & Awards */}
 
-        <section className="grid grid-cols-1 md:grid-cols-3 md:gap-4">
+        {/* <section className="grid grid-cols-1 md:grid-cols-3 md:gap-4">
           <h3 className="col-span-1 md:col-span-3 my-6">Honors & Awards</h3>
           <p className="col-span-1 md:col-span-2 my-0">
             <b>NYU Tandon School of Engineering Merit-based Scholarship</b>
           </p>
-          <p className="text-secondary col-span-1 md:text-right my-0">2023</p>
+          <p className="col-span-1 md:text-right my-0">2023</p>
           <p className="col-span-1 md:col-span-3 my-0">
             Issued by New York University.
           </p>
@@ -309,7 +332,7 @@ export default function Main() {
           <p className="col-span-1 md:col-span-2 my-0">
             <b>Ministry of Education Scholarship</b>
           </p>
-          <p className="text-secondary col-span-1 md:text-right my-0">2018</p>
+          <p className="col-span-1 md:text-right my-0">2018</p>
           <p className="col-span-1 md:col-span-3 my-0">
             Issued by Ministry of Education, Singapore.
           </p>
@@ -318,11 +341,11 @@ export default function Main() {
           <p className="col-span-1 md:col-span-2 my-0">
             <b>NTU Science and Engineering Scholarship</b>
           </p>
-          <p className="text-secondary col-span-1 md:text-right my-0">2018</p>
+          <p className="col-span-1 md:text-right my-0">2018</p>
           <p className="col-span-1 md:col-span-3 my-0">
             Issued by Nanyang Technological University, Singapore.
           </p>
-        </section>
+        </section> */}
         <div className="col-span-1 sm:hidden md:block lg:hidden"></div>
         <div className="col-span-1 md:col-span-3 lg:col-span-1">
           <BackToTop />
