@@ -22,7 +22,7 @@ export default function Main() {
             Technological University.
           </p>
           <p>
-            Fuguo's work spans interactive installations, video games, and
+            Fuguo&apos;s work spans interactive installations, video games, and
             online interactions, exploring the intersection of technology,
             nature, and culture. Passionate about artificial life and digital
             simulations of nature and human society, she strives to create
