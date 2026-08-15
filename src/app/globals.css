@@ -3,33 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --background: 255, 255, 255;       /* #fff */
-  --primary: 20, 20, 20;             /* #141414 */
-  --secondary: 58, 61, 152;          /* #3A3D98 */
-  --tag: 0, 128, 128;                /* #008080 */
-  --selected: 255, 111, 97;          /* #FF6F61 */
-  --caption: 90, 107, 149;           /* #5A6B95 */
-  --date: 122, 122, 122;             /* #7a7a7a */
+  --background: 255, 255, 255; /* #fff */
+  --primary: 20, 20, 20; /* #141414 */
+  --secondary: 58, 61, 152; /* #3A3D98 */
+  --tag: 0, 128, 128; /* #008080 */
+  --selected: 255, 111, 97; /* #FF6F61 */
+  --caption: 90, 107, 149; /* #5A6B95 */
+  --date: 122, 122, 122; /* #7a7a7a */
 }
-
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: 67, 67, 67;        /* #434343 */
-    --primary: 240, 240, 240;        /* #f0f0f0 */
-    --secondary: 124, 127, 212;      /* #7C7FD4 */
-    --tag: 32, 178, 170;             /* #20B2AA */
-    --selected: 255, 133, 122;       /* #FF857A */
-    --caption: 170, 180, 230;        /* #AAB4E6 */
-    --date: 160, 160, 160;           /* #A0A0A0 */
+    --background: 67, 67, 67; /* #434343 */
+    --primary: 240, 240, 240; /* #f0f0f0 */
+    --secondary: 124, 127, 212; /* #7C7FD4 */
+    --tag: 32, 178, 170; /* #20B2AA */
+    --selected: 255, 133, 122; /* #FF857A */
+    --caption: 170, 180, 230; /* #AAB4E6 */
+    --date: 160, 160, 160; /* #A0A0A0 */
   }
 }
-
 
 body {
   color: rgb(var(--primary));
   background: rgb(var(--background));
-  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
 }
 
 @layer utilities {
@@ -89,7 +87,7 @@ span {
 }
 
 p span {
-  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
 }
 
 button {
@@ -114,7 +112,7 @@ button {
 
 .supplementary {
   @apply text-sm;
-  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
 }
 
 /* Slideshow */
@@ -152,13 +150,43 @@ button {
   @apply w-4 h-4 mr-2 align-middle;
 }
 
-.quote {  
+.quote {
   color: rgb(var(--primary));
   border-color: rgb(var(--caption));
-  @apply border-l-4 border-solid pl-4 italic my-4
+  @apply border-l-4 border-solid pl-4 italic my-4;
 }
 
 .caption {
   color: rgb(var(--caption));
   @apply text-center text-sm;
+}
+
+.tutorial-page-container p, ul, ol {
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  @apply text-lg leading-relaxed mb-4 text-justify;
+}
+
+.tutorial-page-container h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+
+.tutorial-page-container h3 {
+  @apply my-8;
+}
+.tutorial-page-container h4 {
+  @apply my-4;
+}
+
+.tutorial-page-container a{
+  @apply text-tag hover:underline;
+}
+
+/* global.css */
+.code-inline {
+  @apply font-mono text-sm my-1 px-1 py-0.5 rounded bg-gray-100 text-red-500;
 }

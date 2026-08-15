@@ -52,7 +52,7 @@ interface SeparationLineProps {
 export function SeparationLine({ thickness }: SeparationLineProps) {
   return (
     <div
-      className={`border-b col-span-full border-caption`}
+      className={`border-b col-span-full border-caption mt-8`}
       style={{ borderWidth: thickness }} // Set the thickness dynamically
     ></div>
   );
