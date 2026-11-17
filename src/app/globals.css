@@ -10,6 +10,7 @@
   --selected: 255, 111, 97; /* #FF6F61 */
   --caption: 90, 107, 149; /* #5A6B95 */
   --date: 122, 122, 122; /* #7a7a7a */
+  --greyline: 100, 100, 100; /* #646464 */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +22,7 @@
     --selected: 255, 133, 122; /* #FF857A */
     --caption: 170, 180, 230; /* #AAB4E6 */
     --date: 160, 160, 160; /* #A0A0A0 */
+    --greyline: 200, 200, 200; /* #C8C8C8 */
   }
 }
 
@@ -72,6 +74,10 @@ h6 {
 
 p {
   @apply text-base leading-relaxed mb-1 text-justify;
+}
+
+ul {
+  @apply text-base;
 }
 
 section {

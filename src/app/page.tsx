@@ -39,14 +39,14 @@ export default function Home() {
             {/* Bio Section */}
             <P5ShadowController />
             <p className="text-tag">
-              Creative Technologist | Game Designer & Developer
+              Creative Technologist · Educator · Multimedia Artist
             </p>
             <p className="leading-relaxed mb-4 text-left">
-              Fuguo Xue is a creative technologist specializing in multimedia
-              and front-end technologies. She is interested in algorithmic art,
-              video games, and GenAI integration for creative purposes. Her work
-              was featured at Ars Electronica Festival Campus Exhibtion 2023 and
-              more.
+              <u>Xue</u> Fuguo is an artist, creative technologist, and educator based
+              in Singapore. Working at the intersection of art, computation, and
+              engineering, she explores artificial life, emergent behavior, and
+              interactive experiences. She is currently a Research Associate at
+              Nanyang Technological University.
             </p>
             <section className="mb-8">
               <div>

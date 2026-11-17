@@ -18,6 +18,7 @@ const config: Config = {
         selected: "rgb(var(--selected))",
         caption: "rgb(var(--caption))",
         date: "rgb(var(--date))",
+        greyline: "rgb(var(--greyline))",
         transparent: "transparent",
         current: "currentColor",
       },

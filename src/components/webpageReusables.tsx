@@ -45,15 +45,15 @@ export function NavigationTab({ href, text, arrowPosition }: TabProps) {
   );
 }
 
-interface SeparationLineProps {
-  thickness: string; // Accept thickness as a prop
-}
+// interface SeparationLineProps {
+//   thickness: string; // Accept thickness as a prop
+// }
 
-export function SeparationLine({ thickness }: SeparationLineProps) {
+export function SeparationLine() {
   return (
     <div
-      className={`border-b col-span-full border-caption mt-8`}
-      style={{ borderWidth: thickness }} // Set the thickness dynamically
+      className={`border-b-[0.5px] col-span-full border-greyline mt-8`}
+      // style={{ borderWidth: thickness }} // Set the thickness dynamically
     ></div>
   );
 }
