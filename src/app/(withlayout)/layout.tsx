@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import TitleLine from "@/components/TitleLine";
 import BackToTop from "@/components/BackToTop";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   authors: [{ name: "Fuguo Xue", url: "https://www.fuguosmediaspace.me/" }],
@@ -25,20 +26,27 @@ export default function WithLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <div className="grid grid-cols-1 lg:grid-cols-5 m-4">
-        <div className="col-span-1 lg:col-span-5">
-          <TitleLine />
-        </div>
-        <div className="col-span-1 sm:hidden md:hidden lg:block"></div>
-        <main className="col-span-1 lg:col-span-3 p-4 mb-8">
-          {children} {/* Content will be rendered here */}
-        </main>
-        <div className="col-span-1 sm:hidden md:block lg:hidden"></div>
-        <div className="col-span-1 md:col-span-3 lg:col-span-1">
-          <BackToTop />
-        </div>
+    <div className="grid min-h-dvh grid-cols-1
+                    grid-rows-[auto_1fr_auto_auto]
+                    lg:grid-cols-5
+                    lg:grid-rows-[auto_1fr_auto] p-4">
+
+      <header className="col-span-full">
+        <TitleLine />
+      </header>
+
+      <main className="lg:col-start-2 lg:col-span-3 p-4 mb-8">
+        {children}
+      </main>
+
+      <div className="lg:col-start-5 lg:row-start-2">
+        <BackToTop />
       </div>
-    </>
+
+      <footer className="col-span-full p-4 flex items-center justify-center">
+        <Footer />
+      </footer>
+
+    </div>
   );
 }

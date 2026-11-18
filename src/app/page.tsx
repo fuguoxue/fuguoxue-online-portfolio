@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
@@ -8,20 +8,17 @@ import P5ShadowController from "../components/P5TitleShadow";
 import Footer from "@/components/Footer";
 // import ThreeScene from '@/components/ThreeScene';
 
-export default function Home() {
-  const [selectedTag, setSelectedTag] = useState<string>("All"); // Explicitly setting the type to 'string'
-  const [allTags, setAllTags] = useState<string[]>([]); // Explicitly setting the type to 'string[]' (array of strings)
-
-  // Extract unique tags from projectData.json
-  useEffect(() => {
-    const tags = new Set<string>(); // Define the Set type explicitly
+const allTags = [
+  "All",
+  ...new Set(
     projectData
       .filter((project) => !project.hidden)
-      .forEach((project) => {
-        project.tags.forEach((tag) => tags.add(tag));
-      });
-    setAllTags(["All", ...Array.from(tags)]); // Convert the Set to an array
-  }, []);
+      .flatMap((project) => project.tags),
+  ),
+];
+
+export default function Home() {
+  const [selectedTag, setSelectedTag] = useState<string>("All"); // Explicitly setting the type to 'string'
 
   // Filter the projects based on selected tag
   const filteredProjects =
