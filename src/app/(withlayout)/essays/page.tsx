@@ -7,14 +7,14 @@ export default function Main() {
       <h2 className="mb-4 col-span-1 md:col-span-3 lg:col-span-5">Essays</h2>
 
       <section className="col-span-1 md:col-span-3 lg:col-span-5 mb-4">
-        <h3>New Media Art</h3>
+        <h3>Media & Technology</h3>
 
         {/* Year and title should be in the same line on lg screens */}
         <div className="col-span-1 md:col-span-3 grid grid-cols-5 gap-4">
-          <p className="col-span-1 mb-4">2024</p>
+          <p className="col-span-1 mb-4 text-xl">2024</p>
           <Link
             href="https://www.proquest.com/docview/3215951167"
-            className="text-tag hover:underline col-span-1 lg:col-span-3 mb-4"
+            className="text-xl hover:underline col-span-1 lg:col-span-3 mb-4"
             target="_blank"
           >
             Open Source Ecosystem and Internet Art in the Post-AI Age
@@ -22,10 +22,10 @@ export default function Main() {
         </div>
 
         <div className="col-span-1 md:col-span-3 grid grid-cols-5 gap-4">
-          <p className="col-span-1 mb-4">2023</p>
+          <p className="col-span-1 mb-4 text-xl">2023</p>
           <Link
             href="https://dr.ntu.edu.sg/handle/10356/167573"
-            className="text-tag hover:underline col-span-1 lg:col-span-3 mb-4"
+            className="text-xl hover:underline col-span-1 lg:col-span-3 mb-4"
             target="_blank"
           >
             Cometale - an interactive showcase of comets
@@ -38,10 +38,10 @@ export default function Main() {
 
         {/* Repeat same structure for other essays */}
         <div className="col-span-1 md:col-span-3 grid grid-cols-5 gap-4">
-          <p className="col-span-1 mb-4">2024</p>
+          <p className="col-span-1 mb-4 text-xl">2024</p>
           <Link
             href="/documents/Fuguo Xue - Functions of Fantasy_ An Analysis of VA-11 Hall-A_ Cyberpunk Bartender Action.pdf"
-            className="text-tag hover:underline col-span-1 lg:col-span-3 mb-4"
+            className="text-xl hover:underline col-span-1 lg:col-span-3 mb-4"
             target="_blank"
           >
             Functions of Fantasy: An Analysis of{" "}
@@ -50,10 +50,10 @@ export default function Main() {
         </div>
 
         <div className="col-span-1 md:col-span-3 grid grid-cols-5 gap-4">
-          <p className="col-span-1 mb-4">2022</p>
+          <p className="col-span-1 mb-4 text-xl">2022</p>
           <Link
             href="/documents/Fuguo Xue - Avatars in A Plague Tale.pdf"
-            className="text-tag hover:underline col-span-1 lg:col-span-3 mb-4"
+            className="text-xl hover:underline col-span-1 lg:col-span-3 mb-4"
             target="_blank"
           >
             Avatars in <i>A Plague Tale: Innocence</i>

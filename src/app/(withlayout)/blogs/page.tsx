@@ -16,14 +16,14 @@ export default function Main() {
               <div key={item.blogTag}>
                 <Link
                   href={`/blogs/${item.blogTag}`}
-                  className="group inline-flex items-center text-tag transition-all duration-300 transform hover:scale-105 text-lg"
+                  className="group inline-flex items-center text-2xl my-2"
                 >
-                  <span className="transition-all group-hover:underline">
+                  <span className="hover:underline">
                     {item.blogName}
                   </span>
-                  <span className="transition-all transform group-hover:scale-105">
+                  {/* <span>
                     &nbsp;&#8594;
-                  </span>
+                  </span> */}
                 </Link>
               </div>
             );

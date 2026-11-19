@@ -1,0 +1,200 @@
+[
+    {
+        "title":"Program or Be Programmed",
+        "id": "program-or-be-programmed",
+        "date": "September 13, 2023",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 1
+    },
+    {
+        "title":"Software Studies: A Lexicon",
+        "id": "software-studies-a-lexicon",
+        "date": "September 20, 2023",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 2
+    },
+    {
+        "title":"Glitch Feminism & Cyberfeminism",
+        "id": "glitch-feminism-and-cyberfeminism",
+        "date": "September 27, 2023",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 3
+    },
+    {
+        "title":"What is Interaction?",
+        "id": "what-is-interaction",
+        "date": "October 4, 2023",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 4
+    },
+    {
+        "title":"Data as A Form of Expression",
+        "id": "data-as-a-form-of-expression",
+        "date": "October 11, 2023",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 5
+    },
+    {
+        "title":"Ways of Seeing",
+        "id": "ways-of-seeing",
+        "date": "October 18, 2023",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 6
+    },
+    {
+        "title":"What is Posthumanism?",
+        "id": "what-is-posthumanism",
+        "date": "October 25, 2023",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 7
+    },
+    {
+        "title":"Data and Anthropocene",
+        "id": "data-and-anthropocene",
+        "date": "November 8, 2023",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 8
+    },
+    {
+        "title":"Other Codes and Other Technologies",
+        "id": "other-codes-and-other-technologies",
+        "date": "November 15, 2023",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 9
+    },
+    {
+        "title":"Media Archaeology",
+        "id": "media-archaeology",
+        "date": "November 29, 2023",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 10
+    },
+    {
+        "title":"The Natural and The Media Worlds",
+        "id": "the-natural-and-the-media-worlds",
+        "date": "December 6, 2023",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 11
+    },
+    {
+        "title":"Technology in China",
+        "id": "technology-in-china",
+        "date": "December 13, 2023",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 12
+    },
+    {
+        "title":"Heidegger’s Theory of Technology",
+        "id": "heidegger-s-theory-of-technology",
+        "date": "January 29, 2024",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 13
+    },
+    {
+        "title":"Technological Determinism",
+        "id": "technological-determinism",
+        "date": "February 6, 2024",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 14
+    },
+    {
+        "title":"Media and its Effects",
+        "id": "media-and-its-effects",
+        "date": "February 13, 2024",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 15
+    },
+    {
+        "title":"The Modern Condition",
+        "id": "the-modern-condition",
+        "date": "February 19, 2024",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 16
+    },
+    {
+        "title":"Media as Spectacle",
+        "id": "media-as-spectacle",
+        "date": "March 4, 2024",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 17
+    },
+    {
+        "title":"Technological Manifesto",
+        "id": "technological-manifesto",
+        "date": "March 11, 2024",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 18
+    },
+    {
+        "title":"Feminist Technology",
+        "id": "feminist-technology",
+        "date": "March 25, 2024",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 19
+    },
+    {
+        "title":"Technological Surveillance",
+        "id": "technological-surveillance",
+        "date": "April 1, 2024",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 20
+    },
+    {
+        "title":"Afrofuturism",
+        "id": "afrofuturism",
+        "date": "April 8, 2024",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 21
+    },
+    {
+        "title":"Digital Media",
+        "id": "digital-media",
+        "date": "April 15, 2024",
+        "tag": "media-theory",
+        "posted": true,
+        "description": "",
+        "sequence": 22
+    }
+]

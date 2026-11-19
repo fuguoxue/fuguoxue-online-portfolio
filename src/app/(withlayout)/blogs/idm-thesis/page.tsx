@@ -39,7 +39,7 @@ export default function Home() {
             >
               <Link
                 href={`/blogs/${blogTag}/${blog.id}`}
-                className="w-full transition-all duration-300 ease-in-out bg-transparent group-hover:bg-black group-hover:bg-opacity-20 group-hover:backdrop-blur-md grid grid-cols-1 md:grid-cols-2 gap-4"
+                className="w-full transition-all duration-300 ease-in-out bg-transparent group-hover:bg-black group-hover:bg-opacity-20 group-hover:backdrop-blur-md grid grid-cols-1 md:grid-cols-2 gap-4 p-4"
               >
                 <div className="col-span-1">
                   <h3>{blog.title}</h3>
